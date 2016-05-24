@@ -1,0 +1,27 @@
+<head>
+    <title>Badges</title>
+</head>
+
+
+<body>
+
+<h1>Badges</h1>
+
+<ul>
+    {{#each model as |badge|}}
+        <li>{{badge}}</li>
+    {{else}}
+        No Badges riperoo
+    {{/each}}
+</ul>
+
+<nav>
+<ul data-role="listview">
+    <li>{{#link-to "home"}}Home{{/link-to}}</li>
+    <li>{{#link-to "trees"}}Tree Collection{{/link-to}}</li>
+</ul>    
+</nav>
+
+</body>
+
+{{outlet}}

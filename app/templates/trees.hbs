@@ -1,0 +1,28 @@
+<head>
+    <title>Tree List</title>
+</head>
+
+<body>
+
+<ul>
+    {{#each model as |tree|}}
+        <li>{{#link-to "treedetails" tree}}{{tree.species}}{{/link-to}}</li>
+    {{else}}
+        No Trees Found riperoo
+    {{/each}}
+</ul>
+
+
+<div>
+<ul data-role="listview">
+    <li>{{#link-to "home"}}Home{{/link-to}}</li>
+    <li>{{#link-to "badges"}}Badges{{/link-to}}</li>
+</ul>    
+</div>
+
+
+</body>
+
+
+
+{{outlet}}

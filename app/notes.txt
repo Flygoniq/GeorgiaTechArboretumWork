@@ -1,0 +1,48 @@
+/*var json = (function() {
+            var temp = null;
+            Ember.$.ajax({
+                'async': false,
+                'global': false,
+                'url': "/app/treedata.json",
+                'dataType': "json",
+                'success': function (data) {
+                    temp = data;
+                }
+            });
+            return temp;
+        })();
+        var stuff = JSON.parse(json);
+        var i;
+        for (i = 0; i < stuff.treedata.length; i++) {
+            this.store.createRecord('tree', {
+                species: stuff.treedata[i].species,
+                id: i,
+                information: stuff.treedata[i].information
+            }).save();
+        }
+        console.log(['json', json]);*/
+
+
+From trees.js:
+/*var treeList = Ember.A();
+        Ember.$.getJSON('http://localhost:4200/treedata.js',function(trees) {
+           trees.forEach(function(data) {
+                treeList.pushObject(App.Tree.createTree(data));
+           });
+        });
+        return treeList;*/
+
+
+From treedetails.js:
+
+model(params) {
+        localStorage.badgeOne = "true";
+        var tree = this.store.findRecord('tree', params.tree_id).then(function(thing) {
+            console.log("cheese");
+            console.log(thing.get('species'));
+            if (thing.get('species') === 'Pine') {
+                localStorage.badgeOne = "true";
+            }
+        });
+        return tree;
+    }
