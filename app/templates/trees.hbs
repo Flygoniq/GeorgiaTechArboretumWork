@@ -6,7 +6,7 @@
 
 <ul>
     {{#each model as |tree|}}
-        <li>{{#link-to "treedetails" tree}}{{tree.species}}{{/link-to}}</li>
+        <li>{{#link-to "treedetails" tree}}{{tree.Common_Name}}{{/link-to}}</li>
     {{else}}
         No Trees Found riperoo
     {{/each}}

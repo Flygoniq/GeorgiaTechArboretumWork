@@ -4,8 +4,11 @@ import attr from 'ember-data/attr';
 
 export default DS.Model.extend({
     
-    species:        attr('string'),
-    information:    attr('string')
+    Common_Name:        attr('string'),
+    Scientific_Name:    attr('string'),
+    Image:              attr('string'),
+    Description:        attr('string'),
+    Tree_Number:        attr('number')
   
 });
 
