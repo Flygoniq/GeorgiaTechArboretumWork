@@ -4,9 +4,10 @@
 
 <body>
 
+<h2>Tree List</h2>
 <ul>
     {{#each model as |tree|}}
-        <li>{{#link-to "treedetails" tree}}{{tree.Common_Name}}{{/link-to}}</li>
+        <p class="TreeListRow">{{#link-to "treedetails" tree}}{{tree.Common_Name}}{{/link-to}}<img src="/assets/images/icons/arrow.png"></p>
     {{else}}
         No Trees Found riperoo
     {{/each}}

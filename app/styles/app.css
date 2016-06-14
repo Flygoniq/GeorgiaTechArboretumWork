@@ -1,0 +1,14 @@
+h2 {
+    text-align: center;
+    
+}
+
+.TreeListRow {
+    height: 40px;
+    padding-top: 20px; /* this is height/2 */
+    border-style: solid none;
+    border-color: rgb(59, 182, 75);
+    margin-top: 0;
+    margin-bottom: -3px;
+    background-color: rgb(243, 243, 243);
+}
