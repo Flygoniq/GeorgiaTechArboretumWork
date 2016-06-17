@@ -7,7 +7,7 @@
 <h2>Tree List</h2>
 <ul>
     {{#each model as |tree|}}
-        <p class="TreeListRow">{{#link-to "treedetails" tree}}{{tree.Common_Name}}{{/link-to}}<img src="/assets/images/icons/arrow.png"></p>
+        <p class="TreeListRow">{{#link-to "treedetails" tree}}{{tree.Common_Name}}{{/link-to}}<img class="TreeListRowArrow" src="/assets/images/icons/arrow.png"></p>
     {{else}}
         No Trees Found riperoo
     {{/each}}

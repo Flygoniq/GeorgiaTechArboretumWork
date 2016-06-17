@@ -1,6 +1,11 @@
 import DS from 'ember-data';
 import attr from 'ember-data/attr';
+import { hasMany } from 'ember-data/relationships';
+import { belongsTo } from 'ember-data/relationships';
 //import { belongsTo } from 'ember-data/relationships';
+
+//each tree belongs to many badges
+//each tree belongs to one tour
 
 export default DS.Model.extend({
     
@@ -8,7 +13,10 @@ export default DS.Model.extend({
     Scientific_Name:    attr('string'),
     Image:              attr('string'),
     Description:        attr('string'),
-    Tree_Number:        attr('number')
+    Tree_Number:        attr('number'),
+    
+    Tour:               belongsTo('tour'),
+    Badges:             hasMany('badge')
   
 });
 

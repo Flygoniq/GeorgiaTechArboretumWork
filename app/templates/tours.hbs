@@ -1,0 +1,29 @@
+<head>
+    <title>Tours</title>
+</head>
+
+<body>
+
+<h2>Tours</h2>
+<ul>
+    {{#each model as |tour|}}
+        <p>{{#link-to "tourdetails" tour}}{{tour.Name}}{{/link-to}}</p>
+    {{else}}
+        No Tours Found riperoo
+    {{/each}}
+</ul>
+
+
+<div>
+<ul data-role="listview">
+    <li>{{#link-to "home"}}Home{{/link-to}}</li>
+    <li>{{#link-to "badges"}}Badges{{/link-to}}</li>
+</ul>    
+</div>
+
+
+</body>
+
+
+
+{{outlet}}

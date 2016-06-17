@@ -10,6 +10,12 @@ Router.map(function() {
   this.route('trees');
   this.route('treedetails', {path: '/treedetails/:tree_id'});
   this.route('badges');
+  this.route('badgedetails', {path: '/badgedetails/:badge_id'});
+  this.route('options');
+  this.route('tours');
+  this.route('tourdetails', {path: '/tourdetails/:tour_id'});
+  this.route('about');
+  this.route('map');
 });
 
 export default Router;
