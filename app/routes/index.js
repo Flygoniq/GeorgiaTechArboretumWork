@@ -9,6 +9,7 @@ import Ember from 'ember';
   */
 
 export default Ember.Route.extend({
+    
     afterModel: function() {
         this.store.push({
             data: [
@@ -32,3 +33,11 @@ export default Ember.Route.extend({
         this.transitionTo('home');
     }
 });
+
+function initiateLocalstorage() {
+    if (!localStorage.badgeOne) {localStorage.badgeOne = "false";}
+    if (!localStorage.badgeTwo) {localStorage.badgeTwo = "false";}
+    if (!localStorage.badgeThree) {localStorage.badgeThree = "false";}
+    if (!localStorage.treeOne) {localStorage.treeOne = "false";}
+    if (!localStorage.treeTwo) {localStorage.treeTwo = "false";}
+}

@@ -4,12 +4,16 @@ export default Ember.Route.extend({
     model() {
         var badges = [];
         if (localStorage.badgeOne) {
-            if (localStorage.badgeOne === "true") {
+            if (localStorage.badgeOne) {
                 badges.push("Badge One");
             }
-        } else {
-            localStorage.badgeOne = "false";
         }
         return badges;
+    }
+});
+
+export default Ember.Route.extend({
+    afterModel() {
+        this.transitionTo('home');
     }
 });
