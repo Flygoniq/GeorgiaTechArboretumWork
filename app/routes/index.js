@@ -20,7 +20,7 @@ export default Ember.Route.extend({
                 
             ]
         });
-        
+
         this.store.push({
             data: [
                 {id: 1, type: 'tree', attributes: {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This is an oak tree', Tree_Number: 1470}, relationships: {Tour: {id: 1, type: 'tour'}, Badges: {data: [{id: 2, type: 'badge'}, {id: 3, type: 'badge'}]} }},
@@ -29,15 +29,17 @@ export default Ember.Route.extend({
 
         });
         //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
-        
+        initiateLocalstorage();
         this.transitionTo('home');
     }
 });
 
 function initiateLocalstorage() {
+    if (localStorage.initialized) {return;}
     if (!localStorage.badgeOne) {localStorage.badgeOne = "false";}
     if (!localStorage.badgeTwo) {localStorage.badgeTwo = "false";}
     if (!localStorage.badgeThree) {localStorage.badgeThree = "false";}
     if (!localStorage.treeOne) {localStorage.treeOne = "false";}
     if (!localStorage.treeTwo) {localStorage.treeTwo = "false";}
-}
+    localStorage.initialized === "true";
+    }
