@@ -13,18 +13,93 @@ export default Ember.Route.extend({
     afterModel: function() {
         this.store.push({
             data: [
-                {id: 1, type: 'tour', attributes: {Name: 'Hill Tour', Description: 'See the trees on the hill'}},
-                {id: 1, type: 'badge', attributes: {Name: 'Ichiban', Summary: 'Visit the About Page'}},
-                {id: 2, type: 'badge', attributes: {Name: 'Segundo', Summary: 'View all the trees'}},
-                {id: 3, type: 'badge', attributes: {Name: 'Third', Summary: 'View the White Oak'}}
-                
+                {
+                    id: 1,
+                    type: 'tour',
+                    attributes: {
+                        Name: 'Hill Tour',
+                        Description: 'See the trees on the hill'
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Ichiban',
+                        Summary: 'Visit the About Page'
+                    }
+                },
+                {
+                    id: 2,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Segundo',
+                        Summary: 'View all the trees'
+                    }
+                },
+                {
+                    id: 3,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Third',
+                        Summary: 'View the White Oak'
+                    }
+                }
             ]
         });
 
         this.store.push({
             data: [
-                {id: 1, type: 'tree', attributes: {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This is an oak tree', Tree_Number: 1470}, relationships: {Tour: {id: 1, type: 'tour'}, Badges: {data: [{id: 2, type: 'badge'}, {id: 3, type: 'badge'}]} }},
-                {id: 2, type: 'tree', attributes: {Common_Name: 'Japanese Maple', Scientific_Name: 'Acer palmatum', Image: '\\assets\\images\\trees\\01336_Acer_palmatum.jpg', Description: 'this is a maple tReeEEe', Tree_Number: 1336}, relationships: {Tour: {id: 1, type: 'tour'}, Badges: {id: 2, type: 'badge'}}}
+                {
+                    id: 1,
+                    type: 'tree',
+                    attributes: {
+                        Common_Name: 'White Oak',
+                        Scientific_Name: 'Quercus alba',
+                        Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg',
+                        Description: 'This is an oak tree',
+                        Tree_Number: 1470
+                    },
+                    relationships: {
+                        Tour: {
+                            id: 1,
+                            type: 'tour'
+                        },
+                        Badges: {
+                            data: [
+                                {
+                                    id: 2,
+                                    type: 'badge'
+                                },
+                                {
+                                    id: 3,
+                                    type: 'badge'
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    id: 2,
+                    type: 'tree',
+                    attributes: {
+                        Common_Name: 'Japanese Maple',
+                        Scientific_Name: 'Acer palmatum',
+                        Image: '\\assets\\images\\trees\\01336_Acer_palmatum.jpg',
+                        Description: 'this is a maple tReeEEe',
+                        Tree_Number: 1336
+                    },
+                    relationships: {
+                        Tour: {
+                            id: 1,
+                            type: 'tour'
+                        },
+                        Badges: {
+                            id: 2,
+                            type: 'badge'
+                        }
+                    }
+                }
             ]
 
         });
