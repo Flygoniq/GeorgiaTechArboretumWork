@@ -56,7 +56,8 @@ export default Ember.Route.extend({
                     attributes: {
                         Common_Name: 'White Oak',
                         Scientific_Name: 'Quercus alba',
-                        Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg',
+                        //Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg',
+                        Image: '\\assets\\images\\icons\\Icon-acorns.svg',
                         Description: 'This is an oak tree',
                         Tree_Number: 1470
                     },
