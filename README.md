@@ -45,6 +45,21 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Notes on Ember behaviors
 * When creating multiple hooks for routes (ie beforeModel, model, afterModel), they must be in the file in their order of execution.  See /app/routes/badges.js for example.
+* Generally, each template and its backend route should share the same name (for example, badge.hbs and badge.js).  However, Ember's initial route is an exception.  It is called application.hbs, serves as the starting page, and is backed by index.js.  Currently, this app uses index.js to initialize data and then transitions to home.hbs without showing application.hbs.
+* Templates should contain links to other templates.  Any appropriate hooks in their backing routes activate when links are pressed.
+
+### File Organization
+* `app` Contains folders and files for code.
+ * `models` Models are Ember's objects.
+ * `routes` Routes are javascript files which serve as backend functionality for templates.  They load models so that templates can use the model.  Other javascript functionality is also written included here.
+ * `styles` Contains app.css, the css file that is shared between all the templates.
+ * `templates` Contains handlebars files (.hbs) which are essentially HTML but with sections that change dynamically based on the model data provided.
+* `bower_components` Bower manages front-end plugins and component dependencies.  bower.json contains a list of dependencies installed automatically.  Additional dependencies such as Bootstrap will be listed in the json and added to this directory.
+* `config` Contains environment.js where app settings can be configured.
+* `dist` Contains output files from building the app.
+* `node_modules` Contains npm modules.  Similarly to bower, they are listed in package.json.
+* `public` Assets that are not compiled go in here (Images, fonts).
+* `vendor` Contains dependencies not managed by bower.
 
 ### Deploying
 
