@@ -1,0 +1,149 @@
+.attribute{
+    display: block;
+    width: 100px;
+    height: 85px;
+    background-size: 100px 85px;
+}
+.attribute.ga { background: url(/i/Icon-galocal.svg); }
+.attribute.bee { background: url(/i/Icon-beetree.svg); }
+
+.attribute.coniferous { background: url(/i/Icon-coniferous.svg); }
+.attribute.deciduous { background: url(/i/Icon-decidouus.svg); }
+
+.attribute.pyramidal { background: url(/i/Icon-pyramidal.svg); }
+.attribute.conical { background: url(/i/Icon-conical.svg); }
+.attribute.columnar { background: url(/i/Icon-columnar.svg); }
+.attribute.spreading { background: url(/i/Icon-spreading.svg); }
+.attribute.vase { background: url(/i/Icon-vaseshape.svg); }
+.attribute.broad { background: url(/i/Icon-broad.svg); }
+.attribute.rounded { background: url(/i/Icon-rounded.svg); }
+
+.attribute.alternate { background: url(/i/Icon-alternate.svg); }
+.attribute.opposite { background: url(/i/Icon-opposite.svg); }
+.attribute.whorled { background: url(/i/Icon-whorled.svg); }
+
+.attribute.needle { background: url(/i/Icon-needleleafconifer.svg); }
+.attribute.scale { background: url(/i/Icon-scaleleafconifer.svg); }
+.attribute.untoothed { background: url(/i/Icon-untoothedsimpleleaf.svg); }
+.attribute.toothed { background: url(/i/Icon-toothedsimpleleaf.svg); }
+.attribute.yucca { background: url(/i/Icon-yucca.svg); }
+.attribute.compound { background: url(/i/Icon-compoundleaf.svg); }
+.attribute.lobed { background: url(/i/Icon-lobedsimpleleaf.svg); }
+
+.attribute.flowerred { background: url(/i/Icon-redflowercolor.svg); }
+.attribute.flowergreen { background: url(/i/Icon-greenflowercolor.svg); }
+.attribute.flowerolive { background: url(/i/Icon-brownflowercolor.svg); }
+.attribute.floweryellow { background: url(/i/Icon-yellowflowercolor.svg); }
+.attribute.flowercream { background: url(/i/Icon-creamflowercolor.svg); }
+.attribute.flowerwhite { background: url(/i/Icon-whiteflowercolor.svg); }
+.attribute.flowerpink { background: url(/i/Icon-pinkflowercolor.svg); }
+.attribute.flowerpurple { background: url(/i/Icon-purpleflowercolor.svg); }
+.attribute.flowerlightgreen { background: url(/i/Icon-lightgreenflowercolor.svg); }
+.attribute.flowercopper { background: url(/i/Icon-copperleafcolor.svg); }
+
+.attribute.cone { background: url(/i/Icon-cone.svg); }
+.attribute.key { background: url(/i/Icon-keys.svg); }
+.attribute.pod { background: url(/i/Icon-pods.svg); }
+.attribute.ball { background: url(/i/Icon-balls.svg); }
+.attribute.acorn { background: url(/i/Icon-acorn.svg); }
+.attribute.nut { background: url(/i/Icon-nuts.svg); }
+.attribute.berry { background: url(/i/Icon-berrylike.svg); }
+.attribute.fruit { background: url(/i/Icon-fleshyfruit.svg); }
+
+.attribute.fallred { background: url(/i/Icon-redleafcolor.svg); }
+.attribute.fallorange { background: url(/i/Icon-orangeleafcolor.svg); }
+.attribute.fallyellow { background: url(/i/Icon-yellowleafcolor.svg); }
+.attribute.fallbrown { background: url(/i/Icon-brownleafcolor.svg); }
+.attribute.fallgreen { background: url(/i/Icon-greenleafcolor.svg); }
+
+.attribute.achievement1 { background: url(/i/Icon-achievement1.svg); }
+.attribute.achievement2 { background: url(/i/Icon-achievement2.svg); }
+.attribute.achievement3 { background: url(/i/Icon-achievement3.svg); }
+.attribute.achievement4 { background: url(/i/Icon-achievement4.svg); }
+.attribute.achievement5 { background: url(/i/Icon-achievement5.svg); }
+.attribute.achievement6 { background: url(/i/Icon-achievement6.svg); }
+.attribute.achievement7 { background: url(/i/Icon-achievement7.svg); }
+.attribute.achievement8 { background: url(/i/Icon-achievement8.svg); }
+.attribute.achievement9 { background: url(/i/Icon-achievement9.svg); }
+.attribute.achievement10 { background: url(/i/Icon-achievement10.svg); }
+.attribute.achievement11 { background: url(/i/Icon-achievement11.svg); }
+.attribute.achievement12 { background: url(/i/Icon-achievement12.svg); }
+.attribute.achievement13 { background: url(/i/Icon-achievement13.svg); }
+.attribute.achievement14 { background: url(/i/Icon-achievement14.svg); }
+.attribute.achievement15 { background: url(/i/Icon-achievement15.svg); }
+.attribute.achievement16 { background: url(/i/Icon-achievement16.svg); }
+.attribute.achievement17 { background: url(/i/Icon-achievement17.svg); }
+.attribute.achievement18 { background: url(/i/Icon-achievement18.svg); }
+.attribute.achievement19 { background: url(/i/Icon-achievement19.svg); }
+.attribute.achievement20 { background: url(/i/Icon-achievement20.svg); }
+.attribute.achievement21 { background: url(/i/Icon-achievement21.svg); }
+.attribute.achievement22 { background: url(/i/Icon-achievement22.svg); }
+.attribute.achievement23 { background: url(/i/Icon-achievement23.svg); }
+.attribute.achievement24 { background: url(/i/Icon-achievement24.svg); }
+.attribute.achievement25 { background: url(/i/Icon-achievement25.svg); }
+.attribute.achievement26 { background: url(/i/Icon-achievement26.svg); }
+.attribute.achievement27 { background: url(/i/Icon-achievement27.svg); }
+.attribute.achievement28 { background: url(/i/Icon-achievement28.svg); }
+.attribute.achievement29 { background: url(/i/Icon-achievement29.svg); }
+.attribute.achievement30 { background: url(/i/Icon-achievement30.svg); }
+
+.attribute.avoidedwaterrunnoff { background: url(/i/Icon-avoidedwaterrunnoff.svg); }
+.attribute.carbonstorage { background: url(/i/Icon-carbonstorage.svg); }
+.attribute.dbh { background: url(/i/Icon-dbh.svg); }
+.attribute.totalheight { background: url(/i/Icon-totalheight.svg); }
+.attribute.treecondition { background: url(/i/Icon-treecondition.svg); }
+.attribute.treenumber { background: url(/i/Icon-treenumber.svg); }
+.attribute.treevalue { background: url(/i/Icon-treevalue.svg); }
+.attribute.leafarea { background: url(/i/Icon-leafarea.svg); }
+.attribute.leafbiomass { background: url(/i/Icon-leafbiomass.svg); }
+.attribute.grosscarbon { background: url(/i/Icon-grosscarbon.svg); }
+.attribute.crownew { background: url(/i/Icon-crownew.svg); }
+.attribute.crownns { background: url(/i/Icon-crownns.svg); }
+
+.attribute.medicinal { background: url(/i/Icon-medicine.svg); }
+.attribute.music { background: url(/i/Icon-instrument.svg); }
+.attribute.tools { background: url(/i/Icon-tools.svg); }
+.attribute.landscaping { background: url(/i/Icon-landscaping.svg); }
+.attribute.transportation { background: url(/i/Icon-transportation.svg); }
+.attribute.barrel { background: url(/i/Icon-barrel.svg); }
+.attribute.construction { background: url(/i/Icon-construction.svg); }
+.attribute.furniture { background: url(/i/Icon-furniture.svg); }
+.attribute.sports { background: url(/i/Icon-sports.svg); }
+
+.attribute.brewingtea { background: url(/i/Icon-brewingtea.svg); }
+.attribute.bugrepellent { background: url(/i/Icon-bugrepellent.svg); }
+.attribute.christmastree { background: url(/i/Icon-christmastree.svg); }
+.attribute.fencepost { background: url(/i/Icon-fencepost.svg); }
+.attribute.food { background: url(/i/Icon-food.svg); }
+.attribute.gasolene { background: url(/i/Icon-gasolene.svg); }
+.attribute.hedge { background: url(/i/Icon-hedge.svg); }
+.attribute.jam { background: url(/i/Icon-jam.svg); }
+.attribute.maplesyrup { background: url(/i/Icon-maplesyrup.svg); }
+.attribute.ornamental { background: url(/i/Icon-ornamental.svg); }
+.attribute.railroadties { background: url(/i/Icon-railroadties.svg); }
+.attribute.seasoning { background: url(/i/Icon-seasoning.svg); }
+.attribute.shingle { background: url(/i/Icon-shingle.svg); }
+.attribute.timber { background: url(/i/Icon-timber.svg); }
+.attribute.weapon { background: url(/i/Icon-weapon.svg); }
+
+.attribute.settings { background: url(/i/Icon-settings.svg); }
+.attribute.placeholder { background: url(/i/Icon-placeholder.svg); }
+
+.treedatagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px
+.treedatagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+ solid #349123; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.treedatagrid table td, .treedatagrid table th { padding: 3px 10px; }
+.treedatagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #349123), color-stop(1, #006937) );background:-moz-linear-gradient( center top, #349123 5%, #006937 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#349123', endColorstr='#006937');background-color:#349123; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D; }
+.treedatagrid table thead th:first-child { border: none; }
+.treedatagrid table tbody td { color: #275420; border-left: 1px solid #CDE5BE;font-size: 16px;font-weight: normal; }
+.treedatagrid table tbody .alt td { background: #CDE5BE; color: #275420; }
+.treedatagrid table tbody td:first-child { border-left: none; }
+.treedatagrid table tbody tr:last-child td { border-bottom: none; }
+.treedatagrid table tfoot td div { border-top: 1px solid #349123;background: #CDE5BE;} 
+.treedatagrid table tfoot td { padding: 0; font-size: 16px }
+.treedatagrid table tfoot td div{ padding: 2px; }
+.treedatagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
+.treedatagrid table tfoot li { display: inline; }
+.treedatagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #36752D;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; }
+.treedatagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #275420; color: #FFFFFF; background: none; background-color:#36752D;}
+/*div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }*/
