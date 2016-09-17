@@ -3,6 +3,10 @@
     font-family: Roboto;
     src: url(/fonts/Roboto/Roboto-Black.ttf);
 }
+@font-face {
+    font-family: Roboto Slab;
+    src: url(/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
 html {
   font-family: "Roboto", sans-serif , "Roboto Slab", serif;
   -ms-text-size-adjust: 100%;

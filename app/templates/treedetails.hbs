@@ -1,6 +1,121 @@
-<img height="42" width="42" src={{model.Image}}>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tree Details</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h2>TreeDetails</h2>
+    </div>
+
+
+    <div class="treeimage">
+        <img height="400" width="280" src={{model.TreeImage}} align=middle margin>
+        <div class="TreeTextBox">
+            <h2>{{model.CommonName}}<br>
+            &#8195;<i>{{model.ScientificName}}</i></h2>
+            
+        </div>    
+        <div class="TextBox">  
+            <h3>Attributes</h3>
+            <table class="attributetable">
+                <tr>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td> 
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                </tr>
+                <tr>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td> 
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                </tr>
+                <tr>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                    <td><img src="\assets\images\icons\Icon-placeholder.svg" height="100"></td>
+                </tr>
+            </table>
+            <h3 align="center">Origin: {{model.Country_of_Origin}}</h3>
+            <h3>Description</h3>  
+            <p>{{model.Description}}</p>
+        </div>  
+        <div>
+            <h3>Statistics</h3>
+        <p><a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-treenumber.svg" height="50" width="50">
+            <span style="font-size:50%">Tree Number</span>
+            <span style= "line-height=1000px">{{model.TreeNumber}}</span>
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-treecondition.svg" height="50" width="50">
+            <span style="font-size:50%">Tree Condition</span>
+            <span style= "line-height=1000px">{{model.TreeCondition}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-dbh.svg" height="50" width="50">
+            <span style="font-size:50%">Diameter at Breast Height</span>
+            <span style= "line-height=1000px">{{model.DBH_inches}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-totalheight.svg" height="50" width="50">
+            <span style="font-size:50%">Total Height</span>
+            <span style= "line-height=1000px">{{model.TotalHeight_feet}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+         <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-crownns.svg" height="50" width="50">
+            <span style="font-size:50%">Crown Width N-S</span>
+            <span style= "line-height=1000px">{{model.CrownNS_feet}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-crownew.svg" height="50" width="50">
+            <span style="font-size:50%">Crown Width E-W</span>
+            <span style= "line-height=1000px">{{model.CrownEW_feet}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-leafarea.svg" height="50" width="50">
+            <span style="font-size:50%">Leaf Area</span>
+            <span style= "line-height=1000px">{{model.LeafArea_Feet_Squared}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-leafbiomass.svg" height="50" width="50">
+          <span style="font-size:50%">Leaf BioMass</span>
+            <span style= "line-height=1000px">{{model.LeafBiomass_Pounds}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-carbonstorage.svg" height="50" width="50">
+            <span style="font-size:50%">Carbon Storage</span>
+            <span style= "line-height=1000px">{{model.CarbonStorage_Pounds}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-grosscarbon.svg" height="50" width="50">
+            <span style="font-size:50%">Gross Carbon Sequestration</span>
+            <span style= "line-height=1000px">{{model.GrossCarbonSequestration_Pounds_per_Year}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-treevalue.svg" height="50" width="50">
+            <span style="font-size:50%">Structural Tree Value</span>
+            <span style= "line-height=1000px">{{model.StruturalTreeValue_Dollars}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a>
+        <a class="btn btn-info btn-bar" href="#" role="button"> <img src="\assets\images\icons\Icon-avoidedwaterrunnoff.svg" height="50" width="50">
+            <span style="font-size:50%">Avoided Water Runnoff</span>
+            <span style= "line-height=1000px">{{model.AvoidedWaterRunnoff_Feet_Cubed_per_Year}}</span> 
+            <img src="\assets\images\icons\ListArrow.png" height="50" align=right vertical-align="middle"> </a></p>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<!-- <img height="42" width="42" src={{model.TreeImage}}>
 <ul>
-    <li>{{model.Common_Name}}</li>
+    <li>{{model.CommonName}}</li>
     <li>{{model.Description}}</li>
 </ul>
 
@@ -10,6 +125,6 @@
     <li>{{#link-to "trees"}}Tree Collection{{/link-to}}</li>
     <li>{{#link-to "badges"}}Badges{{/link-to}}</li>
 </ul>
-</nav>
+</nav> -->
 
 {{outlet}}
