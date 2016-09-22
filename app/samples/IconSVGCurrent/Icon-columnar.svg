@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<g id="template">
+	<g id="Hexigon">
+		<g>
+			<polygon style="fill:#42AA48;" points="257.289,953.174 2.577,512 257.289,70.828 766.711,70.828 1021.423,512 766.711,953.174 
+							"/>
+			<g>
+				<path style="fill:#00A651;" d="M766.423,71.328L1020.845,512L766.423,952.673H257.577L3.155,512L257.577,71.328H766.423
+					 M767,70.328H257L2,512l255,441.673h510L1022,512L767,70.328L767,70.328z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="columnar">
+	<path style="fill:#FFFFFF;" d="M558.813,861.839h-29.599l-5.512,45.75h-23.405l-5.512-45.75h-29.599L418.373,230.05l46.813-113.639
+		h93.627l46.814,113.639L558.813,861.839z"/>
+</g>
+</svg>

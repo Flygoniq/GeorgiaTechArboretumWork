@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<g id="template">
+	<g id="Hexigon">
+		<g>
+			<polygon style="fill:#42AA48;" points="257.289,953.174 2.577,512 257.289,70.828 766.711,70.828 1021.423,512 766.711,953.174 
+							"/>
+			<g>
+				<path style="fill:#00A651;" d="M766.423,71.328L1020.845,512L766.423,952.673H257.577L3.155,512L257.577,71.328H766.423
+					 M767,70.328H257L2,512l255,441.673h510L1022,512L767,70.328L767,70.328z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="brownflowercolor">
+	<g>
+		<path style="fill:#6D4D32;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" d="M507.745,162.402
+			c0,0-17.98,172.605,25.172,291.27c0,0,129.453-133.693,226.544-194.18C853.73,200.762,511.375,86.994,507.745,162.402z"/>
+		<path style="fill:#6D4D32;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" d="M188.757,399.386
+			c0,0,133.811,3.943,284.793,66.068c0,0-39-194.159-114.671-275.461S118.161,372.632,188.757,399.386z"/>
+		<path style="fill:#6D4D32;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" d="M315.569,775.995
+			c0,0,48.339-156.91,150.84-250.438c0,0-196.708-22.907-297.414,23.936S268.309,834.868,315.569,775.995z"/>
+		<path style="fill:#6D4D32;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" d="M712.932,771.768
+			c0,0-111.693-170.662-191.569-220.847c0,0-47.814,143.679-69.141,290.254C436.23,951.084,754.319,834.908,712.932,771.768z"/>
+		<path style="fill:#6D4D32;stroke:#FFFFFF;stroke-width:12;stroke-miterlimit:10;" d="M831.704,392.546
+			c0,0-169.713,36.238-269.236,113.947c0,0,96.307,13.463,254.682,155.451C899.848,736.085,904.543,372.696,831.704,392.546z"/>
+	</g>
+</g>
+</svg>
