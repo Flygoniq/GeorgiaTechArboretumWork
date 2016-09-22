@@ -1,4 +1,3 @@
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 @font-face {
     font-family: Roboto;
     src: url(/fonts/Roboto/Roboto-Black.ttf);
@@ -7,6 +6,7 @@
     font-family: Roboto Slab;
     src: url(/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
 }
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: "Roboto", sans-serif , "Roboto Slab", serif;
   -ms-text-size-adjust: 100%;
@@ -505,6 +505,15 @@ cite {
 }
 .text-center {
   text-align: center;
+}
+.treeimage{
+  text-align: center;
+    margin-top: -65px;
+}
+.tourimage{
+    text-align: center;
+    margin-top: -30px;
+
 }
 .text-justify {
   text-align: justify;
@@ -4404,6 +4413,11 @@ a.list-group-item.active > .badge,
 .jumbotron .h1 {
     color: white;
 }
+.jumbotron h2,
+.jumbotron .h2 {
+    text-align: center;
+    color: white;
+}
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 21px;
@@ -4439,9 +4453,52 @@ a.list-group-item.active > .badge,
 .TextBox .h2 {
     text-align: center;
 }
+.TextBox h3,
+.TextBox .h3 {
+    text-align: left;
+}
 .TextBox p {
     text-align: left;
     padding-left: 20px;
+}
+.TextBoxDetail{
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+    margin-top: -65px;
+    color: inherit;
+    background-color: #f0f0f0;
+}
+.TextBoxDetail h2,
+.TextBoxDetail .h2 {
+    text-align: center;
+}
+.TextBoxDetail h3,
+.TextBoxDetail .h3 {
+    text-align: left;
+}
+.TextBoxDetail p {
+    text-align: left;
+    padding-left: 20px;
+}
+.TreeTextBox{
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: -50px;
+    color: inherit;
+    background-color: #42aa19;
+}
+.TreeTextBox h2,
+.TreeTextBox .h2{
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+}
+.TreeTextBox p {
+    text-align: left;
+    padding-left: 40px;
+    font-style: italic
 }
 .thumbnail {
   display: block;
@@ -5820,40 +5877,10 @@ button.close {
     display: none !important;
   }
 }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//old stuff alan messed with
-/*h2 {
-    text-align: center;
-    
+.attributetable{
+    width: 100%;
 }
-
-.TreeListRow {
-    height: 40px;
-    padding-top: 20px; // this is height/2
-    padding-bottom: 20px;
-    border-style: solid none;
-    border-color: rgb(59, 182, 75);
-    margin-top: 0;
-    margin-bottom: -3px;
-    background-color: rgb(243, 243, 243);
+.attributetable.td{
+    text-align: center
+    padding: 100px;
 }
-
-.TreeListRowArrow {
-    padding-top: 0px;
-    position: relative;
-    top: 5px;
-}*/
