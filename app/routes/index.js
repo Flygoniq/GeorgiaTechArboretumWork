@@ -47,7 +47,20 @@ export default Ember.Route.extend({
                 }
             ]
         });
-
+        
+        this.store.push({
+            data: [
+            {
+                id: 1,
+                type: 'attribute',
+            }
+            ]
+        });
+        
+        
+        
+        
+//trees:
         this.store.push({
 data: [
 {
