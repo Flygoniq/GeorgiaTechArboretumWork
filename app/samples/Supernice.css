@@ -500,7 +500,11 @@ cite {
 }
 .treeimage{
   text-align: center;
-    margin-top: -65px;
+  margin-top: -65px;
+}
+.treeimage img{
+    max-width: 100%;
+    height:auto;
 }
 .tourimage{
     text-align: center;
@@ -2369,9 +2373,9 @@ fieldset[disabled] .btn-link:focus {
 .btn-bar{
       display: block;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   font-size: 2em;
   text-align: left;
 }
@@ -2380,8 +2384,10 @@ fieldset[disabled] .btn-link:focus {
     text-align: left;
     font-size: 15px;
     font-style: italic;
-    position: absolute;
-    top: 5;
+    position: relative;
+    top: -10px;
+    left: 80px;
+}
 }
 .btn-bar img{
     position: relative;
@@ -5885,9 +5891,22 @@ button.close {
   }
 }
 .attributetable{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
-.attributetable.td{
-    text-align: center
-    padding: 100px;
+.attributetable th{
+    max-width: 100%;
+}
+.attributetable td{
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    max-width: 100%;
+}
+.attibutetable td img{
+    text-align: center;
+    height: 100px;
+    max-width: 100%;
+    
+    
 }
