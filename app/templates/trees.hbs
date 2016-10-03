@@ -26,10 +26,15 @@
     
     <div>
         {{#each model as |tree|}}
-            {{#link-to "treedetails" tree}}<p><a class="btn btn-info btn-bar" role="button"> <img src="/assets/images/icons/Icon-HexTree.svg" height="50" width="50">
-            <span style= "line-height=1000px">{{tree.CommonName}}</span> 
-            <span style="font-size:50%"><i>{{tree.ScientificName}}</i></span>
-            <img src="/assets/images/icons/ListArrow.png" height="50" align=right vertical-align="middle"> </a></p>{{/link-to}}
+            {{#link-to "treedetails" tree}}
+                <p>
+                    <a class="btn btn-info btn-bar" role="button">
+                    <img src="/assets/images/icons/Icon-HexTree.svg" height="50" width="50">
+                    <span style= "line-height=1000px">{{tree.CommonName}}</span> 
+                    <span style="font-size:50%"><i>{{tree.ScientificName}}</i></span>
+                    </a>
+                </p>
+            {{/link-to}}
         {{else}}
             No Trees Found riperoo
         {{/each}}
