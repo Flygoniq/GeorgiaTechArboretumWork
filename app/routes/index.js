@@ -11,7 +11,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     
     afterModel: function() {
-        this.store.push({
+        var Store = this.store;
+        Store.push({
             data: [
                 {
                     id: 1,
@@ -48,26 +49,486 @@ export default Ember.Route.extend({
             ]
         });
         
-        this.store.push({
+        initializeTrees(Store);
+        initializeAttributes(Store);
+        connectTreesAttributes(Store);
+    
+        
+        //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
+        initiateLocalstorage();
+        this.transitionTo('home');
+    }
+});
+
+function connectTreesAttributes(Store) {
+    //i should be the number of trees, aka the largest ember ID for trees below.
+    var currentTree;
+    var a;
+    for (var i = 1; i <=  2; i++) {
+        currentTree = Store.peekRecord('tree', i);
+        //console.log("Line 69" + currentTree.get('Attributes'));
+        if (currentTree.get('Attribute1') === "TRUE") {
+            //console.log("We inner");
+            a = Store.peekRecord('attribute', 1);
+            currentTree.get('Attributes').pushObject(a);
+            //console.log("Line 69 " + currentTree.get('Attributes').objectAt(0).get('Name'));
+            //currentTree.save();
+        }
+    }
+    console.log("Line 78 " + Store.peekRecord('tree', 1).get('Attributes').objectAt(0).get('Name'));
+}
+
+function initiateLocalstorage() {
+    if (localStorage.initialized) {return;}
+    if (!localStorage.badgeOne) {localStorage.badgeOne = "false";}
+    if (!localStorage.badgeTwo) {localStorage.badgeTwo = "false";}
+    if (!localStorage.badgeThree) {localStorage.badgeThree = "false";}
+    if (!localStorage.treeOne) {localStorage.treeOne = "false";}
+    if (!localStorage.treeTwo) {localStorage.treeTwo = "false";}
+    localStorage.initialized = "true";
+    return;
+    }
+    
+    
+function initializeAttributes(Store) {
+    Store.push({
             data: [
             {
                 id: 1,
                 type: 'attribute',
+                attributes: {
+                    Name: 'Georgia Local',
+                    Image_Path: '\\assets\\images\\icons\\Icon-galocal.svg'
+                }
+            },
+            {
+                id: 2,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Bee Tree',
+                    Image_Path: '\\assets\\images\\icons\\Icon-beetree.svg'
+                }
+            },
+            {
+                id: 3,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Medicine',
+                    Image_Path: '\\assets\\images\\icons\\Icon-medicine.svg'
+                }
+            },
+            {
+                id: 4,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Landscaping',
+                    Image_Path: '\\assets\\images\\icons\\Icon-landscaping.svg'
+                }
+            },
+            {
+                id: 5,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Furniture',
+                    Image_Path: '\\assets\\images\\icons\\Icon-furniture.svg'
+                }
+            },
+            {
+                id: 6,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Construction',
+                    Image_Path: '\\assets\\images\\icons\\Icon-construction.svg'
+                }
+            },
+            {
+                id: 7,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Transportation',
+                    Image_Path: '\\assets\\images\\icons\\Icon-transportation.svg'
+                }
+            },
+            {
+                id: 8,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Barrels',
+                    Image_Path: '\\assets\\images\\icons\\Icon-barrel.svg'
+                }
+            },
+            {
+                id: 9,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Music',
+                    Image_Path: '\\assets\\images\\icons\\Icon-instrument.svg'
+                }
+            },
+            {
+                id: 10,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Tools',
+                    Image_Path: '\\assets\\images\\icons\\Icon-tools.svg'
+                }
+            },
+            {
+                id: 11,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Sports',
+                    Image_Path: '\\assets\\images\\icons\\Icon-sports.svg'
+                }
+            },
+            {
+                id: 12,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Food',
+                    Image_Path: '\\assets\\images\\icons\\Icon-food.svg'
+                }
+            },
+            {
+                id: 13,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fall Red',
+                    Image_Path: '\\assets\\images\\icons\\Icon-redleafcolor.svg'
+                }
+            },
+            {
+                id: 14,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fall Orange and Brown',
+                    Image_Path: '\\assets\\images\\icons\\Icon-.svg'
+                }
+            },
+            {
+                id: 15,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fall Yellow',
+                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
+                }
+            },
+            {
+                id: 16,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fall Copper',
+                    Image_Path: '\\assets\\images\\icons\\Icon-copperleafcolor.svg'
+                }
+            },
+            {
+                id: 17,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fall Green',
+                    Image_Path: '\\assets\\images\\icons\\Icon-greenleafcolor.svg'
+                }
+            },
+            {
+                id: 18,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Needle Leaf Conifers',
+                    Image_Path: '\\assets\\images\\icons\\Icon-needleleafconifer.svg'
+                }
+            },
+            {
+                id: 19,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Scale Leaf Conifers',
+                    Image_Path: '\\assets\\images\\icons\\Icon-scaleleafconifer.svg'
+                }
+            },
+            {
+                id: 20,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Untoothed Simple',
+                    Image_Path: '\\assets\\images\\icons\\Icon-untoothedsimpleleaf.svg'
+                }
+            },
+            {
+                id: 21,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Toothed Simple',
+                    Image_Path: '\\assets\\images\\icons\\Icon-toothedsimpleleaf.svg'
+                }
+            },
+            {
+                id: 22,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Lobed Simple',
+                    Image_Path: '\\assets\\images\\icons\\Icon-lobedsimpleleaf.svg'
+                }
+            },
+            {
+                id: 23,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Compound',
+                    Image_Path: '\\assets\\images\\icons\\Icon-compoundleaf.svg'
+                }
+            },
+            {
+                id: 24,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Yucca & Palmetto',
+                    Image_Path: '\\assets\\images\\icons\\Icon-yuccaleaf.svg'
+                }
+            },
+            {
+                id: 25,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Alternate',
+                    Image_Path: '\\assets\\images\\icons\\Icon-alternate.svg'
+                }
+            },
+            {
+                id: 26,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Opposite',
+                    Image_Path: '\\assets\\images\\icons\\Icon-opposite.svg'
+                }
+            },
+            {
+                id: 27,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Whorled',
+                    Image_Path: '\\assets\\images\\icons\\Icon-whorled.svg'
+                }
+            },
+            {
+                id: 28,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Pyramidal',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pyramidal.svg'
+                }
+            },
+            {
+                id: 29,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Conical',
+                    Image_Path: '\\assets\\images\\icons\\Icon-conical.svg'
+                }
+            },
+            {
+                id: 30,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Columnar',
+                    Image_Path: '\\assets\\images\\icons\\Icon-columnar.svg'
+                }
+            },
+            {
+                id: 31,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Spreading',
+                    Image_Path: '\\assets\\images\\icons\\Icon-spreading.svg'
+                }
+            },
+            {
+                id: 32,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Vase Shaped',
+                    Image_Path: '\\assets\\images\\icons\\Icon-vaseshape.svg'
+                }
+            },
+            {
+                id: 33,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Broad',
+                    Image_Path: '\\assets\\images\\icons\\Icon-broad.svg'
+                }
+            },
+            {
+                id: 34,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Rounded',
+                    Image_Path: '\\assets\\images\\icons\\Icon-rounded.svg'
+                }
+            },
+            {
+                id: 35,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Red',
+                    Image_Path: '\\assets\\images\\icons\\Icon-.redflowercolor.svg'
+                }
+            },
+            {
+                id: 36,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Green',
+                    Image_Path: '\\assets\\images\\icons\\Icon-greenflowercolor.svg'
+                }
+            },
+            {
+                id: 37,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Yellow',
+                    Image_Path: '\\assets\\images\\icons\\Icon-yellowflowercolor.svg'
+                }
+            },
+            {
+                id: 38,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Cream',
+                    Image_Path: '\\assets\\images\\icons\\Icon-creamflowercolor.svg'
+                }
+            },
+            {
+                id: 39,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower White',
+                    Image_Path: '\\assets\\images\\icons\\Icon-whiteflowercolor.svg'
+                }
+            },
+            {
+                id: 40,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Pink',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pinkflowercolor.svg'
+                }
+            },
+            {
+                id: 41,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Purple',
+                    Image_Path: '\\assets\\images\\icons\\Icon-purpleflowercolor.svg'
+                }
+            },
+            {
+                id: 42,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Flower Brown',
+                    Image_Path: '\\assets\\images\\icons\\Icon-brownflowercolor.svg'
+                }
+            },
+            {
+                id: 43,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Pods',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pods.svg'
+                }
+            },
+            {
+                id: 44,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Balls, Capsules, Tufted Fruit',
+                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
+                }
+            },
+            {
+                id: 45,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Acorns',
+                    Image_Path: '\\assets\\images\\icons\\Icon-acorns.svg'
+                }
+            },
+            {
+                id: 46,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Nuts',
+                    Image_Path: '\\assets\\images\\icons\\Icon-nuts.svg'
+                }
+            },
+            {
+                id: 47,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Berrylike fruit',
+                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
+                }
+            },
+            {
+                id: 48,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fleshy Fruit',
+                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                }
+            },
+            {
+                id: 49,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Capsules',
+                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
+                }
+            },
+            {
+                id: 50,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Conelike',
+                    Image_Path: '\\assets\\images\\icons\\Icon-cone.svg'
+                }
+            },
+            {
+                id: 51,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Drupes',
+                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                }
+            },
+            {
+                id: 52,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Plum',
+                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                }
+            },
+            {
+                id: 53,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Berries',
+                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
+                }
             }
             ]
         });
-        
-        
-        
-        
-//trees:
-        this.store.push({
+}
+    
+function initializeTrees(Store) {
+    Store.push({
 data: [
 {
     id: 1,
     type: 'tree',
     attributes: {
-        CommonName:' White Oak',
+        CommonName: "White Oak",
         ScientificName: "Quercus alba",
         TreeImage: "\\assets\\images\\trees\\01470_Quercus_alba.jpg",
         Description: "This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.",
@@ -78,7 +539,7 @@ data: [
         DBH_inches: "42.9",
         TotalHeight_feet: "88",
         CrownNS_feet: "96",
-        CrownEW_feet: "78",
+        CrownEW_Feet: "78",
         LeafArea_Feet_Squared: "12755.88",
         LeafBiomass_Pounds: "190.06",
         CarbonStorage_Pounds: "11176.71",
@@ -102,16 +563,25 @@ data: [
         Flowering: "TRUE",
         FlowerColor_Primary: "Green",
         Flower_Color: "Green",
-        ConeFruit_Type: "Acons",
+        ConeFruit_Type: "Acorns",
         Country_of_Origin: "Eastern and Central North America",
         Habitat: "",
         Range: "",
-        Fall_Primary: "Orange ",
-        Fall_Color: "Orange ",
+        Fall_Primary: "Orange",
+        Fall_Color: "Orange",
         PF_Primary: "Barrels",
         Proformance_Feature: "Ornamental, Barrels making, Furniture, Weapon making",
         wood_hardness: "1,360 lbf/6,000 N",
-        book_pages: "282 380 524 597 382"
+        book_pages: "282 380 524 597 382",
+        Attribute1: "TRUE",
+        Attribute2: "Barrels",
+        Attribute3: "TRUE",
+        Attribute4: "Orange",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -129,7 +599,7 @@ data: [
         DBH_inches: "3.8",
         TotalHeight_feet: "5",
         CrownNS_feet: "13",
-        CrownEW_feet: "14",
+        CrownEW_Feet: "14",
         LeafArea_Feet_Squared: "206.34",
         LeafBiomass_Pounds: "2.38",
         CarbonStorage_Pounds: "27.4",
@@ -162,7 +632,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental, Shade Tree",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Red",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -180,7 +659,7 @@ data: [
         DBH_inches: "23.8",
         TotalHeight_feet: "62",
         CrownNS_feet: "51",
-        CrownEW_feet: "49",
+        CrownEW_Feet: "49",
         LeafArea_Feet_Squared: "5525.33",
         LeafBiomass_Pounds: "96.32",
         CarbonStorage_Pounds: "2651.85",
@@ -213,7 +692,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Fence post making, Smoking Texas Barbecue",
         wood_hardness: "1,360 lbf/6,000 N",
-        book_pages: "270 514 409"
+        book_pages: "270 514 409",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Copper",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -231,7 +719,7 @@ data: [
         DBH_inches: "9.3",
         TotalHeight_feet: "46",
         CrownNS_feet: "34",
-        CrownEW_feet: "32",
+        CrownEW_Feet: "32",
         LeafArea_Feet_Squared: "3927.54",
         LeafBiomass_Pounds: "54.17",
         CarbonStorage_Pounds: "248.64",
@@ -264,7 +752,16 @@ data: [
         PF_Primary: "Furniture",
         Proformance_Feature: "Ornamental, Furniture, Maple syrup",
         wood_hardness: "950 lbf/4,200 N",
-        book_pages: "261 366 369 495 593 577"
+        book_pages: "261 366 369 495 593 577",
+        Attribute1: "TRUE",
+        Attribute2: "Furniture",
+        Attribute3: "TRUE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "Red",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -282,7 +779,7 @@ data: [
         DBH_inches: "8.7",
         TotalHeight_feet: "48",
         CrownNS_feet: "36",
-        CrownEW_feet: "32",
+        CrownEW_Feet: "32",
         LeafArea_Feet_Squared: "1906.61",
         LeafBiomass_Pounds: "17.22",
         CarbonStorage_Pounds: "203.16",
@@ -315,7 +812,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Medical",
         wood_hardness: "",
-        book_pages: "235 619 271"
+        book_pages: "235 619 271",
+        Attribute1: "FALSE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "Green",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -333,7 +839,7 @@ data: [
         DBH_inches: "12",
         TotalHeight_feet: "29",
         CrownNS_feet: "34",
-        CrownEW_feet: "36",
+        CrownEW_Feet: "36",
         LeafArea_Feet_Squared: "4015.15",
         LeafBiomass_Pounds: "63.63",
         CarbonStorage_Pounds: "494.08",
@@ -366,7 +872,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Pink",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -384,7 +899,7 @@ data: [
         DBH_inches: "22.9",
         TotalHeight_feet: "58",
         CrownNS_feet: "44",
-        CrownEW_feet: "46",
+        CrownEW_Feet: "46",
         LeafArea_Feet_Squared: "5754.17",
         LeafBiomass_Pounds: "159.15",
         CarbonStorage_Pounds: "2112.56",
@@ -417,7 +932,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "1,020 lbf/4,500 N",
-        book_pages: "58 432 565 440"
+        book_pages: "58 432 565 440",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -435,7 +959,7 @@ data: [
         DBH_inches: "12.7",
         TotalHeight_feet: "48",
         CrownNS_feet: "42",
-        CrownEW_feet: "37",
+        CrownEW_Feet: "37",
         LeafArea_Feet_Squared: "4847.74",
         LeafBiomass_Pounds: "98",
         CarbonStorage_Pounds: "555.01",
@@ -468,7 +992,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade Tree, Wildlife food",
         wood_hardness: "",
-        book_pages: "293 408"
+        book_pages: "293 408",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acornes"
     }, relationships: {}
 },
 {
@@ -486,7 +1019,7 @@ data: [
         DBH_inches: "1.4",
         TotalHeight_feet: "8",
         CrownNS_feet: "8",
-        CrownEW_feet: "6",
+        CrownEW_Feet: "6",
         LeafArea_Feet_Squared: "91.28",
         LeafBiomass_Pounds: "1.08",
         CarbonStorage_Pounds: "2.54",
@@ -519,7 +1052,16 @@ data: [
         PF_Primary: "Tools",
         Proformance_Feature: "Ornamental, Dyes, Tools",
         wood_hardness: "2,150 lbf/9,600 N",
-        book_pages: "76 454 554 579"
+        book_pages: "76 454 554 579",
+        Attribute1: "TRUE",
+        Attribute2: "Tools",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Spreading",
+        Attribute8: "Pink",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -537,7 +1079,7 @@ data: [
         DBH_inches: "9",
         TotalHeight_feet: "24",
         CrownNS_feet: "28",
-        CrownEW_feet: "32",
+        CrownEW_Feet: "32",
         LeafArea_Feet_Squared: "2828.11",
         LeafBiomass_Pounds: "37.1",
         CarbonStorage_Pounds: "206.62",
@@ -570,7 +1112,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Seasoning for food, Ornamental",
         wood_hardness: "",
-        book_pages: "99 466 518"
+        book_pages: "99 466 518",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Pink",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -588,7 +1139,7 @@ data: [
         DBH_inches: "3.7",
         TotalHeight_feet: "10",
         CrownNS_feet: "7",
-        CrownEW_feet: "7",
+        CrownEW_Feet: "7",
         LeafArea_Feet_Squared: "136.59",
         LeafBiomass_Pounds: "2.09",
         CarbonStorage_Pounds: "23.46",
@@ -621,7 +1172,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: "374"
+        book_pages: "374",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Orange",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Red",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -639,7 +1199,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -672,7 +1232,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Medicine",
         wood_hardness: "1,530 lbf/6,800 N",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Medicine",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Capsule"
     }, relationships: {}
 },
 {
@@ -690,7 +1259,7 @@ data: [
         DBH_inches: "23",
         TotalHeight_feet: "38",
         CrownNS_feet: "41",
-        CrownEW_feet: "38",
+        CrownEW_Feet: "38",
         LeafArea_Feet_Squared: "3579.97",
         LeafBiomass_Pounds: "48.99",
         CarbonStorage_Pounds: "2011.94",
@@ -723,7 +1292,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: "86 443"
+        book_pages: "86 443",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Spreading",
+        Attribute8: "Pink",
+        Attribute9: "Conelike"
     }, relationships: {}
 },
 {
@@ -741,7 +1319,7 @@ data: [
         DBH_inches: "54.5",
         TotalHeight_feet: "104",
         CrownNS_feet: "125",
-        CrownEW_feet: "102",
+        CrownEW_Feet: "102",
         LeafArea_Feet_Squared: "17564.33",
         LeafBiomass_Pounds: "340.17",
         CarbonStorage_Pounds: "13227.74",
@@ -774,7 +1352,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Reforesting",
         wood_hardness: "1,190 lbf/5,300 N",
-        book_pages: "271 401"
+        book_pages: "271 401",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -792,7 +1379,7 @@ data: [
         DBH_inches: "13.8",
         TotalHeight_feet: "42",
         CrownNS_feet: "25",
-        CrownEW_feet: "24",
+        CrownEW_Feet: "24",
         LeafArea_Feet_Squared: "3441.76",
         LeafBiomass_Pounds: "110.39",
         CarbonStorage_Pounds: "218.48",
@@ -825,7 +1412,16 @@ data: [
         PF_Primary: "Transportiation",
         Proformance_Feature: "Timber, Railroad ties, Christmas Tree, Ornamental",
         wood_hardness: "660 lbf/2,900 N",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Transportiation",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Needle Like Conifers",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "Red",
+        Attribute9: "Conelike"
     }, relationships: {}
 },
 {
@@ -843,7 +1439,7 @@ data: [
         DBH_inches: "2.4",
         TotalHeight_feet: "19",
         CrownNS_feet: "18",
-        CrownEW_feet: "12",
+        CrownEW_Feet: "12",
         LeafArea_Feet_Squared: "807.4",
         LeafBiomass_Pounds: "45.94",
         CarbonStorage_Pounds: "52.8",
@@ -876,7 +1472,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Scale Leaf Conifers",
+        Attribute6: "Opposite",
+        Attribute7: "Pyramid",
+        Attribute8: "Brown",
+        Attribute9: "Conelike"
     }, relationships: {}
 },
 {
@@ -894,7 +1499,7 @@ data: [
         DBH_inches: "18.8",
         TotalHeight_feet: "46",
         CrownNS_feet: "13",
-        CrownEW_feet: "10",
+        CrownEW_Feet: "10",
         LeafArea_Feet_Squared: "919.88",
         LeafBiomass_Pounds: "29.5",
         CarbonStorage_Pounds: "611.89",
@@ -927,7 +1532,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Privacy enforcement ",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Scale Leaf Conifers",
+        Attribute6: "Opposite",
+        Attribute7: "Pyramid",
+        Attribute8: "White",
+        Attribute9: "Conelike"
     }, relationships: {}
 },
 {
@@ -945,7 +1559,7 @@ data: [
         DBH_inches: "6.2",
         TotalHeight_feet: "15",
         CrownNS_feet: "10",
-        CrownEW_feet: "12",
+        CrownEW_Feet: "12",
         LeafArea_Feet_Squared: "241.22",
         LeafBiomass_Pounds: "3.7",
         CarbonStorage_Pounds: "83.86",
@@ -978,7 +1592,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Brew tea",
         wood_hardness: "",
-        book_pages: "606 607"
+        book_pages: "606 607",
+        Attribute1: "FALSE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "Pink",
+        Attribute9: "Balls, Capsules, Tufted Fruit"
     }, relationships: {}
 },
 {
@@ -996,7 +1619,7 @@ data: [
         DBH_inches: "19.8",
         TotalHeight_feet: "37",
         CrownNS_feet: "39",
-        CrownEW_feet: "42",
+        CrownEW_Feet: "42",
         LeafArea_Feet_Squared: "3411.84",
         LeafBiomass_Pounds: "54.08",
         CarbonStorage_Pounds: "1674.06",
@@ -1029,7 +1652,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Weeping",
+        Attribute8: "Pink",
+        Attribute9: "Fleshy Fruit"
     }, relationships: {}
 },
 {
@@ -1047,7 +1679,7 @@ data: [
         DBH_inches: "6.2",
         TotalHeight_feet: "7",
         CrownNS_feet: "4",
-        CrownEW_feet: "4",
+        CrownEW_Feet: "4",
         LeafArea_Feet_Squared: "29.28",
         LeafBiomass_Pounds: "0.44",
         CarbonStorage_Pounds: "79.96",
@@ -1080,7 +1712,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Brew tea, Make tea seed oil",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Conical",
+        Attribute8: "Pink",
+        Attribute9: "Capsule"
     }, relationships: {}
 },
 {
@@ -1098,7 +1739,7 @@ data: [
         DBH_inches: "2.1",
         TotalHeight_feet: "15",
         CrownNS_feet: "10",
-        CrownEW_feet: "9",
+        CrownEW_Feet: "9",
         LeafArea_Feet_Squared: "285.57",
         LeafBiomass_Pounds: "14.62",
         CarbonStorage_Pounds: "20.53",
@@ -1131,7 +1772,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Timber, Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Scale Leaf Conifers",
+        Attribute6: "Opposite",
+        Attribute7: "Pyramid",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -1149,7 +1799,7 @@ data: [
         DBH_inches: "17",
         TotalHeight_feet: "21",
         CrownNS_feet: "43",
-        CrownEW_feet: "28",
+        CrownEW_Feet: "28",
         LeafArea_Feet_Squared: "3029.61",
         LeafBiomass_Pounds: "48.02",
         CarbonStorage_Pounds: "1154.54",
@@ -1182,7 +1832,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Pink",
+        Attribute9: "Fleshy Fruit"
     }, relationships: {}
 },
 {
@@ -1200,7 +1859,7 @@ data: [
         DBH_inches: "26.4",
         TotalHeight_feet: "78",
         CrownNS_feet: "63",
-        CrownEW_feet: "54",
+        CrownEW_Feet: "54",
         LeafArea_Feet_Squared: "15522.2",
         LeafBiomass_Pounds: "154.01",
         CarbonStorage_Pounds: "2950.58",
@@ -1233,7 +1892,16 @@ data: [
         PF_Primary: "Music",
         Proformance_Feature: "Shade tree, Containers, Furniture, Musical instruments",
         wood_hardness: "770 lbf/3,400 N",
-        book_pages: "256 508 456 576"
+        book_pages: "256 508 456 576",
+        Attribute1: "TRUE",
+        Attribute2: "Music",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "Red",
+        Attribute9: "Balls, Capsules, Tufted Fruit"
     }, relationships: {}
 },
 {
@@ -1251,7 +1919,7 @@ data: [
         DBH_inches: "2.6",
         TotalHeight_feet: "16",
         CrownNS_feet: "13",
-        CrownEW_feet: "14",
+        CrownEW_Feet: "14",
         LeafArea_Feet_Squared: "363.39",
         LeafBiomass_Pounds: "5.58",
         CarbonStorage_Pounds: "10.54",
@@ -1284,7 +1952,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: "195 426 638"
+        book_pages: "195 426 638",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Spreading",
+        Attribute8: "White",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -1302,7 +1979,7 @@ data: [
         DBH_inches: "18.5",
         TotalHeight_feet: "38",
         CrownNS_feet: "39",
-        CrownEW_feet: "45",
+        CrownEW_Feet: "45",
         LeafArea_Feet_Squared: "4459.17",
         LeafBiomass_Pounds: "69.71",
         CarbonStorage_Pounds: "1193.12",
@@ -1335,7 +2012,16 @@ data: [
         PF_Primary: "Furniture",
         Proformance_Feature: "Landscaping, Biodiesel production, Furniture",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Furniture",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Red",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -1353,7 +2039,7 @@ data: [
         DBH_inches: "2.1",
         TotalHeight_feet: "15",
         CrownNS_feet: "11",
-        CrownEW_feet: "11",
+        CrownEW_Feet: "11",
         LeafArea_Feet_Squared: "297.41",
         LeafBiomass_Pounds: "8.71",
         CarbonStorage_Pounds: "21.14",
@@ -1386,7 +2072,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: "444"
+        book_pages: "444",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -1404,7 +2099,7 @@ data: [
         DBH_inches: "3.4",
         TotalHeight_feet: "32",
         CrownNS_feet: "20",
-        CrownEW_feet: "24",
+        CrownEW_Feet: "24",
         LeafArea_Feet_Squared: "3017.34",
         LeafBiomass_Pounds: "63.05",
         CarbonStorage_Pounds: "192.88",
@@ -1437,7 +2132,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Hedge",
         wood_hardness: "",
-        book_pages: "21 278"
+        book_pages: "21 278",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -1455,7 +2159,7 @@ data: [
         DBH_inches: "2.3",
         TotalHeight_feet: "12",
         CrownNS_feet: "12",
-        CrownEW_feet: "13",
+        CrownEW_Feet: "13",
         LeafArea_Feet_Squared: "337.56",
         LeafBiomass_Pounds: "8.53",
         CarbonStorage_Pounds: "15.3",
@@ -1488,7 +2192,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Oval",
+        Attribute8: "Yellow",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -1506,7 +2219,7 @@ data: [
         DBH_inches: "3.3",
         TotalHeight_feet: "22",
         CrownNS_feet: "15",
-        CrownEW_feet: "14",
+        CrownEW_Feet: "14",
         LeafArea_Feet_Squared: "549.17",
         LeafBiomass_Pounds: "8.97",
         CarbonStorage_Pounds: "20.15",
@@ -1539,7 +2252,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Timber, Firewood, Hedge",
         wood_hardness: "1,290 lbf/5,700 N",
-        book_pages: "292 370 523 407"
+        book_pages: "292 370 523 407",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -1557,7 +2279,7 @@ data: [
         DBH_inches: "66.5",
         TotalHeight_feet: "85",
         CrownNS_feet: "104",
-        CrownEW_feet: "107",
+        CrownEW_Feet: "107",
         LeafArea_Feet_Squared: "23558.86",
         LeafBiomass_Pounds: "428.05",
         CarbonStorage_Pounds: "13227.74",
@@ -1590,7 +2312,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental, Pulpwood",
         wood_hardness: "1,460 lbf/6,500 N",
-        book_pages: "101 404"
+        book_pages: "101 404",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -1608,7 +2339,7 @@ data: [
         DBH_inches: "3.3",
         TotalHeight_feet: "13",
         CrownNS_feet: "12",
-        CrownEW_feet: "12",
+        CrownEW_Feet: "12",
         LeafArea_Feet_Squared: "309.03",
         LeafBiomass_Pounds: "4.74",
         CarbonStorage_Pounds: "18.17",
@@ -1641,7 +2372,16 @@ data: [
         PF_Primary: "Furniture",
         Proformance_Feature: "Furniture, Gunstocks, Decorative woodturning",
         wood_hardness: "",
-        book_pages: "350 519"
+        book_pages: "350 519",
+        Attribute1: "TRUE",
+        Attribute2: "Furniture",
+        Attribute3: "FALSE",
+        Attribute4: "Copper",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -1659,7 +2399,7 @@ data: [
         DBH_inches: "13.6",
         TotalHeight_feet: "15",
         CrownNS_feet: "15",
-        CrownEW_feet: "15",
+        CrownEW_Feet: "15",
         LeafArea_Feet_Squared: "923.65",
         LeafBiomass_Pounds: "31.72",
         CarbonStorage_Pounds: "16.07",
@@ -1692,7 +2432,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Landscaping, Represent independence and liberty by Confedrate States of America",
         wood_hardness: "",
-        book_pages: "314"
+        book_pages: "314",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Yuccas and Palmettos",
+        Attribute6: "Whorled",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -1710,7 +2459,7 @@ data: [
         DBH_inches: "6.8",
         TotalHeight_feet: "31",
         CrownNS_feet: "16",
-        CrownEW_feet: "16",
+        CrownEW_Feet: "16",
         LeafArea_Feet_Squared: "1706.62",
         LeafBiomass_Pounds: "23.81",
         CarbonStorage_Pounds: "91.01",
@@ -1743,7 +2492,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade tree",
         wood_hardness: "830 lbf/3,700 N",
-        book_pages: "162 373 498 419 425 427"
+        book_pages: "162 373 498 419 425 427",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -1761,7 +2519,7 @@ data: [
         DBH_inches: "17.5",
         TotalHeight_feet: "29",
         CrownNS_feet: "27",
-        CrownEW_feet: "26",
+        CrownEW_Feet: "26",
         LeafArea_Feet_Squared: "3126.7",
         LeafBiomass_Pounds: "42.79",
         CarbonStorage_Pounds: "1027.82",
@@ -1794,7 +2552,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -1812,7 +2579,7 @@ data: [
         DBH_inches: "1",
         TotalHeight_feet: "9",
         CrownNS_feet: "6",
-        CrownEW_feet: "5",
+        CrownEW_Feet: "5",
         LeafArea_Feet_Squared: "120.45",
         LeafBiomass_Pounds: "1.59",
         CarbonStorage_Pounds: "1.06",
@@ -1845,7 +2612,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Dye, Timber, Food",
         wood_hardness: "1,010 lbf/4,500 N",
-        book_pages: "317 532 358"
+        book_pages: "317 532 358",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -1863,7 +2639,7 @@ data: [
         DBH_inches: "1",
         TotalHeight_feet: "9",
         CrownNS_feet: "3",
-        CrownEW_feet: "3",
+        CrownEW_Feet: "3",
         LeafArea_Feet_Squared: "72.12",
         LeafBiomass_Pounds: "0.86",
         CarbonStorage_Pounds: "0.9",
@@ -1896,7 +2672,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Firewood, Food for wildlife, Ornamental",
         wood_hardness: "2,140 lbf/9,500 N",
-        book_pages: "343 377 534 627 347"
+        book_pages: "343 377 534 627 347",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Spreading",
+        Attribute8: "Green",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -1914,7 +2699,7 @@ data: [
         DBH_inches: "33.8",
         TotalHeight_feet: "72",
         CrownNS_feet: "41",
-        CrownEW_feet: "40",
+        CrownEW_Feet: "40",
         LeafArea_Feet_Squared: "9324.35",
         LeafBiomass_Pounds: "299.08",
         CarbonStorage_Pounds: "2400.79",
@@ -1947,7 +2732,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Ornamental, Make shingles",
         wood_hardness: "",
-        book_pages: "27 302"
+        book_pages: "27 302",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Needle Like Conifers",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramidal",
+        Attribute8: "Brown",
+        Attribute9: "Cone"
     }, relationships: {}
 },
 {
@@ -1965,7 +2759,7 @@ data: [
         DBH_inches: "32.7",
         TotalHeight_feet: "58",
         CrownNS_feet: "52",
-        CrownEW_feet: "55",
+        CrownEW_Feet: "55",
         LeafArea_Feet_Squared: "7022.38",
         LeafBiomass_Pounds: "103.9",
         CarbonStorage_Pounds: "3935.52",
@@ -1998,7 +2792,16 @@ data: [
         PF_Primary: "Sports",
         Proformance_Feature: "Make hockey sticks",
         wood_hardness: "1,540 lbf/6,800 N",
-        book_pages: "165 497 418"
+        book_pages: "165 497 418",
+        Attribute1: "TRUE",
+        Attribute2: "Sports",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -2016,7 +2819,7 @@ data: [
         DBH_inches: "8.2",
         TotalHeight_feet: "16",
         CrownNS_feet: "22",
-        CrownEW_feet: "18",
+        CrownEW_Feet: "18",
         LeafArea_Feet_Squared: "835.28",
         LeafBiomass_Pounds: "12.81",
         CarbonStorage_Pounds: "161.47",
@@ -2049,7 +2852,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Ornamental, Medicine, Make candles",
         wood_hardness: "",
-        book_pages: "209 339"
+        book_pages: "209 339",
+        Attribute1: "TRUE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -2067,7 +2879,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2100,7 +2912,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Food for wildlife, Timber",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -2118,7 +2939,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2151,7 +2972,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: "312 529"
+        book_pages: "312 529",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -2169,7 +2999,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2202,7 +3032,16 @@ data: [
         PF_Primary: "Tools",
         Proformance_Feature: "Food for wildlife, Make tool handles",
         wood_hardness: "1,970 lbf/8,800 N",
-        book_pages: "348 355"
+        book_pages: "348 355",
+        Attribute1: "TRUE",
+        Attribute2: "Tools",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -2220,7 +3059,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2253,7 +3092,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -2271,7 +3119,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2304,7 +3152,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -2314,7 +3171,7 @@ data: [
         CommonName: "Osage Orange",
         ScientificName: "Maclura pomifera",
         TreeImage: "\\assets\\images\\trees\\13043_Maclura_pomifera.JPG",
-        Description: "When dried, the wood has the highest BTU content of any commonly available North American wood, and burns long and hot.  In Arkansas, in the early 19th century, a good Osage bow was worth a horse and a blanket.  A yellow-orange dye can be extracted from the wood, which can be used as a substitute for fustic and aniline dyes. ",
+        Description: "When dried, the wood has the highest BTU content of any commonly available North American wood, and burns long and hot.  In Arkansas, in the early 19th century, a good Osage bow was worth a horse and a blanket.  A yellow-Orangedye can be extracted from the wood, which can be used as a substitute for fustic and aniline dyes. ",
         TreeNumber: "13043",
         ID: "45",
         TagID: "62",
@@ -2322,7 +3179,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2355,7 +3212,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Windbreak, Medicine",
         wood_hardness: "2,040 lbf/9,100 N",
-        book_pages: "71 391 573 429"
+        book_pages: "71 391 573 429",
+        Attribute1: "FALSE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Fleshy Fruit"
     }, relationships: {}
 },
 {
@@ -2373,7 +3239,7 @@ data: [
         DBH_inches: "16",
         TotalHeight_feet: "48",
         CrownNS_feet: "26",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -2406,7 +3272,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "830 lbf/3,700 N",
-        book_pages: "162 373 498 419 "
+        book_pages: "162 373 498 419 ",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: " Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -2424,7 +3299,7 @@ data: [
         DBH_inches: "5.1",
         TotalHeight_feet: "23",
         CrownNS_feet: "17",
-        CrownEW_feet: "18",
+        CrownEW_Feet: "18",
         LeafArea_Feet_Squared: "1057.98",
         LeafBiomass_Pounds: "13.05",
         CarbonStorage_Pounds: "53.42",
@@ -2457,7 +3332,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "White",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -2475,7 +3359,7 @@ data: [
         DBH_inches: "2",
         TotalHeight_feet: "11",
         CrownNS_feet: "10",
-        CrownEW_feet: "8",
+        CrownEW_Feet: "8",
         LeafArea_Feet_Squared: "253.27",
         LeafBiomass_Pounds: "3.02",
         CarbonStorage_Pounds: "5.95",
@@ -2508,7 +3392,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Food for wildlife, Cooking oil",
         wood_hardness: "2,680 lbf/11,900 N",
-        book_pages: "47 521 410"
+        book_pages: "47 521 410",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Spreading",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -2526,7 +3419,7 @@ data: [
         DBH_inches: "15.3",
         TotalHeight_feet: "23",
         CrownNS_feet: "29",
-        CrownEW_feet: "30",
+        CrownEW_Feet: "30",
         LeafArea_Feet_Squared: "2702.71",
         LeafBiomass_Pounds: "41.45",
         CarbonStorage_Pounds: "735.46",
@@ -2559,7 +3452,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Food for wildlife, Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Drupes"
     }, relationships: {}
 },
 {
@@ -2577,7 +3479,7 @@ data: [
         DBH_inches: "2.6",
         TotalHeight_feet: "9",
         CrownNS_feet: "8",
-        CrownEW_feet: "8",
+        CrownEW_Feet: "8",
         LeafArea_Feet_Squared: "134.55",
         LeafBiomass_Pounds: "0.95",
         CarbonStorage_Pounds: "10.12",
@@ -2610,7 +3512,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Ornametnal, Medicine",
         wood_hardness: "",
-        book_pages: "84 419 644 "
+        book_pages: "84 419 644 ",
+        Attribute1: "TRUE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Oval",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -2628,7 +3539,7 @@ data: [
         DBH_inches: "5.2",
         TotalHeight_feet: "21",
         CrownNS_feet: "15",
-        CrownEW_feet: "16",
+        CrownEW_Feet: "16",
         LeafArea_Feet_Squared: "1100.83",
         LeafBiomass_Pounds: "9.61",
         CarbonStorage_Pounds: "81.09",
@@ -2661,7 +3572,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental, Forestry",
         wood_hardness: "1,300 lbf/5,800 N",
-        book_pages: "152 528 601 614 380"
+        book_pages: "152 528 601 614 380",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Brown",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -2679,7 +3599,7 @@ data: [
         DBH_inches: "3.3",
         TotalHeight_feet: "13",
         CrownNS_feet: "8",
-        CrownEW_feet: "8",
+        CrownEW_Feet: "8",
         LeafArea_Feet_Squared: "358.33",
         LeafBiomass_Pounds: "20.39",
         CarbonStorage_Pounds: "19.07",
@@ -2712,7 +3632,16 @@ data: [
         PF_Primary: "Music",
         Proformance_Feature: "Make shinew-backed bows, Christmas Tree, Mark out territories by Native Americans",
         wood_hardness: "900 lbf/4,000 N",
-        book_pages: "35 310"
+        book_pages: "35 310",
+        Attribute1: "TRUE",
+        Attribute2: "Music",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Scale Leaf Conifers",
+        Attribute6: "Whorled",
+        Attribute7: "Columnar",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -2722,7 +3651,7 @@ data: [
         CommonName: "Tulip Poplar",
         ScientificName: "Liriodendron tulipifera",
         TreeImage: "\\assets\\images\\trees\\02391_Liriodendron_tulipifera.JPG",
-        Description: "Native to Georgia, this tree bears the wood of choice for use in organs.  Its tall and rapid growth is a function of its shade intolerance; it grows much slower in the sun.  This tree species is a major honey plant, receiving mixed reviews as a table honey but favorably regarded by bakers.  Nectar is produced in the orange parts of the ?owers.",
+        Description: "Native to Georgia, this tree bears the wood of choice for use in organs.  Its tall and rapid growth is a function of its shade intolerance; it grows much slower in the sun.  This tree species is a major honey plant, receiving mixed reviews as a table honey but favorably regarded by bakers.  Nectar is produced in the Orangeparts of the ?owers.",
         TreeNumber: "2391",
         ID: "53",
         TagID: "",
@@ -2730,7 +3659,7 @@ data: [
         DBH_inches: "6.1",
         TotalHeight_feet: "33",
         CrownNS_feet: "23",
-        CrownEW_feet: "24",
+        CrownEW_Feet: "24",
         LeafArea_Feet_Squared: "5272.49",
         LeafBiomass_Pounds: "63.65",
         CarbonStorage_Pounds: "69.23",
@@ -2763,7 +3692,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Honey plant, Timber",
         wood_hardness: "540 lbf/2,400 N",
-        book_pages: "267 390 490 436"
+        book_pages: "267 390 490 436",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "Green",
+        Attribute9: "keys"
     }, relationships: {}
 },
 {
@@ -2781,7 +3719,7 @@ data: [
         DBH_inches: "3.5",
         TotalHeight_feet: "10",
         CrownNS_feet: "8",
-        CrownEW_feet: "8",
+        CrownEW_Feet: "8",
         LeafArea_Feet_Squared: "122.92",
         LeafBiomass_Pounds: "1.48",
         CarbonStorage_Pounds: "22.6",
@@ -2814,7 +3752,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Purple",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berries"
     }, relationships: {}
 },
 {
@@ -2832,7 +3779,7 @@ data: [
         DBH_inches: "2",
         TotalHeight_feet: "5",
         CrownNS_feet: "5",
-        CrownEW_feet: "4",
+        CrownEW_Feet: "4",
         LeafArea_Feet_Squared: "80.84",
         LeafBiomass_Pounds: "1.21",
         CarbonStorage_Pounds: "5.2",
@@ -2865,7 +3812,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Opposite",
+        Attribute7: "Spreading",
+        Attribute8: "White",
+        Attribute9: "Capsule"
     }, relationships: {}
 },
 {
@@ -2883,7 +3839,7 @@ data: [
         DBH_inches: "4.4",
         TotalHeight_feet: "30",
         CrownNS_feet: "29",
-        CrownEW_feet: "28",
+        CrownEW_Feet: "28",
         LeafArea_Feet_Squared: "2423.71",
         LeafBiomass_Pounds: "38.47",
         CarbonStorage_Pounds: "314.38",
@@ -2916,7 +3872,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Ornamental , Sweetner, Food",
         wood_hardness: "",
-        book_pages: "178 366"
+        book_pages: "178 366",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -2934,7 +3899,7 @@ data: [
         DBH_inches: "5.4",
         TotalHeight_feet: "15",
         CrownNS_feet: "22",
-        CrownEW_feet: "21",
+        CrownEW_Feet: "21",
         LeafArea_Feet_Squared: "1286.5",
         LeafBiomass_Pounds: "16.87",
         CarbonStorage_Pounds: "59.24",
@@ -2967,7 +3932,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Landscaping",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Pink",
+        Attribute9: "Pods"
     }, relationships: {}
 },
 {
@@ -2985,7 +3959,7 @@ data: [
         DBH_inches: "3.5",
         TotalHeight_feet: "20",
         CrownNS_feet: "16",
-        CrownEW_feet: "13",
+        CrownEW_Feet: "13",
         LeafArea_Feet_Squared: "748.95",
         LeafBiomass_Pounds: "9.24",
         CarbonStorage_Pounds: "60.1",
@@ -3018,7 +3992,16 @@ data: [
         PF_Primary: "Sports",
         Proformance_Feature: "Make bows by Native Americans",
         wood_hardness: "1,780 lbf/7,900 N",
-        book_pages: "147 596 372"
+        book_pages: "147 596 372",
+        Attribute1: "TRUE",
+        Attribute2: "Sports",
+        Attribute3: "FALSE",
+        Attribute4: "Orange",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "Red",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -3036,7 +4019,7 @@ data: [
         DBH_inches: "2",
         TotalHeight_feet: "12",
         CrownNS_feet: "3",
-        CrownEW_feet: "4",
+        CrownEW_Feet: "4",
         LeafArea_Feet_Squared: "0",
         LeafBiomass_Pounds: "0",
         CarbonStorage_Pounds: "0",
@@ -3069,7 +4052,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade tree ",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Columnar",
+        Attribute8: "White",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -3087,7 +4079,7 @@ data: [
         DBH_inches: "5.3",
         TotalHeight_feet: "20",
         CrownNS_feet: "12",
-        CrownEW_feet: "11",
+        CrownEW_Feet: "11",
         LeafArea_Feet_Squared: "459.3",
         LeafBiomass_Pounds: "6.13",
         CarbonStorage_Pounds: "38.12",
@@ -3120,7 +4112,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "1,200 lbf/5,300 N",
-        book_pages: "328 651"
+        book_pages: "328 651",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -3138,7 +4139,7 @@ data: [
         DBH_inches: "6.6",
         TotalHeight_feet: "33",
         CrownNS_feet: "28",
-        CrownEW_feet: "28",
+        CrownEW_Feet: "28",
         LeafArea_Feet_Squared: "4172.85",
         LeafBiomass_Pounds: "97.11",
         CarbonStorage_Pounds: "84.7",
@@ -3171,7 +4172,16 @@ data: [
         PF_Primary: "Tools",
         Proformance_Feature: "Making tool handles, Furniture",
         wood_hardness: "",
-        book_pages: "168 421 423"
+        book_pages: "168 421 423",
+        Attribute1: "FALSE",
+        Attribute2: "Tools",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -3189,7 +4199,7 @@ data: [
         DBH_inches: "1.4",
         TotalHeight_feet: "10",
         CrownNS_feet: "6",
-        CrownEW_feet: "8",
+        CrownEW_Feet: "8",
         LeafArea_Feet_Squared: "117.11",
         LeafBiomass_Pounds: "1.79",
         CarbonStorage_Pounds: "5.2",
@@ -3222,7 +4232,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Make jams and jellies",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -3240,7 +4259,7 @@ data: [
         DBH_inches: "3.5",
         TotalHeight_feet: "39",
         CrownNS_feet: "34",
-        CrownEW_feet: "28",
+        CrownEW_Feet: "28",
         LeafArea_Feet_Squared: "1915.98",
         LeafBiomass_Pounds: "30.36",
         CarbonStorage_Pounds: "342.25",
@@ -3273,7 +4292,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Floristry",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -3291,7 +4319,7 @@ data: [
         DBH_inches: "16.9",
         TotalHeight_feet: "37",
         CrownNS_feet: "38",
-        CrownEW_feet: "45",
+        CrownEW_Feet: "45",
         LeafArea_Feet_Squared: "2791.51",
         LeafBiomass_Pounds: "42.81",
         CarbonStorage_Pounds: "959.05",
@@ -3324,7 +4352,16 @@ data: [
         PF_Primary: "Furniture",
         Proformance_Feature: "Furniture, Make woodwind instruments",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Furniture",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "White",
+        Attribute9: "Fleshy Fruit"
     }, relationships: {}
 },
 {
@@ -3342,7 +4379,7 @@ data: [
         DBH_inches: "8.4",
         TotalHeight_feet: "35",
         CrownNS_feet: "14",
-        CrownEW_feet: "14",
+        CrownEW_Feet: "14",
         LeafArea_Feet_Squared: "1977.65",
         LeafBiomass_Pounds: "63.43",
         CarbonStorage_Pounds: "124.85",
@@ -3375,7 +4412,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Timber, Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Needle Leaf Conifers",
+        Attribute6: "Whorled",
+        Attribute7: "Pyramid",
+        Attribute8: "Green",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -3393,7 +4439,7 @@ data: [
         DBH_inches: "14.9",
         TotalHeight_feet: "39",
         CrownNS_feet: "34",
-        CrownEW_feet: "34",
+        CrownEW_Feet: "34",
         LeafArea_Feet_Squared: "3072.88",
         LeafBiomass_Pounds: "21.76",
         CarbonStorage_Pounds: "638.75",
@@ -3426,7 +4472,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Beverage, Food Preserves",
         wood_hardness: "",
-        book_pages: "66 619"
+        book_pages: "66 619",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -3444,7 +4499,7 @@ data: [
         DBH_inches: "9.3",
         TotalHeight_feet: "30",
         CrownNS_feet: "26",
-        CrownEW_feet: "28",
+        CrownEW_Feet: "28",
         LeafArea_Feet_Squared: "3179.98",
         LeafBiomass_Pounds: "43.52",
         CarbonStorage_Pounds: "227.1",
@@ -3477,7 +4532,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shad tree",
         wood_hardness: "",
-        book_pages: "90 430 441"
+        book_pages: "90 430 441",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Broad",
+        Attribute8: "White",
+        Attribute9: "Conelike"
     }, relationships: {}
 },
 {
@@ -3495,7 +4559,7 @@ data: [
         DBH_inches: "41.5",
         TotalHeight_feet: "81",
         CrownNS_feet: "72",
-        CrownEW_feet: "64",
+        CrownEW_Feet: "64",
         LeafArea_Feet_Squared: "11744.93",
         LeafBiomass_Pounds: "187.59",
         CarbonStorage_Pounds: "10533.66",
@@ -3528,7 +4592,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Timber, Food for wildlife",
         wood_hardness: "1,060 lbf/4,700 N",
-        book_pages: "283 388"
+        book_pages: "283 388",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "TRUE",
+        Attribute4: "Copper",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -3546,7 +4619,7 @@ data: [
         DBH_inches: "18.9",
         TotalHeight_feet: "52",
         CrownNS_feet: "34",
-        CrownEW_feet: "29",
+        CrownEW_Feet: "29",
         LeafArea_Feet_Squared: "3950.03",
         LeafBiomass_Pounds: "77.98",
         CarbonStorage_Pounds: "619.72",
@@ -3579,7 +4652,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Reforesting, Pulpwood",
         wood_hardness: "740 lbf/3,300 N",
-        book_pages: "14 473 298"
+        book_pages: "14 473 298",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Needle Like Conifers",
+        Attribute6: "Whorled",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -3597,7 +4679,7 @@ data: [
         DBH_inches: "33.7",
         TotalHeight_feet: "80",
         CrownNS_feet: "59",
-        CrownEW_feet: "68",
+        CrownEW_Feet: "68",
         LeafArea_Feet_Squared: "11216.96",
         LeafBiomass_Pounds: "167.09",
         CarbonStorage_Pounds: "4230.41",
@@ -3630,7 +4712,16 @@ data: [
         PF_Primary: "Transportiation",
         Proformance_Feature: "Make wooden automobile bodies, Make whips",
         wood_hardness: "830 lbf/3,700 N",
-        book_pages: "162 373 498 419"
+        book_pages: "162 373 498 419",
+        Attribute1: "TRUE",
+        Attribute2: "Transportiation",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Red",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -3648,7 +4739,7 @@ data: [
         DBH_inches: "6.9",
         TotalHeight_feet: "11",
         CrownNS_feet: "12",
-        CrownEW_feet: "12",
+        CrownEW_Feet: "12",
         LeafArea_Feet_Squared: "229.49",
         LeafBiomass_Pounds: "3.53",
         CarbonStorage_Pounds: "176.02",
@@ -3681,7 +4772,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Traditional Chinese medicine, Brew tea, Bug repellent",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Medicine",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Columnar",
+        Attribute8: "White",
+        Attribute9: "Drupes"
     }, relationships: {}
 },
 {
@@ -3699,7 +4799,7 @@ data: [
         DBH_inches: "11.2",
         TotalHeight_feet: "29",
         CrownNS_feet: "29",
-        CrownEW_feet: "33",
+        CrownEW_Feet: "33",
         LeafArea_Feet_Squared: "2462.03",
         LeafBiomass_Pounds: "39.02",
         CarbonStorage_Pounds: "727.5",
@@ -3732,7 +4832,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental , Landscaping",
         wood_hardness: "",
-        book_pages: "138 408 496 "
+        book_pages: "138 408 496 ",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "Cream",
+        Attribute9: "Plum"
     }, relationships: {}
 },
 {
@@ -3750,7 +4859,7 @@ data: [
         DBH_inches: "1.6",
         TotalHeight_feet: "16",
         CrownNS_feet: "17",
-        CrownEW_feet: "12",
+        CrownEW_Feet: "12",
         LeafArea_Feet_Squared: "367.05",
         LeafBiomass_Pounds: "5.69",
         CarbonStorage_Pounds: "29.32",
@@ -3783,7 +4892,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "White",
+        Attribute9: "Berries"
     }, relationships: {}
 },
 {
@@ -3801,7 +4919,7 @@ data: [
         DBH_inches: "16.1",
         TotalHeight_feet: "44",
         CrownNS_feet: "39",
-        CrownEW_feet: "37",
+        CrownEW_Feet: "37",
         LeafArea_Feet_Squared: "3764.79",
         LeafBiomass_Pounds: "57.74",
         CarbonStorage_Pounds: "864.9",
@@ -3834,7 +4952,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Lawn or Park Tree",
         wood_hardness: "",
-        book_pages: "153 426"
+        book_pages: "153 426",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Green",
+        Attribute9: "Drupes"
     }, relationships: {}
 },
 {
@@ -3852,7 +4979,7 @@ data: [
         DBH_inches: "6",
         TotalHeight_feet: "25",
         CrownNS_feet: "21",
-        CrownEW_feet: "24",
+        CrownEW_Feet: "24",
         LeafArea_Feet_Squared: "1871.09",
         LeafBiomass_Pounds: "51.24",
         CarbonStorage_Pounds: "276.42",
@@ -3885,7 +5012,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Brew Tea ",
         wood_hardness: "",
-        book_pages: "208 561 565"
+        book_pages: "208 561 565",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -3903,7 +5039,7 @@ data: [
         DBH_inches: "20.1",
         TotalHeight_feet: "41",
         CrownNS_feet: "46",
-        CrownEW_feet: "49",
+        CrownEW_Feet: "49",
         LeafArea_Feet_Squared: "6016.16",
         LeafBiomass_Pounds: "121.61",
         CarbonStorage_Pounds: "1684.77",
@@ -3936,7 +5072,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Pulpwood, Ornamental",
         wood_hardness: "1,210 lbf/5,400 N",
-        book_pages: "51 394"
+        book_pages: "51 394",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -3954,7 +5099,7 @@ data: [
         DBH_inches: "14.9",
         TotalHeight_feet: "40",
         CrownNS_feet: "32",
-        CrownEW_feet: "31",
+        CrownEW_Feet: "31",
         LeafArea_Feet_Squared: "2622.84",
         LeafBiomass_Pounds: "40.23",
         CarbonStorage_Pounds: "729.82",
@@ -3987,7 +5132,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental, Shade Tree",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4005,7 +5159,7 @@ data: [
         DBH_inches: "36",
         TotalHeight_feet: "69",
         CrownNS_feet: "67",
-        CrownEW_feet: "59",
+        CrownEW_Feet: "59",
         LeafArea_Feet_Squared: "6016.16",
         LeafBiomass_Pounds: "85.69",
         CarbonStorage_Pounds: "7524.31",
@@ -4038,7 +5192,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Food",
         wood_hardness: "1,820 lbf/8,100 N",
-        book_pages: "327 535 348"
+        book_pages: "327 535 348",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Compound",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -4056,7 +5219,7 @@ data: [
         DBH_inches: "3.7",
         TotalHeight_feet: "15",
         CrownNS_feet: "23",
-        CrownEW_feet: "16",
+        CrownEW_Feet: "16",
         LeafArea_Feet_Squared: "672.74",
         LeafBiomass_Pounds: "10.32",
         CarbonStorage_Pounds: "76.52",
@@ -4089,7 +5252,16 @@ data: [
         PF_Primary: "Sports",
         Proformance_Feature: "Make maple syrup, Make bowling alleys and pins",
         wood_hardness: "1,450 lbf/6,400 N",
-        book_pages: "258 374 592"
+        book_pages: "258 374 592",
+        Attribute1: "TRUE",
+        Attribute2: "Sports",
+        Attribute3: "TRUE",
+        Attribute4: "Orange",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -4107,7 +5279,7 @@ data: [
         DBH_inches: "14.1",
         TotalHeight_feet: "30",
         CrownNS_feet: "31",
-        CrownEW_feet: "38",
+        CrownEW_Feet: "38",
         LeafArea_Feet_Squared: "3802.46",
         LeafBiomass_Pounds: "77.36",
         CarbonStorage_Pounds: "613.26",
@@ -4140,7 +5312,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Food",
         wood_hardness: "",
-        book_pages: "157 432"
+        book_pages: "157 432",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Berries"
     }, relationships: {}
 },
 {
@@ -4158,7 +5339,7 @@ data: [
         DBH_inches: "16.3",
         TotalHeight_feet: "51",
         CrownNS_feet: "41",
-        CrownEW_feet: "39",
+        CrownEW_Feet: "39",
         LeafArea_Feet_Squared: "8855.58",
         LeafBiomass_Pounds: "123.33",
         CarbonStorage_Pounds: "901.73",
@@ -4191,7 +5372,16 @@ data: [
         PF_Primary: "Sports",
         Proformance_Feature: "Furniture, Container, Producing sporting goods, Plywood",
         wood_hardness: "",
-        book_pages: "139 412"
+        book_pages: "139 412",
+        Attribute1: "TRUE",
+        Attribute2: "Sports",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Drupes"
     }, relationships: {}
 },
 {
@@ -4209,7 +5399,7 @@ data: [
         DBH_inches: "3.6",
         TotalHeight_feet: "19",
         CrownNS_feet: "18",
-        CrownEW_feet: "18",
+        CrownEW_Feet: "18",
         LeafArea_Feet_Squared: "912.03",
         LeafBiomass_Pounds: "10.52",
         CarbonStorage_Pounds: "29.26",
@@ -4242,7 +5432,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade Tree",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Oval",
+        Attribute8: "Red",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -4260,7 +5459,7 @@ data: [
         DBH_inches: "5",
         TotalHeight_feet: "18",
         CrownNS_feet: "16",
-        CrownEW_feet: "15",
+        CrownEW_Feet: "15",
         LeafArea_Feet_Squared: "674.25",
         LeafBiomass_Pounds: "4.78",
         CarbonStorage_Pounds: "47.8",
@@ -4293,7 +5492,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "810 lbf/3,600 N",
-        book_pages: "72 540 583 "
+        book_pages: "72 540 583 ",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Red",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "Green",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -4311,7 +5519,7 @@ data: [
         DBH_inches: "6.6",
         TotalHeight_feet: "27",
         CrownNS_feet: "18",
-        CrownEW_feet: "17",
+        CrownEW_Feet: "17",
         LeafArea_Feet_Squared: "989.74",
         LeafBiomass_Pounds: "20",
         CarbonStorage_Pounds: "105.14",
@@ -4344,7 +5552,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade Tree",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Nuts"
     }, relationships: {}
 },
 {
@@ -4362,7 +5579,7 @@ data: [
         DBH_inches: "7.3",
         TotalHeight_feet: "21",
         CrownNS_feet: "17",
-        CrownEW_feet: "17",
+        CrownEW_Feet: "17",
         LeafArea_Feet_Squared: "721.4",
         LeafBiomass_Pounds: "14.57",
         CarbonStorage_Pounds: "131.66",
@@ -4395,7 +5612,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Lumber",
         wood_hardness: "1,130 lbf/5,000 N",
-        book_pages: "276 604"
+        book_pages: "276 604",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Orange",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Green",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4413,7 +5639,7 @@ data: [
         DBH_inches: "9",
         TotalHeight_feet: "27",
         CrownNS_feet: "18",
-        CrownEW_feet: "17",
+        CrownEW_Feet: "17",
         LeafArea_Feet_Squared: "1099.1",
         LeafBiomass_Pounds: "22.22",
         CarbonStorage_Pounds: "225.07",
@@ -4446,7 +5672,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Lumber",
         wood_hardness: "1,620 lbf/7,200 N",
-        book_pages: "280 515 384"
+        book_pages: "280 515 384",
+        Attribute1: "FALSE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4464,7 +5699,7 @@ data: [
         DBH_inches: "10.3",
         TotalHeight_feet: "36",
         CrownNS_feet: "26",
-        CrownEW_feet: "23",
+        CrownEW_Feet: "23",
         LeafArea_Feet_Squared: "2667.3",
         LeafBiomass_Pounds: "53.93",
         CarbonStorage_Pounds: "195.15",
@@ -4497,7 +5732,16 @@ data: [
         PF_Primary: "Barrels",
         Proformance_Feature: "Ornamental, Barrels making, Furniture",
         wood_hardness: "1,190 lbf/5,300 N",
-        book_pages: "278 395"
+        book_pages: "278 395",
+        Attribute1: "TRUE",
+        Attribute2: "Barrels",
+        Attribute3: "FALSE",
+        Attribute4: "Copper",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Rounded",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4515,7 +5759,7 @@ data: [
         DBH_inches: "10.4",
         TotalHeight_feet: "51",
         CrownNS_feet: "43",
-        CrownEW_feet: "41",
+        CrownEW_Feet: "41",
         LeafArea_Feet_Squared: "3729.05",
         LeafBiomass_Pounds: "75.38",
         CarbonStorage_Pounds: "343.97",
@@ -4548,7 +5792,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Shade Tree",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4566,7 +5819,7 @@ data: [
         DBH_inches: "4.8",
         TotalHeight_feet: "22",
         CrownNS_feet: "12",
-        CrownEW_feet: "15",
+        CrownEW_Feet: "15",
         LeafArea_Feet_Squared: "840.02",
         LeafBiomass_Pounds: "22.99",
         CarbonStorage_Pounds: "55.29",
@@ -4599,7 +5852,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -4617,7 +5879,7 @@ data: [
         DBH_inches: "4.1",
         TotalHeight_feet: "21",
         CrownNS_feet: "14",
-        CrownEW_feet: "14",
+        CrownEW_Feet: "14",
         LeafArea_Feet_Squared: "885.33",
         LeafBiomass_Pounds: "13.58",
         CarbonStorage_Pounds: "80.65",
@@ -4650,7 +5912,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -4668,7 +5939,7 @@ data: [
         DBH_inches: "10",
         TotalHeight_feet: "38",
         CrownNS_feet: "22",
-        CrownEW_feet: "23",
+        CrownEW_Feet: "23",
         LeafArea_Feet_Squared: "2250.95",
         LeafBiomass_Pounds: "41.71",
         CarbonStorage_Pounds: "301.39",
@@ -4701,7 +5972,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Landscaping, Ornamental, Medicine",
         wood_hardness: "1,510 lbf/6,700 N",
-        book_pages: "288 517 586 403"
+        book_pages: "288 517 586 403",
+        Attribute1: "TRUE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "Brown",
+        Attribute9: "Acorns"
     }, relationships: {}
 },
 {
@@ -4719,7 +5999,7 @@ data: [
         DBH_inches: "7.2",
         TotalHeight_feet: "29",
         CrownNS_feet: "20",
-        CrownEW_feet: "21",
+        CrownEW_Feet: "21",
         LeafArea_Feet_Squared: "1980.34",
         LeafBiomass_Pounds: "37.1",
         CarbonStorage_Pounds: "142.22",
@@ -4752,7 +6032,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Fiberboard, Make tubes, Spiritrual medicine for Native Americans",
         wood_hardness: "720 lbf",
-        book_pages: "335 494 572"
+        book_pages: "335 494 572",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Rounded",
+        Attribute8: "Yellow",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -4770,7 +6059,7 @@ data: [
         DBH_inches: "34.1",
         TotalHeight_feet: "69",
         CrownNS_feet: "80",
-        CrownEW_feet: "82",
+        CrownEW_Feet: "82",
         LeafArea_Feet_Squared: "17747",
         LeafBiomass_Pounds: "162.72",
         CarbonStorage_Pounds: "4351.84",
@@ -4803,7 +6092,16 @@ data: [
         PF_Primary: "Medicine",
         Proformance_Feature: "Medicine, Timber, Pitched baseball, Starting fire, Threading",
         wood_hardness: "",
-        book_pages: "160 500 423"
+        book_pages: "160 500 423",
+        Attribute1: "TRUE",
+        Attribute2: "Medicine",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Green",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -4821,7 +6119,7 @@ data: [
         DBH_inches: "6",
         TotalHeight_feet: "20",
         CrownNS_feet: "14",
-        CrownEW_feet: "20",
+        CrownEW_Feet: "20",
         LeafArea_Feet_Squared: "812.78",
         LeafBiomass_Pounds: "12.46",
         CarbonStorage_Pounds: "284.55",
@@ -4854,7 +6152,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Landscaping",
         wood_hardness: "",
-        book_pages: ""
+        book_pages: "",
+        Attribute1: "FALSE",
+        Attribute2: "Landscaping",
+        Attribute3: "TRUE",
+        Attribute4: "Orange",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Vase Shaped",
+        Attribute8: "Pink",
+        Attribute9: "Capsule"
     }, relationships: {}
 },
 {
@@ -4872,7 +6179,7 @@ data: [
         DBH_inches: "26.6",
         TotalHeight_feet: "59",
         CrownNS_feet: "40",
-        CrownEW_feet: "52",
+        CrownEW_Feet: "52",
         LeafArea_Feet_Squared: "1302.76",
         LeafBiomass_Pounds: "14.04",
         CarbonStorage_Pounds: "2272.48",
@@ -4905,7 +6212,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Surga, Ornanmental, Landscaping, Food",
         wood_hardness: "700 lbf/3,100 N",
-        book_pages: "264 493 600"
+        book_pages: "264 493 600",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "FALSE",
+        Attribute4: "Yellow",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Spreading",
+        Attribute8: "Red",
+        Attribute9: "Keys"
     }, relationships: {}
 },
 {
@@ -4923,7 +6239,7 @@ data: [
         DBH_inches: "23.8",
         TotalHeight_feet: "42",
         CrownNS_feet: "43",
-        CrownEW_feet: "39",
+        CrownEW_Feet: "39",
         LeafArea_Feet_Squared: "3698.8",
         LeafBiomass_Pounds: "101.28",
         CarbonStorage_Pounds: "2237.47",
@@ -4956,7 +6272,16 @@ data: [
         PF_Primary: "Food",
         Proformance_Feature: "Ornamental, Brew Tea ",
         wood_hardness: "1,020 lbf",
-        book_pages: "212 559 564"
+        book_pages: "212 559 564",
+        Attribute1: "TRUE",
+        Attribute2: "Food",
+        Attribute3: "TRUE",
+        Attribute4: "Green",
+        Attribute5: "Toothed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "White",
+        Attribute9: "Berrylike Fruit"
     }, relationships: {}
 },
 {
@@ -4974,7 +6299,7 @@ data: [
         DBH_inches: "40.8",
         TotalHeight_feet: "44",
         CrownNS_feet: "42",
-        CrownEW_feet: "53",
+        CrownEW_Feet: "53",
         LeafArea_Feet_Squared: "4082.86",
         LeafBiomass_Pounds: "44.6",
         CarbonStorage_Pounds: "8064.16",
@@ -5007,7 +6332,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Ornamental",
         wood_hardness: "550 lbf/2,400 N",
-        book_pages: "94 663"
+        book_pages: "94 663",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Untoothed Simple",
+        Attribute6: "Opposite",
+        Attribute7: "Roundedd",
+        Attribute8: "White",
+        Attribute9: "Capsule"
     }, relationships: {}
 },
 {
@@ -5025,7 +6359,7 @@ data: [
         DBH_inches: "20.5",
         TotalHeight_feet: "60",
         CrownNS_feet: "46",
-        CrownEW_feet: "36",
+        CrownEW_Feet: "36",
         LeafArea_Feet_Squared: "3866.93",
         LeafBiomass_Pounds: "76.32",
         CarbonStorage_Pounds: "671.97",
@@ -5058,7 +6392,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Reforestation, Food for wildlife",
         wood_hardness: "",
-        book_pages: "6 288"
+        book_pages: "6 288",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Needle Leaf Conifers",
+        Attribute6: "Alternate",
+        Attribute7: "Pyramid",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -5076,7 +6419,7 @@ data: [
         DBH_inches: "29.6",
         TotalHeight_feet: "60",
         CrownNS_feet: "60",
-        CrownEW_feet: "74",
+        CrownEW_Feet: "74",
         LeafArea_Feet_Squared: "13030.79",
         LeafBiomass_Pounds: "216.49",
         CarbonStorage_Pounds: "1690.92",
@@ -5109,7 +6452,16 @@ data: [
         PF_Primary: "Landscaping",
         Proformance_Feature: "Habitat for wildlife, Shade tree",
         wood_hardness: "690 lbf/3,100 N",
-        book_pages: "3 297"
+        book_pages: "3 297",
+        Attribute1: "TRUE",
+        Attribute2: "Landscaping",
+        Attribute3: "FALSE",
+        Attribute4: "Green",
+        Attribute5: "Needle Leaf Conifers",
+        Attribute6: "Alternate",
+        Attribute7: "Oval",
+        Attribute8: "Yellow",
+        Attribute9: "Cones"
     }, relationships: {}
 },
 {
@@ -5127,7 +6479,7 @@ data: [
         DBH_inches: "33.2",
         TotalHeight_feet: "58",
         CrownNS_feet: "67",
-        CrownEW_feet: "48",
+        CrownEW_Feet: "48",
         LeafArea_Feet_Squared: "7665.52",
         LeafBiomass_Pounds: "72.07",
         CarbonStorage_Pounds: "2038.06",
@@ -5160,7 +6512,16 @@ data: [
         PF_Primary: "Construction",
         Proformance_Feature: "Lumber, Produce resin",
         wood_hardness: "850 lbf",
-        book_pages: "266 509 594 624 453"
+        book_pages: "266 509 594 624 453",
+        Attribute1: "TRUE",
+        Attribute2: "Construction",
+        Attribute3: "FALSE",
+        Attribute4: "Red",
+        Attribute5: "Lobed Simple",
+        Attribute6: "Alternate",
+        Attribute7: "Conical",
+        Attribute8: "Green",
+        Attribute9: "Balls, Capsules, Tufted Fruit"
     }, relationships: {}
 }
 ]
@@ -5222,18 +6583,4 @@ data: [
             ]*/
 
         });
-        //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
-        initiateLocalstorage();
-        this.transitionTo('home');
-    }
-});
-
-function initiateLocalstorage() {
-    if (localStorage.initialized) {return;}
-    if (!localStorage.badgeOne) {localStorage.badgeOne = "false";}
-    if (!localStorage.badgeTwo) {localStorage.badgeTwo = "false";}
-    if (!localStorage.badgeThree) {localStorage.badgeThree = "false";}
-    if (!localStorage.treeOne) {localStorage.treeOne = "false";}
-    if (!localStorage.treeTwo) {localStorage.treeTwo = "false";}
-    localStorage.initialized === "true";
-    }
+}

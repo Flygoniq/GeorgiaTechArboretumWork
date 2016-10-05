@@ -2,8 +2,6 @@ import DS from 'ember-data';
 import attr from 'ember-data/attr';
 import { hasMany } from 'ember-data/relationships';
 
-//each tree contains many attributes.
-
 export default DS.Model.extend({
     
     Name:               attr('string'),

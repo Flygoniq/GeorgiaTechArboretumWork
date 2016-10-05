@@ -53,6 +53,15 @@ export default DS.Model.extend({
     Proformance_Feature:            attr('string'),
     wood_hardness:                  attr('string'),
     book_pages:                     attr('string'),
+    Attribute1:                     attr('string'),
+    Attribute2:                     attr('string'),
+    Attribute3:                     attr('string'),
+    Attribute4:                     attr('string'),
+    Attribute5:                     attr('string'),
+    Attribute6:                     attr('string'),
+    Attribute7:                     attr('string'),
+    Attribute8:                     attr('string'),
+    Attribute9:                     attr('string'),
     
     
     Tour:               belongsTo('tour'),

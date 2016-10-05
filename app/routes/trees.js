@@ -3,6 +3,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model() {
-        return this.store.findAll('tree');
+        return this.store.peekAll('tree');
     }
 });
