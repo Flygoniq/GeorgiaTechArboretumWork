@@ -18,32 +18,165 @@ export default Ember.Route.extend({
                     id: 1,
                     type: 'tour',
                     attributes: {
-                        Name: 'Hill Tour',
-                        Description: 'See the trees on the hill'
+                        Name: 'Tech Green Tour',
+                        Description: 'Tech Green has some of the largest trees on campus and has also undergone the most changes over the past 10 years.'
                     }
                 },
+                {
+                    id: 2,
+                    type: 'tour',
+                    attributes: {
+                        Name: 'The Hill Tour',
+                        Description: 'The landscape of the historic district, also known as The Hill, primarily uses a mixture of native and non-native species that are proven to survive in this region.'
+                    }
+                },
+                {
+                    id: 3,
+                    type: 'tour',
+                    attributes: {
+                        Name: 'Central Campus Tour',
+                        Description: 'Central Campus has a diverse plant palette including many native species indigenous to the Southeastern United States.'
+                    }
+                },
+                {
+                    id: 4,
+                    type: 'tour',
+                    attributes: {
+                        Name: 'Hemphill and IC Lawn Tour',
+                        Description: 'The Hemphill and IC Lawn area is home to the pilot woodland project; more than 795 saplings are tracked to see how long it takes a dense forest to grow.'
+                    }
+                }
+            ]
+        });
+                
+        this.store.push({
+                data: [
                 {
                     id: 1,
                     type: 'badge',
                     attributes: {
-                        Name: 'Ichiban',
-                        Summary: 'Visit the About Page'
+                        Name: 'King of the Hill',
+                        Summary: 'Completed the Hill Tour'
                     }
                 },
                 {
                     id: 2,
                     type: 'badge',
                     attributes: {
-                        Name: 'Segundo',
-                        Summary: 'View all the trees'
+                        Name: 'Stuck in the Middle',
+                        Summary: 'Completed the Central Campus Tour'
                     }
                 },
                 {
                     id: 3,
                     type: 'badge',
                     attributes: {
-                        Name: 'Third',
-                        Summary: 'View the White Oak'
+                        Name: 'Mowing the Lawn',
+                        Summary: 'Completed the Hemphill and IC Lawn Tour'
+                    }
+                },
+                {
+                    id: 4,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Gone Green',
+                        Summary: 'Completed the Tech Green Tour'
+                    }
+                },
+                {
+                    id: 5,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Hometree',
+                        Summary: 'Found the largest tree'
+                    }
+                },
+                {
+                    id: 6,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Reach for the Sky',
+                        Summary: 'Found the tallest tree'
+                    }
+                },
+                {
+                    id: 7,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Tree Hugger',
+                        Summary: 'Found the widest tree'
+                    }
+                },
+                {
+                    id: 8,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Seeking Shade',
+                        Summary: 'Found the tree with the most leaf area'
+                    }
+                },
+                {
+                    id: 9,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Get Heavy',
+                        Summary: 'Found the tree with the most leaf biomass'
+                    }
+                },
+                {
+                    id: 10,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'ITS OVER 9000',
+                        Summary: 'Collected all the trees with a gross carbon sequestration of over 9000 pounds'
+                    }
+                },
+                {
+                    id: 11,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Seeing Green',
+                        Summary: 'Found the tree with the most structural value'
+                    }
+                },
+                {
+                    id: 12,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Thirsty',
+                        Summary: 'Found the tree with the most avoided runoff'
+                    }
+                },
+                {
+                    id: 13,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Professor Oak',
+                        Summary: 'Collected all the oak trees'
+                    }
+                },
+                {
+                    id: 14,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Seedling',
+                        Summary: 'Collected your first tree'
+                    }
+                },
+                {
+                    id: 15,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Sapling',
+                        Summary: 'Collected 50 trees'
+                    }
+                },
+                {
+                    id: 16,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Grown Up',
+                        Summary: 'Collected 100 trees'
                     }
                 }
             ]

@@ -5,11 +5,16 @@
 <body>
 
 <h2>Tours</h2>
+    
 <ul>
     {{#each model as |tour|}}
-        <p>{{#link-to "tourdetails" tour}}{{tour.Name}}{{/link-to}}</p>
+    <p>
+        {{#link-to "tourdetails" tour}}
+        <button type="button" class="btn btn-lg btn-success btn-block">{{tour.Name}}</button>
+        {{/link-to}}
+    </p>
     {{else}}
-        No Tours Found riperoo
+        No Tours Found
     {{/each}}
 </ul>
 

@@ -498,6 +498,19 @@ cite {
 .text-center {
   text-align: center;
 }
+.treeimage{
+  text-align: center;
+  margin-top: -65px;
+}
+.treeimage img{
+    max-width: 100%;
+    height:auto;
+}
+.tourimage{
+    text-align: center;
+    margin-top: -30px;
+
+}
 .text-justify {
   text-align: justify;
 }
@@ -2360,13 +2373,28 @@ fieldset[disabled] .btn-link:focus {
 .btn-bar{
       display: block;
   width: 100%;
-  padding-left: 20;
-  padding-right: 0;
-  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 2em;
   text-align: left;
-  background-image: url("ListArrow.png") no-repeat ;
 }
 
+.btn-bar p{
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -10px;
+    left: 80px;
+}
+}
+.btn-bar img{
+    position: relative;
+    right: 0px;
+    top: 10px;
+    height: 50px;
+}
 .btn-bar + .btn-bar {
   margin-top: -3px;
     margin-bottom: -3px;
@@ -4395,6 +4423,13 @@ a.list-group-item.active > .badge,
 .jumbotron h1,
 .jumbotron .h1 {
     color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.jumbotron h2,
+.jumbotron .h2 {
+    text-align: center;
+    color: white;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4431,9 +4466,52 @@ a.list-group-item.active > .badge,
 .TextBox .h2 {
     text-align: center;
 }
+.TextBox h3,
+.TextBox .h3 {
+    text-align: left;
+}
 .TextBox p {
     text-align: left;
     padding-left: 20px;
+}
+.TextBoxDetail{
+    padding: 20px;
+    padding-top: 5px;
+    margin: 20px;
+    margin-top: -65px;
+    color: inherit;
+    background-color: #f0f0f0;
+}
+.TextBoxDetail h2,
+.TextBoxDetail .h2 {
+    text-align: center;
+}
+.TextBoxDetail h3,
+.TextBoxDetail .h3 {
+    text-align: left;
+}
+.TextBoxDetail p {
+    text-align: left;
+    padding-left: 20px;
+}
+.TreeTextBox{
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: -50px;
+    color: inherit;
+    background-color: #42aa19;
+}
+.TreeTextBox h2,
+.TreeTextBox .h2{
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+}
+.TreeTextBox p {
+    text-align: left;
+    padding-left: 40px;
+    font-style: italic
 }
 .thumbnail {
   display: block;
@@ -5812,4 +5890,23 @@ button.close {
     display: none !important;
   }
 }
-   
+.attributetable{
+    max-width: 100%;
+    height: auto;
+}
+.attributetable th{
+    max-width: 100%;
+}
+.attributetable td{
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    max-width: 100%;
+}
+.attibutetable td img{
+    text-align: center;
+    height: 100px;
+    max-width: 100%;
+    
+    
+}

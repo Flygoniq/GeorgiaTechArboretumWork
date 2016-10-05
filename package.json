@@ -21,6 +21,8 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
+    "ember-bootstrap": "0.10.0",
+    "ember-clean-tmp": "0.1.4",
     "ember-cli": "2.4.3",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
@@ -41,5 +43,9 @@
   },
   "ember-addon": {
     "configPath": "./config"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "rsvp": "^3.3.3"
   }
 }
