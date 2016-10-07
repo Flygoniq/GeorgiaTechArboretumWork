@@ -66,7 +66,6 @@ export default DS.Model.extend({
     
     Tour:               belongsTo('tour'),
     Badges:             hasMany('badge'),
-    Attributes:         hasMany('attribute')
   
 });
 

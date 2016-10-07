@@ -184,7 +184,6 @@ export default Ember.Route.extend({
         
         initializeTrees(Store);
         initializeAttributes(Store);
-        connectTreesAttributes(Store);
     
         
         //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
@@ -192,24 +191,6 @@ export default Ember.Route.extend({
         this.transitionTo('home');
     }
 });
-
-function connectTreesAttributes(Store) {
-    //i should be the number of trees, aka the largest ember ID for trees below.
-    var currentTree;
-    var a;
-    for (var i = 1; i <=  2; i++) {
-        currentTree = Store.peekRecord('tree', i);
-        //console.log("Line 69" + currentTree.get('Attributes'));
-        if (currentTree.get('Attribute1') === "TRUE") {
-            //console.log("We inner");
-            a = Store.peekRecord('attribute', 1);
-            currentTree.get('Attributes').pushObject(a);
-            //console.log("Line 69 " + currentTree.get('Attributes').objectAt(0).get('Name'));
-            //currentTree.save();
-        }
-    }
-    console.log("Line 78 " + Store.peekRecord('tree', 1).get('Attributes').objectAt(0).get('Name'));
-}
 
 function initiateLocalstorage() {
     if (localStorage.initialized) {return;}
@@ -335,7 +316,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Orange and Brown',
-                    Image_Path: '\\assets\\images\\icons\\Icon-.svg'
+                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
                 }
             },
             {
@@ -343,7 +324,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Yellow',
-                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
+                    Image_Path: '\\assets\\images\\icons\\Icon-yellowleafcolor.svg'
                 }
             },
             {

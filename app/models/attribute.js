@@ -10,6 +10,5 @@ export default DS.Model.extend({
     //Medium_Image_Path:  attr('string'),
     //Status:             attr('string'),
     
-    Trees:              hasMany('tree')
     
 });
