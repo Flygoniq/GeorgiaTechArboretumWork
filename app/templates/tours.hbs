@@ -1,30 +1,35 @@
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Tours</title>
 </head>
 
 <body>
 
-<h2>Tours</h2>
+    <div class="jumbotron">
+        <h1>Tours</h1>
+        <div class="row">
+            <div class="text-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    {{#link-to "badges"}}<button type="button" class="btn btn-success">Achievements</button>{{/link-to}}
+                    {{#link-to "home"}}<button type="button" class="btn btn-success">Home</button>{{/link-to}}
+                    {{#link-to "trees"}}<button type="button" class="btn btn-success">Trees</button>{{/link-to}}
+                </div>
+            </div>
+        </div>
+    </div>
     
-<ul>
     {{#each model as |tour|}}
-    <p>
         {{#link-to "tourdetails" tour}}
-        <button type="button" class="btn btn-lg btn-success btn-block">{{tour.Name}}</button>
+            <p><a class="btn btn-lg btn-success btn-block" role="button">{{tour.Name}}</a></p>
         {{/link-to}}
-    </p>
     {{else}}
         No Tours Found
     {{/each}}
-</ul>
-
-
-<div>
-<ul data-role="listview">
-    <li>{{#link-to "home"}}Home{{/link-to}}</li>
-    <li>{{#link-to "badges"}}Badges{{/link-to}}</li>
-</ul>    
-</div>
 
 
 </body>

@@ -9,7 +9,7 @@ export default DS.Model.extend({
     Name:               attr('string'),
     Summary:            attr('string'),
     //Description:        attr('string'),
-    //Full_Image_Path:    attr('string'),
+    Image_Path:    attr('string'),
     
     Trees:              hasMany('tree')
     

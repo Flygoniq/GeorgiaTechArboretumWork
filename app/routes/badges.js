@@ -14,11 +14,12 @@ export default Ember.Route.extend({
 });
 
 export default Ember.Route.extend({
-    model() {
+    store: Ember.inject.service(),
+    model: function() {
         /*
             In order to push actual badges in, make an array, pull the badges out of ember
             Data and into this array, then push the appropriate badge models in.
-        */
+        
         var badges = [];
         if (localStorage.badgeOne) {
             if (localStorage.badgeOne === "true") {
@@ -35,6 +36,8 @@ export default Ember.Route.extend({
                 badges.push("Badge Three");
             }
         }
-        return badges;
+        return badges;*/
+        
+        return this.store.peekAll('badge');
     }
 });

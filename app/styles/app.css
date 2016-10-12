@@ -6,6 +6,7 @@
     font-family: Roboto Slab;
     src: url(/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
 }
+/* please don't remove stuff above this */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: "Roboto", sans-serif , "Roboto Slab", serif;
@@ -508,7 +509,11 @@ cite {
 }
 .treeimage{
   text-align: center;
-    margin-top: -65px;
+  margin-top: -65px;
+}
+.treeimage img{
+    max-width: 100%;
+    height:auto;
 }
 .tourimage{
     text-align: center;
@@ -2377,13 +2382,28 @@ fieldset[disabled] .btn-link:focus {
 .btn-bar{
       display: block;
   width: 100%;
-  padding-left: 20;
-  padding-right: 0;
-  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 2em;
   text-align: left;
-  background-image: url("ListArrow.png") no-repeat ;
 }
 
+.btn-bar p{
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -10px;
+    left: 80px;
+}
+}
+.btn-bar img{
+    position: relative;
+    right: 0px;
+    top: 10px;
+    height: 50px;
+}
 .btn-bar + .btn-bar {
   margin-top: -3px;
     margin-bottom: -3px;
@@ -4412,6 +4432,8 @@ a.list-group-item.active > .badge,
 .jumbotron h1,
 .jumbotron .h1 {
     color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .jumbotron h2,
 .jumbotron .h2 {
@@ -5878,9 +5900,20 @@ button.close {
   }
 }
 .attributetable{
-    width: 100%;
+    max-width: 100%;
 }
-.attributetable.td{
+.attributetable th{
+    max-width: 100%;
+}
+.attributetable td{
     text-align: center
+    /*align-content: center;*/
     padding: 100px;
+    width: 100px;
+    max-width: 100%;
+}
+.attibutetable td img{
+    text-align: center;
+    width: 100px;
+    max-width: 100%;
 }
