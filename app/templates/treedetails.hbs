@@ -20,24 +20,24 @@
             <h2>{{model.CommonName}}<br>
             &#8195;<i>{{model.ScientificName}}</i></h2>
             
-        </div>    
+        </div>
         <div class="TextBox">  
             <h3>Attributes</h3>
             <table class="attributetable">
                 <tr>
-                    <td><img src={{choose-attribute model.Attribute1 store number="1"}}></td>
-                    <td><img src={{choose-attribute model.Attribute2 store number="2"}}></td> 
-                    <td><img src={{choose-attribute model.Attribute3 store number="3"}}></td>
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute1 store number="1" usage="1")}}<td><img src={{choose-attribute model.Attribute1 store number="1"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute2 store number="2" usage="1")}}<td><img src={{choose-attribute model.Attribute2 store number="2"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute3 store number="3" usage="1")}}<td><img src={{choose-attribute model.Attribute3 store number="3"}}></td>{{/link-to}}
                 </tr>
                 <tr>
-                    <td><img src={{choose-attribute model.Attribute4 store number="4"}}></td>
-                    <td><img src={{choose-attribute model.Attribute5 store number="5"}}></td> 
-                    <td><img src={{choose-attribute model.Attribute6 store number="6"}}></td>
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute4 store number="4" usage="1")}}<td><img src={{choose-attribute model.Attribute4 store number="4"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute5 store number="5" usage="1")}}<td><img src={{choose-attribute model.Attribute5 store number="5"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute6 store number="6" usage="1")}}<td><img src={{choose-attribute model.Attribute6 store number="6"}}></td>{{/link-to}}
                 </tr>
                 <tr>
-                    <td><img src={{choose-attribute model.Attribute7 store number="7"}}></td>
-                    <td><img src={{choose-attribute model.Attribute8 store number="8"}}></td>
-                    <td><img src={{choose-attribute model.Attribute9 store number="9"}}></td>
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute7 store number="7" usage="1")}}<td><img src={{choose-attribute model.Attribute7 store number="7"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute8 store number="8" usage="1")}}<td><img src={{choose-attribute model.Attribute8 store number="8"}}></td>{{/link-to}}
+                    {{#link-to "attributedetails" (choose-attribute model.Attribute9 store number="9" usage="1")}}<td><img src={{choose-attribute model.Attribute9 store number="9"}}></td>{{/link-to}}
                 </tr>
             </table>
             <h3 align="center">Origin: {{model.Country_of_Origin}}</h3>
@@ -52,89 +52,74 @@
                     <span style="font-size:50%">Tree Number</span>
                     <span style= "line-height=1000px">{{model.TreeNumber}} </span>
                 </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                {{#link-to "statdetails" 1}}<a class="btn btn-info btn-bar" role="button"> 
                     <img src="\assets\images\icons\Icon-treecondition.svg" height="50" width="50">
                     <span style="font-size:50%">Tree Condition</span>
                     <span style= "line-height=1000px">{{model.TreeCondition}}</span> 
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 2}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-dbh.svg" height="50" width="50">
                     <span style="font-size:50%">Diameter at Breast Height</span>
                     <span style= "line-height=1000px">{{model.DBH_inches}}</span> 
                     <span style="font-size:50%">in</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button">   
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 3}}<a class="btn btn-info btn-bar" href="#" role="button">   
                     <img src="\assets\images\icons\Icon-totalheight.svg" height="50" width="50">
                     <span style="font-size:50%">Total Height</span>
                     <span style= "line-height=1000px">{{model.TotalHeight_feet}}</span>
                     <span style="font-size:50%">ft</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 4}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-crownns.svg" height="50" width="50">
                     <span style="font-size:50%">Crown Width N-S</span>
                     <span style= "line-height=1000px">{{model.CrownNS_feet}}</span>
                     <span style="font-size:50%">ft</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 5}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-crownew.svg" height="50" width="50">
                     <span style="font-size:50%">Crown Width E-W</span>
                     <span style= "line-height=1000px">{{model.CrownEW_feet}}</span>
                     <span style="font-size:50%">ft</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 6}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-leafarea.svg" height="50" width="50">
                     <span style="font-size:50%">Leaf Area</span>
                     <span style= "line-height=1000px">{{model.LeafArea_Feet_Squared}}</span>
                     <span style="font-size:50%">sqft</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 7}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-leafbiomass.svg" height="50" width="50">
                     <span style="font-size:50%">Leaf BioMass</span>
                     <span style= "line-height=1000px">{{model.LeafBiomass_Pounds}}</span>
                     <span style="font-size:50%">lbs</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 8}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-carbonstorage.svg" height="50" width="50">
                     <span style="font-size:50%">Carbon Storage</span>
                     <span style= "line-height=1000px">{{model.CarbonStorage_Pounds}}</span> 
                     <span style="font-size:50%">lbs</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 9}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-grosscarbon.svg" height="50" width="50">
                     <span style="font-size:50%">Gross Carbon Sequestration</span>
                     <span style= "line-height=1000px">{{model.GrossCarbonSequestration_Pounds_per_Year}}</span>
                     <span style="font-size:50%">lbs/yr</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 10}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-treevalue.svg" height="50" width="50">
                     <span style="font-size:50%">Structural Tree Value</span>
                     <span style= "line-height=1000px">{{model.StruturalTreeValue_Dollars}}</span>
                     <span style="font-size:50%">dollars</span>
-                </a>
-                <a class="btn btn-info btn-bar" href="#" role="button"> 
+                </a>{{/link-to}}
+                {{#link-to "statdetails" 11}}<a class="btn btn-info btn-bar" href="#" role="button"> 
                     <img src="\assets\images\icons\Icon-avoidedwaterrunnoff.svg" height="50" width="50">
                     <span style="font-size:50%">Avoided Water Runnoff</span>
                     <span style= "line-height=1000px">{{model.AvoidedWaterRunnoff_Feet_Cubed_per_Year}}</span>
                     <span style="font-size:50%">cuft</span>
-                </a>
+                </a>{{/link-to}}
             </p>
         </div>
     </div>
 </body>
-
-
-<!-- <img height="42" width="42" src={{model.TreeImage}}>
-<ul>
-    <li>{{model.CommonName}}</li>
-    <li>{{model.Description}}</li>
-</ul>
-
-<nav>
-<ul data-role="listview">
-    <li>{{#link-to "home"}}Home{{/link-to}}</li>
-    <li>{{#link-to "trees"}}Tree Collection{{/link-to}}</li>
-    <li>{{#link-to "badges"}}Badges{{/link-to}}</li>
-</ul>
-</nav> -->
 
 {{outlet}}

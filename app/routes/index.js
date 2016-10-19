@@ -50,7 +50,7 @@ export default Ember.Route.extend({
         });
                 
         this.store.push({
-                data: [
+            data: [
                 {
                     id: 1,
                     type: 'badge',
@@ -198,6 +198,171 @@ export default Ember.Route.extend({
             ]
         });
         
+        this.store.push({
+            data: [
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Tree Condition',
+                        Description: 'The smaller the % the more deado this tree is',
+                    }
+                },
+                {
+                    id: 2,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Diameter at Breast Height',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 3,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Total Height',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 4,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Crown Width N-S',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 5,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Crown Width E-W',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 6,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Leaf Area',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 7,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Leaf Biomass',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 8,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Carbon Storage',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 9,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Gross Carbon Sequestration',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 10,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Structural Tree Value',
+                        Description: 'this is a description',
+                    }
+                },
+                {
+                    id: 11,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Avoided Water Runoff',
+                        Description: 'this is a description',
+                    }
+                }/*,
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },
+                {
+                    id: 1,
+                    type: 'statistic',
+                    attributes: {
+                        Name: '',
+                        Description: '',
+                    }
+                },*/
+            ]
+        });
+        
         initializeTrees(Store);
         initializeAttributes(Store);
     
@@ -228,6 +393,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Georgia Local',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-galocal.svg'
                 }
             },
@@ -236,6 +402,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Bee Tree',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-beetree.svg'
                 }
             },
@@ -244,6 +411,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Medicine',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-medicine.svg'
                 }
             },
@@ -252,6 +420,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Landscaping',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-landscaping.svg'
                 }
             },
@@ -260,6 +429,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Furniture',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-furniture.svg'
                 }
             },
@@ -268,6 +438,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Construction',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-construction.svg'
                 }
             },
@@ -276,6 +447,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Transportation',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-transportation.svg'
                 }
             },
@@ -284,6 +456,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Barrels',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-barrel.svg'
                 }
             },
@@ -292,6 +465,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Music',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-instrument.svg'
                 }
             },
@@ -300,6 +474,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Tools',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-tools.svg'
                 }
             },
@@ -308,6 +483,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Sports',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-sports.svg'
                 }
             },
@@ -316,6 +492,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Food',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-food.svg'
                 }
             },
@@ -324,6 +501,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Red',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-redleafcolor.svg'
                 }
             },
@@ -332,6 +510,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Orange and Brown',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
                 }
             },
@@ -340,6 +519,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Yellow',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-yellowleafcolor.svg'
                 }
             },
@@ -348,6 +528,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Copper',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-copperleafcolor.svg'
                 }
             },
@@ -356,6 +537,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fall Green',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-greenleafcolor.svg'
                 }
             },
@@ -364,6 +546,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Needle Leaf Conifers',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-needleleafconifer.svg'
                 }
             },
@@ -372,6 +555,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Scale Leaf Conifers',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-scaleleafconifer.svg'
                 }
             },
@@ -380,6 +564,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Untoothed Simple',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-untoothedsimpleleaf.svg'
                 }
             },
@@ -388,6 +573,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Toothed Simple',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-toothedsimpleleaf.svg'
                 }
             },
@@ -396,6 +582,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Lobed Simple',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-lobedsimpleleaf.svg'
                 }
             },
@@ -404,6 +591,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Compound',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-compoundleaf.svg'
                 }
             },
@@ -412,6 +600,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Yucca & Palmetto',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-yuccaleaf.svg'
                 }
             },
@@ -420,6 +609,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Alternate',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-alternate.svg'
                 }
             },
@@ -428,6 +618,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Opposite',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-opposite.svg'
                 }
             },
@@ -436,6 +627,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Whorled',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-whorled.svg'
                 }
             },
@@ -444,6 +636,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Pyramidal',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-pyramidal.svg'
                 }
             },
@@ -452,6 +645,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Conical',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-conical.svg'
                 }
             },
@@ -460,6 +654,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Columnar',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-columnar.svg'
                 }
             },
@@ -468,6 +663,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Spreading',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-spreading.svg'
                 }
             },
@@ -476,6 +672,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Vase Shaped',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-vaseshape.svg'
                 }
             },
@@ -484,6 +681,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Broad',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-broad.svg'
                 }
             },
@@ -492,6 +690,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Rounded',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-rounded.svg'
                 }
             },
@@ -500,6 +699,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Red',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-redflowercolor.svg'
                 }
             },
@@ -508,6 +708,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Green',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-greenflowercolor.svg'
                 }
             },
@@ -516,6 +717,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Yellow',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-yellowflowercolor.svg'
                 }
             },
@@ -524,6 +726,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Cream',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-creamflowercolor.svg'
                 }
             },
@@ -532,6 +735,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower White',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-whiteflowercolor.svg'
                 }
             },
@@ -540,6 +744,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Pink',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-pinkflowercolor.svg'
                 }
             },
@@ -548,6 +753,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Purple',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-purpleflowercolor.svg'
                 }
             },
@@ -556,6 +762,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Flower Brown',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-brownflowercolor.svg'
                 }
             },
@@ -564,6 +771,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Pods',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-pods.svg'
                 }
             },
@@ -572,6 +780,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Balls, Capsules, Tufted Fruit',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
                 }
             },
@@ -580,6 +789,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Acorns',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-acorns.svg'
                 }
             },
@@ -588,6 +798,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Nuts',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-nuts.svg'
                 }
             },
@@ -596,6 +807,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Berrylike fruit',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
                 }
             },
@@ -604,6 +816,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Fleshy Fruit',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
                 }
             },
@@ -612,6 +825,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Capsules',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
                 }
             },
@@ -620,6 +834,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Conelike',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-cone.svg'
                 }
             },
@@ -628,6 +843,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Drupes',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
                 }
             },
@@ -636,6 +852,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Plum',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
                 }
             },
@@ -644,6 +861,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Berries',
+                    Description: 'This is a description',
                     Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
                 }
             }
