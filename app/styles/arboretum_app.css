@@ -39,7 +39,6 @@
 .attribute.flowerpink { background: url(/assets/images/icons/Icon-pinkflowercolor.svg); }
 .attribute.flowerpurple { background: url(/assets/images/icons/Icon-purpleflowercolor.svg); }
 .attribute.flowerlightgreen { background: url(/assets/images/icons/Icon-lightgreenflowercolor.svg); }
-.attribute.flowercopper { background: url(/assets/images/icons/Icon-copperleafcolor.svg); }
 
 .attribute.cone { background: url(/assets/images/icons/Icon-cone.svg); }
 .attribute.key { background: url(/assets/images/icons/Icon-keys.svg); }
@@ -55,6 +54,7 @@
 .attribute.fallyellow { background: url(/assets/images/icons/Icon-yellowleafcolor.svg); }
 .attribute.fallbrown { background: url(/assets/images/icons/Icon-brownleafcolor.svg); }
 .attribute.fallgreen { background: url(/assets/images/icons/Icon-greenleafcolor.svg); }
+.attribute.fallcopper { background: url(/assets/images/icons/Icon-copperleafcolor.svg); }
 
 .attribute.achievement1 { background: url(/assets/images/icons/Icon-achievement1.svg); }
 .attribute.achievement2 { background: url(/assets/images/icons/Icon-achievement2.svg); }
