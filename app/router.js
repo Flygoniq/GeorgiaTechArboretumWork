@@ -12,7 +12,7 @@ Router.map(function() {
   this.route('treedetails', {path: '/treedetails/:tree_id'});
   this.route('badges');
   this.route('badgedetails', {path: '/badgedetails/:badge_id'});
-  this.route('options');
+  this.route('settings');
   this.route('tours');
   this.route('tourdetails', {path: '/tourdetails/:tour_id'});
   this.route('about');

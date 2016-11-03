@@ -5,9 +5,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Badges</title>
+    <title>Settings</title>
 </head>
-
 
 <body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
 
@@ -17,29 +16,18 @@
             <li role="presentation">{{#link-to "home"}}Home{{/link-to}}</li>
             <li role="presentation">{{#link-to "tours"}}Tours{{/link-to}}</li>
             <li role="presentation">{{#link-to "trees"}}Trees{{/link-to}}</li>
-            <li role="presentation" class="active">{{#link-to "badges"}}Badges{{/link-to}}</li>
+            <li role="presentation">{{#link-to "badges"}}Badges{{/link-to}}</li>
             <li role="presentation">{{#link-to "about"}}About{{/link-to}}</li>
-            <li role="presentation">{{#link-to "settings"}}Settings{{/link-to}}</li>
+            <li role="presentation" class="active">{{#link-to "settings"}}Settings{{/link-to}}</li>
           </ul>
         </nav>
     </div>
 
     <div class="jumbotron">
-        <h1>Badges</h1>
+        <h1>Georgia Tech Arboretum</h1>
     </div>
-
-    {{#each model as |badge|}}
-        {{#link-to "badgedetails" badge}}
-            <a class="btn btn-info btn-bar" role="button">
-                <img src={{badge.Image_Path}} height="50" width="50">
-                {{badge.Name}}
-                <p>{{badge.Summary}}</p>
-            </a>
-        {{/link-to}}
-    {{else}}
-        No Badges
-    {{/each}}
+    
+<h2>There are currently no options for additional configuration.</h2>
 
 </body>
-
 {{outlet}}

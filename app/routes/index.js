@@ -57,7 +57,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'King of the Hill',
                         Summary: 'Completed the Hill Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement1.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge1.svg'
                     }
                 },
                 {
@@ -66,7 +66,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Stuck in the Middle',
                         Summary: 'Completed the Central Campus Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement2.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge2.svg'
                     }
                 },
                 {
@@ -75,7 +75,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Mowing the Lawn',
                         Summary: 'Completed the Hemphill and IC Lawn Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement3.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge3.svg'
                     }
                 },
                 {
@@ -84,7 +84,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Gone Green',
                         Summary: 'Completed the Tech Green Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement4.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge4.svg'
                     }
                 },
                 {
@@ -93,7 +93,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Hometree',
                         Summary: 'Found the largest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement5.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge5.svg'
                     }
                 },
                 {
@@ -102,7 +102,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Reach for the Sky',
                         Summary: 'Found the tallest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement6.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge6.svg'
                     }
                 },
                 {
@@ -111,7 +111,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Tree Hugger',
                         Summary: 'Found the widest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement7.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge7.svg'
                     }
                 },
                 {
@@ -120,7 +120,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeking Shade',
                         Summary: 'Found the tree with the most leaf area',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement8.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge8.svg'
                     }
                 },
                 {
@@ -129,7 +129,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Get Heavy',
                         Summary: 'Found the tree with the most leaf biomass',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement9.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge9.svg'
                     }
                 },
                 {
@@ -138,7 +138,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'ITS OVER 9000',
                         Summary: 'Collected all the trees with a gross carbon sequestration of over 9000 pounds',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement10.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge10.svg'
                     }
                 },
                 {
@@ -147,7 +147,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeing Green',
                         Summary: 'Found the tree with the most structural value',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement11.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge11.svg'
                     }
                 },
                 {
@@ -156,7 +156,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Thirsty',
                         Summary: 'Found the tree with the most avoided runoff',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement12.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge12.svg'
                     }
                 },
                 {
@@ -165,7 +165,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Professor Oak',
                         Summary: 'Collected all the oak trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement13.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge13.svg'
                     }
                 },
                 {
@@ -174,7 +174,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seedling',
                         Summary: 'Collected your first tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement14.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge14.svg'
                     }
                 },
                 {
@@ -183,7 +183,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Sapling',
                         Summary: 'Collected 50 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement15.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge15.svg'
                     }
                 },
                 {
@@ -192,7 +192,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Grown Up',
                         Summary: 'Collected 100 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement16.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge16.svg'
                     }
                 }
             ]
