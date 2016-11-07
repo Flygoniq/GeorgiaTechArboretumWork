@@ -57,7 +57,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'King of the Hill',
                         Summary: 'Completed the Hill Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement1.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge1.svg'
                     }
                 },
                 {
@@ -66,7 +66,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Stuck in the Middle',
                         Summary: 'Completed the Central Campus Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement2.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge2.svg'
                     }
                 },
                 {
@@ -75,7 +75,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Mowing the Lawn',
                         Summary: 'Completed the Hemphill and IC Lawn Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement3.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge3.svg'
                     }
                 },
                 {
@@ -84,7 +84,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Gone Green',
                         Summary: 'Completed the Tech Green Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement4.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge4.svg'
                     }
                 },
                 {
@@ -93,7 +93,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Hometree',
                         Summary: 'Found the largest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement5.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge5.svg'
                     }
                 },
                 {
@@ -102,7 +102,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Reach for the Sky',
                         Summary: 'Found the tallest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement6.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge6.svg'
                     }
                 },
                 {
@@ -111,7 +111,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Tree Hugger',
                         Summary: 'Found the widest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement7.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge7.svg'
                     }
                 },
                 {
@@ -120,7 +120,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeking Shade',
                         Summary: 'Found the tree with the most leaf area',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement8.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge8.svg'
                     }
                 },
                 {
@@ -129,7 +129,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Get Heavy',
                         Summary: 'Found the tree with the most leaf biomass',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement9.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge9.svg'
                     }
                 },
                 {
@@ -138,7 +138,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'ITS OVER 9000',
                         Summary: 'Collected all the trees with a gross carbon sequestration of over 9000 pounds',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement10.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge10.svg'
                     }
                 },
                 {
@@ -147,7 +147,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeing Green',
                         Summary: 'Found the tree with the most structural value',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement11.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge11.svg'
                     }
                 },
                 {
@@ -156,7 +156,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Thirsty',
                         Summary: 'Found the tree with the most avoided runoff',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement12.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge12.svg'
                     }
                 },
                 {
@@ -165,7 +165,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Professor Oak',
                         Summary: 'Collected all the oak trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement13.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge13.svg'
                     }
                 },
                 {
@@ -174,7 +174,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seedling',
                         Summary: 'Collected your first tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement14.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge14.svg'
                     }
                 },
                 {
@@ -183,7 +183,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Sapling',
                         Summary: 'Collected 50 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement15.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge15.svg'
                     }
                 },
                 {
@@ -192,7 +192,133 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Grown Up',
                         Summary: 'Collected 100 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-achievement16.svg'
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge16.svg'
+                    }
+                },
+                    {
+                    id: 17,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'You’ve Sent Mail',
+                        Summary: 'shared that you completed a tour',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge17.svg'
+                    }
+                },
+                                    {
+                    id: 18,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Marathon',
+                        Summary: 'completed all 4 tours in a single day',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge18.svg'
+                    }
+                },
+                                    {
+                    id: 19,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Hardwood',
+                        Summary: 'find the persian ironwood',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge19.svg'
+                    }
+                },
+                                    {
+                    id: 20,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Nothing Rhymes with Orange',
+                        Summary: 'find the oasage orange',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge20.svg'
+                    }
+                },
+                                    {
+                    id: 21,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'The Last Samurai',
+                        Summary: 'find the ginko',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge21.svg'
+                    }
+                },
+                                    {
+                    id: 22,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Syrup',
+                        Summary: 'find all the maple trees',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge22.svg'
+                    }
+                },
+                                    {
+                    id: 23,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Don’t Tell George',
+                        Summary: 'find all the cherry trees',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge23.svg'
+                    }
+                },
+                                    {
+                    id: 24,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Freddy Would be Proud',
+                        Summary: 'find all the elm tree',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge24.svg'
+                    }
+                },
+                                    {
+                    id: 25,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Real Steel',
+                        Summary: 'collect all the magnolia trees',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge25.svg'
+                    }
+                },
+                                    {
+                    id: 26,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Stay Green',
+                        Summary: 'collect all the coniferous',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge26.svg'
+                    }
+                },
+                                    {
+                    id: 27,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Get Naked',
+                        Summary: 'collect all the deciduous',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge27.svg'
+                    }
+                },
+                                    {
+                    id: 28,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'One Down',
+                        Summary: 'complete your first tour',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge28.svg'
+                    }
+                },
+                                    {
+                    id: 29,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Going Native',
+                        Summary: 'collect all the native GA trees',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge29.svg'
+                    }
+                },
+                                    {
+                    id: 30,
+                    type: 'badge',
+                    attributes: {
+                        Name: 'Bees?',
+                        Summary: 'collect all the bee trees',
+                        Image_Path: '\\assets\\images\\icons\\Icon-badge30.svg'
                     }
                 }
             ]
@@ -205,7 +331,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Tree Condition',
-                        Description: 'The smaller the % the more deado this tree is',
+                        Description: 'The health and structure of each tree based on visible root, trunk, scaffold branch, twig, and foliage conditions at the time of the inventory and adapted from the rating system established by the International Society of Arboriculture and based on visible root, trunk, scaffold branch, twig, and foliage conditions. Excellent - 100% of condition rating. Very Good - 90% of condition rating. Good - 80% of condition rating. Fair - 60% of condition rating. Poor - 40% of condition rating. Dead - 0% of condition rating.',
                     }
                 },
                 {
@@ -213,7 +339,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Diameter at Breast Height',
-                        Description: 'this is a description',
+                        Description: 'The diameter of the tree measured at 4-1/2 feet above the ground.',
                     }
                 },
                 {
@@ -221,7 +347,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Total Height',
-                        Description: 'this is a description',
+                        Description: 'The measure of the height to the top (alive or dead) of the tree. For standing dead trees, downed living trees, or severely leaning trees, the height is considered the distance along the main stem from ground to tree top. The height of a tree is measured in 1-foot increments.',
                     }
                 },
                 {
@@ -229,7 +355,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Crown Width N-S',
-                        Description: 'this is a description',
+                        Description: 'The crown width is the measure of the portion of the tree consisting of branches and leaves. The crown is measured to the nearest foot in the north south direction or as safety considerations or physical obstructions allow. If tree is downed or leaning, the width measurements are taken perpendicular to the tree bole.',
                     }
                 },
                 {
@@ -237,7 +363,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Crown Width E-W',
-                        Description: 'this is a description',
+                        Description: 'The crown width is the measure of the portion of the tree consisting of branches and leaves. The crown is measured to the nearest foot in the east west direction or as safety considerations or physical obstructions allow. If tree is downed or leaning, the width measurements are taken perpendicular to the tree bole.',
                     }
                 },
                 {
@@ -245,7 +371,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Leaf Area',
-                        Description: 'this is a description',
+                        Description: 'The estimated amount of leaf surface area in a tree measured in square feet. Leaf area provides most of the environmental services. The greater the leaf area a tree has the greater the shade that is provided, the greater the carbon that is sequestered, the greater the amount air pollution that is removed, and the greater the amount of storm-water that is intercepted.',
                     }
                 },
                 {
@@ -253,7 +379,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Leaf Biomass',
-                        Description: 'this is a description',
+                        Description: 'The mass (or weight) of the leaves of the tree measured in pounds.',
                     }
                 },
                 {
@@ -261,7 +387,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Carbon Storage',
-                        Description: 'this is a description',
+                        Description: ' The amount of carbon bound up in the above-ground and below-ground parts of tree measured in lbs. Carbon storage is an indication of the amount of carbon that can be lost if trees are allowed to die and decompose. Through the process of photosynthesis, trees remove carbon dioxide from the atmosphere and store the carbon in their wood and leaves throughout their lives.',
                     }
                 },
                 {
@@ -269,7 +395,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Gross Carbon Sequestration',
-                        Description: 'this is a description',
+                        Description: 'The amount of carbon dioxide that the tree removes from the atmosphere each year.',
                     }
                 },
                 {
@@ -277,7 +403,7 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Structural Tree Value',
-                        Description: 'this is a description',
+                        Description: 'The cost of replacing the tree with the same or a similar tree. This is the physical cost of the tree.',
                     }
                 },
                 {
@@ -285,7 +411,15 @@ export default Ember.Route.extend({
                     type: 'statistic',
                     attributes: {
                         Name: 'Avoided Water Runoff',
-                        Description: 'this is a description',
+                        Description: 'The amount of rain fall runoff intercepted by the tree that would have otherwise been discharged into storm drains.',
+                    }
+                },
+                {
+                    id: 12,
+                    type: 'statistic',
+                    attributes: {
+                        Name: 'Tree Number',
+                        Description: 'The unique identification number assigned to each tree on the Georgia Tech campus.',
                     }
                 }/*,
                 {
@@ -393,7 +527,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Georgia Local',
-                    Description: 'This is a description',
+                    Description: 'Trees that are native to Georgia, USA',
                     Image_Path: '\\assets\\images\\icons\\Icon-galocal.svg'
                 }
             },
@@ -402,7 +536,7 @@ function initializeAttributes(Store) {
                 type: 'attribute',
                 attributes: {
                     Name: 'Bee Tree',
-                    Description: 'This is a description',
+                    Description: 'Trees that attract bees for nectar or pollen',
                     Image_Path: '\\assets\\images\\icons\\Icon-beetree.svg'
                 }
             },
@@ -410,459 +544,595 @@ function initializeAttributes(Store) {
                 id: 3,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Medicine',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-medicine.svg'
+                    Name: 'Coniferous',
+                    Description: 'Trees that are usually evergreen, having narrow, needlelike or scale-like leaves, and bear exposed seeds, usually in cones.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-coniferous.svg'
                 }
             },
             {
                 id: 4,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Landscaping',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-landscaping.svg'
+                    Name: 'Decidous Tree',
+                    Description: 'Trees that shed or lose foliage at the end of the growing season.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-decidouus.svg'
                 }
             },
             {
                 id: 5,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Furniture',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-furniture.svg'
+                    Name: 'Pyramidal Shaped Tree',
+                    Description: 'Trees that have pyramid shaped crowns.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pyramidal.svg'
                 }
             },
             {
                 id: 6,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Construction',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-construction.svg'
+                    Name: 'Conical Shaped Tree',
+                    Description: 'Trees that have cone shaped crowns.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-conical.svg'
                 }
             },
             {
                 id: 7,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Transportation',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-transportation.svg'
+                    Name: 'Columnar Shaped Tree',
+                    Description: 'Trees that have tall, narrow, and somewhat cylindrical shaped crowns.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-columnar.svg'
                 }
             },
             {
                 id: 8,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Barrels',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-barrel.svg'
+                    Name: 'Spreading Shaped Tree',
+                    Description: 'Trees that have open and irregular shaped crowns that are wider than their tall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-spreading.svg'
                 }
             },
             {
                 id: 9,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Music',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-instrument.svg'
+                    Name: 'Vase Shaped Tree',
+                    Description: 'Trees that have upside-down triangle shaped crowns.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-vaseshape.svg'
                 }
             },
             {
                 id: 10,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Tools',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-tools.svg'
+                    Name: 'Broad Shaped Tree',
+                    Description: 'Trees that have wider crown than the average crown spread.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-broad.svg'
                 }
             },
             {
                 id: 11,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Sports',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-sports.svg'
+                    Name: 'Rounded Shaped Tree',
+                    Description: 'Trees that have rounded shaped crowns.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-rounded.svg'
                 }
             },
             {
                 id: 12,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Food',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-food.svg'
+                    Name: 'Alternate Leaf Position',
+                    Description: 'Leaves attach singly at different levels on the stem.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-alternate.svg'
                 }
             },
             {
                 id: 13,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fall Red',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-redleafcolor.svg'
+                    Name: 'Opposite Leaf Position',
+                    Description: 'Leaves attach at the same level in pairs on the stem.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-opposite.svg'
                 }
             },
             {
                 id: 14,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fall Orange and Brown',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
+                    Name: 'Whorled Leaf Position',
+                    Description: 'Three or more leaves attach at one level in a ring on the stem.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-whorled.svg'
                 }
             },
             {
                 id: 15,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fall Yellow',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yellowleafcolor.svg'
+                    Name: 'Needle Shaped Leaf',
+                    Description: 'Leaves that are needlelike.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-needleleafconifer.svg'
                 }
             },
             {
                 id: 16,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fall Copper',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-copperleafcolor.svg'
+                    Name: 'Scale Shaped Leaf',
+                    Description: 'Small modified leaves with the form of scales.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-scaleleafconifer.svg'
                 }
             },
             {
                 id: 17,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fall Green',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-greenleafcolor.svg'
+                    Name: 'Untoothed Shaped Leaf',
+                    Description: 'Leaves with smooth margins.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-untoothedsimpleleaf.svg'
                 }
             },
             {
                 id: 18,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Needle Leaf Conifers',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-needleleafconifer.svg'
+                    Name: 'Toothed Shaped Leaf',
+                    Description: 'Leaves with teeth along the margins.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-toothedsimpleleaf.svg'
                 }
             },
             {
                 id: 19,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Scale Leaf Conifers',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-scaleleafconifer.svg'
+                    Name: 'Yucca Shaped Leaf',
+                    Description: 'Clustered long, narrow, and bayonetlike evergreen leaves.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-yucca.svg'
                 }
             },
             {
                 id: 20,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Untoothed Simple',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-untoothedsimpleleaf.svg'
+                    Name: 'Compound Shaped Leaf',
+                    Description: 'Leaves composed of 3 or more small leaflets.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-compoundleaf.svg'
                 }
             },
             {
                 id: 21,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Toothed Simple',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-toothedsimpleleaf.svg'
+                    Name: 'Lobed Shaped Leaf',
+                    Description: 'Leaves with margins that are shallowly or deeply cut into narrow or broad lobes.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-lobedsimpleleaf.svg'
                 }
             },
             {
                 id: 22,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Lobed Simple',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-lobedsimpleleaf.svg'
+                    Name: 'Red Flower Color',
+                    Description: 'Flowers that are red during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-redflowercolor.svg'
                 }
             },
             {
                 id: 23,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Compound',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-compoundleaf.svg'
+                    Name: 'Green Flower Color',
+                    Description: 'Flowers that are green during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-greenflowercolor.svg'
                 }
             },
             {
                 id: 24,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Yucca & Palmetto',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yuccaleaf.svg'
+                    Name: 'Brown Flower Color',
+                    Description: 'Flowers that are brown during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-brownflowercolor.svg'
                 }
             },
             {
                 id: 25,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Alternate',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-alternate.svg'
+                    Name: 'Yellow Flower Color',
+                    Description: 'Flowers that are yellow during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-yellowflowercolor.svg'
                 }
             },
             {
                 id: 26,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Opposite',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-opposite.svg'
+                    Name: 'Cream Flower Color',
+                    Description: 'Flowers that are yellowish white cream color during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-creamflowercolor.svg'
                 }
             },
             {
                 id: 27,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Whorled',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-whorled.svg'
+                    Name: 'White Flower Color',
+                    Description: 'Flowers that are white during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-whiteflowercolor.svg'
                 }
             },
             {
                 id: 28,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Pyramidal',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pyramidal.svg'
+                    Name: 'Pink Flower Color',
+                    Description: 'Flowers that are pink during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pinkflowercolor.svg'
                 }
             },
             {
                 id: 29,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Conical',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-conical.svg'
+                    Name: 'Purple Flower Color',
+                    Description: 'Flowers that are purple during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-purpleflowercolor.svg'
                 }
             },
             {
                 id: 30,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Columnar',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-columnar.svg'
+                    Name: 'Light Green Flower Color',
+                    Description: 'Flowers that are light green during blossoms.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-lightgreenflowercolor.svg'
                 }
             },
             {
                 id: 31,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Spreading',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-spreading.svg'
+                    Name: 'Cone FruitCone Type',
+                    Description: 'The dry fruits of conifers, briches, and alders. Typically tapering to a rounded end with a array of overlapping scales.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-cone.svg'
                 }
             },
             {
                 id: 32,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Vase Shaped',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-vaseshape.svg'
+                    Name: 'Keys FruitCone Type',
+                    Description: 'Also called samara. The dry winged fruits of maples, elms, ashes, Ailanthus, and the Common Hoptree.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-keys.svg'
                 }
             },
             {
                 id: 33,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Broad',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-broad.svg'
+                    Name: 'Pods FruitCone Type',
+                    Description: 'The elongated seed vessel of trees in the legume family.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-pods.svg'
                 }
             },
             {
                 id: 34,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Rounded',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-rounded.svg'
+                    Name: 'Ball FruitCone Type',
+                    Description: 'The fruits of Sweetgum, Cottonwoods, Sourwood, Sycamore, and Eastern Baccharis. Typically rounded looking.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
                 }
             },
             {
                 id: 35,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Red',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-redflowercolor.svg'
+                    Name: 'Acorn FruitCone Type',
+                    Description: 'The fruits of oaks. Typically with oval shells and cuplike bases.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-acorn.svg'
                 }
             },
             {
                 id: 36,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Green',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-greenflowercolor.svg'
+                    Name: 'Nuts FruitCone Type',
+                    Description: 'The fruits of hickorie, beeches, walnuts, buckeyes, and schestnuts . Consisting of hard shells around edible kernels.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-nuts.svg'
                 }
             },
             {
                 id: 37,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Yellow',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yellowflowercolor.svg'
+                    Name: 'Berrylike FruitCone Type',
+                    Description: 'Small fleshy fruits without a stone.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
                 }
             },
             {
                 id: 38,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Cream',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-creamflowercolor.svg'
+                    Name: 'Fleshy Fruit FruitCone Type',
+                    Description: 'Fruits with edible flesh between seeds and skin.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
                 }
             },
             {
                 id: 39,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower White',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-whiteflowercolor.svg'
+                    Name: 'Red Fall Leaf Color',
+                    Description: 'Tree foliage turns red during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-redleafcolor.svg'
                 }
             },
             {
                 id: 40,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Pink',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pinkflowercolor.svg'
+                    Name: 'Orange Fall Leaf Color',
+                    Description: 'Tree foliage turns orange during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
                 }
             },
             {
                 id: 41,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Purple',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-purpleflowercolor.svg'
+                    Name: 'Yellow Fall Leaf Color',
+                    Description: 'Tree foliage turns yellow during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-yellowleafcolor.svg'
                 }
             },
             {
                 id: 42,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Flower Brown',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-brownflowercolor.svg'
+                    Name: 'Brown Fall Leaf Color',
+                    Description: 'Tree foliage turns brown during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-brownleafcolor.svg'
                 }
             },
             {
                 id: 43,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Pods',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pods.svg'
+                    Name: 'Green Fall Leaf Color',
+                    Description: 'Tree foliage turns green during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-greenleafcolor.svg'
                 }
             },
             {
                 id: 44,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Balls, Capsules, Tufted Fruit',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
+                    Name: 'Copper Fall Leaf Color',
+                    Description: 'Tree foliage turns copper during fall.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-copperleafcolor.svg'
                 }
             },
             {
                 id: 45,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Acorns',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-acorns.svg'
+                    Name: 'Medicine Performance Characteristic',
+                    Description: 'The tree can be used for making medicines.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-medicine.svg'
                 }
             },
             {
                 id: 46,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Nuts',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-nuts.svg'
+                    Name: 'Musical Insturment Performance Characteristic',
+                    Description: 'The tree can be used for making musical insturments.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-instrument.svg'
                 }
             },
             {
                 id: 47,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Berrylike fruit',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
+                    Name: 'Tools Performance Characteristic',
+                    Description: 'The tree can be used for making tools.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-tools.svg'
                 }
             },
             {
                 id: 48,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Fleshy Fruit',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                    Name: 'Landscaping Performance Characteristic',
+                    Description: 'The tree can be used during landscaping.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-landscaping.svg'
                 }
             },
             {
                 id: 49,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Capsules',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
+                    Name: 'Transportation Performance Characteristic',
+                    Description: 'The tree can be used for making transportation devices or assisting transportaion.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-transportation.svg'
                 }
             },
             {
                 id: 50,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Conelike',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-cone.svg'
+                    Name: 'Barrel Making Performance Characteristic',
+                    Description: 'The tree can be used for making barrels.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-barrel.svg'
                 }
             },
             {
                 id: 51,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Drupes',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                    Name: 'Construction Performance Characteristic',
+                    Description: 'The tree can be used as construction material or to assist the construction process.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-construction.svg'
                 }
             },
             {
                 id: 52,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Plum',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                    Name: 'Furniture Performance Characteristic',
+                    Description: 'The tree can be used as furniture materials.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-furniture.svg'
                 }
             },
             {
                 id: 53,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Berries',
-                    Description: 'This is a description',
-                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
+                    Name: 'Sports Equiptment Performance Characteristic',
+                    Description: 'The tree can be used to make sports equipments.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-sports.svg'
+                }
+            },
+            {
+                id: 54,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Brewing Tea Performance Characteristic',
+                    Description: 'Tree leaves are brewed for making tea.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-brewingtea.svg'
+                }
+            },    
+            {
+                id: 55,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Bug Repellent Performance Characteristic',
+                    Description: 'The tree can be used for making bug repellent.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-bugrepellent.svg'
+                }
+            }, 
+            {
+                id: 56,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Christmas Tree Performance Characteristic',
+                    Description: 'The tree can be used as Christmas trees.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-christmastree.svg'
+                }
+            }, 
+            {
+                id: 57,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fence Post Performance Characteristic',
+                    Description: 'The tree can be used to make fence posts.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-fencepost.svg
+'
+                }
+            }, 
+            {
+                id: 58,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Food Performance Characteristic',
+                    Description: 'Parts of the tree can be consumed as food for animals or humans.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-food.svg'
+                }
+            }, 
+            {
+                id: 59,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Fuel Source Performance Characteristic',
+                    Description: 'The tree can be used as fuel sources.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-gasolene.svg'
+                }
+            }, 
+            {
+                id: 60,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Hedge Performance Characteristic',
+                    Description: 'The tree can be grown to form hedges.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-hedge.svg'
+                }
+            }, 
+            {
+                id: 61,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Jam Making Performance Characteristic',
+                    Description: 'Parts of the tree can be made into jams.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-jam.svg'
+                }
+            }, 
+            {
+                id: 62,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Maple Syrup Performance Characteristic',
+                    Description: 'Parts of the tree can be made into maple syrup.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-maplesyrup.svg'
+                }
+            }, 
+            {
+                id: 63,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Ornamental Tree Performance Characteristic',
+                    Description: 'The tree can be planted as ornamental pieces.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-ornamental.svg'
+                }
+            }, 
+            {
+                id: 64,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Rail Road Ties Performance Characteristic',
+                    Description: 'The tree can be used for making rail road ties.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-railroadties.svg'
+                }
+            }, 
+            {
+                id: 65,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Seasoning Performance Characteristic',
+                    Description: 'Parts of the tree can be used as seasonings for food.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-seasoning.svg'
+                }
+            }, 
+            {
+                id: 66,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Roof Shingles Performance Characteristic',
+                    Description: 'The tree can be used for making roof shingles.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-shingle.svg'
+                }
+            }, 
+            {
+                id: 67,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Timber Source Performance Characteristic',
+                    Description: 'The tree can be processed into timber.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-timber.svg'
+                }
+            }, 
+            {
+                id: 67,
+                type: 'attribute',
+                attributes: {
+                    Name: 'Weapons Performance Characteristic',
+                    Description: 'The tree can be used in weapon making.',
+                    Image_Path: '\\assets\\images\\icons\\Icon-weapon.svg'
                 }
             }
             ]
