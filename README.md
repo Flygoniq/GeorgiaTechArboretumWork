@@ -42,7 +42,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 * To build android app:
  * Delete /cordova/ path in root
  * `ember generate cordova-init edu.gatech.arch.imagine.arboretum --platform=android`.  The url can be whatever you want when testing.
- * `ember cordova run android`
+ ** `ember cordova run android`
+ * `.\ArboretumApp\cordova\platforms\android\cordova\build.bat`
+ * `.\ArboretumAPp\cordova\platforms\android\build\outputs\apk\...`
 
 ### Notes on Ember behaviors
 * When creating multiple hooks for routes (ie beforeModel, model, afterModel), they must be in the file in their order of execution.  See /app/routes/badges.js for example.
