@@ -193,7 +193,6 @@ export default Ember.Route.extend({
                         Name: 'Grown Up',
                         Summary: 'Collected 100 trees',
                         Image_Path: '\\assets\\images\\icons\\Icon-badge16.svg'
-<<<<<<< HEAD
                     }
                 },
                     {
@@ -320,8 +319,6 @@ export default Ember.Route.extend({
                         Name: 'Bees?',
                         Summary: 'collect all the bee trees',
                         Image_Path: '\\assets\\images\\icons\\Icon-badge30.svg'
-=======
->>>>>>> 65d82772a8d9be1130bb55682d27dd3bec32d443
                     }
                 }
             ]
@@ -964,8 +961,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Fence Post Performance Characteristic',
                     Description: 'The tree can be used to make fence posts.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fencepost.svg
-'
+                    Image_Path: '\\assets\\images\\icons\\Icon-fencepost.svg'
                 }
             }, 
             {
