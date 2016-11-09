@@ -7,23 +7,27 @@
     <meta name="author" content="">
 </head>
 
-<body>
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+
+    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation">{{#link-to "home"}}Home{{/link-to}}</li>
+            <li role="presentation">{{#link-to "tours"}}Tours{{/link-to}}</li>
+            <li role="presentation">{{#link-to "trees"}}Trees{{/link-to}}</li>
+            <li role="presentation">{{#link-to "badges"}}Badges{{/link-to}}</li>
+            <li role="presentation" class="active">{{#link-to "about"}}About{{/link-to}}</li>
+            <li role="presentation">{{#link-to "settings"}}Settings{{/link-to}}</li>
+          </ul>
+        </nav>
+    </div>
 
     <div class="jumbotron">
         <h1>About</h1>
-        <div class="row">
-            <div class="text-center">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    {{#link-to "badges"}}<button type="button" class="btn btn-success">Achievements</button>{{/link-to}}
-                    {{#link-to "home"}}<button type="button" class="btn btn-success">Home</button>{{/link-to}}
-                    {{#link-to "trees"}}<button type="button" class="btn btn-success">Trees</button>{{/link-to}}
-                </div>
-            </div>
-        </div>
     </div>
     
     <div class="TextBox">  
-        <h2>About the Arboertum</h2>
+        <h2>About the Arboretum</h2>
         <p>The Georgia Tech Arboretum provides a platform for the development of educational tools defining the performance of individual trees and the collective forest in the urban landscape. The impact of trees on the environment can be studied on a variety of scales. From the microscopic impacts of trees on soils, to the regional impact of the urban forest on the air we breathe, the Arboretum provides the Georgia Tech community a tool for explaining trees performance values while they are being researched as part of our Living Learning Laboratory.
         </p>
         <h2>Arboretum People</h2>  

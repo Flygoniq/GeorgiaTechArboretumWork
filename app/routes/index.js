@@ -193,6 +193,7 @@ export default Ember.Route.extend({
                         Name: 'Grown Up',
                         Summary: 'Collected 100 trees',
                         Image_Path: '\\assets\\images\\icons\\Icon-badge16.svg'
+<<<<<<< HEAD
                     }
                 },
                     {
@@ -319,6 +320,8 @@ export default Ember.Route.extend({
                         Name: 'Bees?',
                         Summary: 'collect all the bee trees',
                         Image_Path: '\\assets\\images\\icons\\Icon-badge30.svg'
+=======
+>>>>>>> 65d82772a8d9be1130bb55682d27dd3bec32d443
                     }
                 }
             ]
@@ -421,79 +424,7 @@ export default Ember.Route.extend({
                         Name: 'Tree Number',
                         Description: 'The unique identification number assigned to each tree on the Georgia Tech campus.',
                     }
-                }/*,
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },
-                {
-                    id: 1,
-                    type: 'statistic',
-                    attributes: {
-                        Name: '',
-                        Description: '',
-                    }
-                },*/
+                }
             ]
         });
         
@@ -504,7 +435,8 @@ export default Ember.Route.extend({
         //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
         initiateLocalstorage();
         this.transitionTo('home');
-    }
+    },
+    title: 'Georgia Tech Arboretum'
 });
 
 function initiateLocalstorage() {

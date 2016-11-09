@@ -8,7 +8,20 @@
     <title>Statistic Details</title>
 </head>
 
-<body>
+<body ontouchstart=""><!-- ontouchstart="" enables low-delay CSS transitions. -->
+
+    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation">{{#link-to "home"}}Home{{/link-to}}</li>
+            <li role="presentation">{{#link-to "tours"}}Tours{{/link-to}}</li>
+            <li role="presentation">{{#link-to "trees"}}Trees{{/link-to}}</li>
+            <li role="presentation">{{#link-to "badges"}}Badges{{/link-to}}</li>
+            <li role="presentation">{{#link-to "about"}}About{{/link-to}}</li>
+            <li role="presentation">{{#link-to "settings"}}Settings{{/link-to}}</li>
+          </ul>
+        </nav>
+    </div>
     <div class="jumbotron">
         <div class="row">
             <div class="text-center">
