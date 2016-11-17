@@ -4,8 +4,10 @@ export default Ember.Route.extend({
     beforeModel: function() {
         Ember.$.getScript('\\js\\jquery.min.js');
         Ember.$.getScript('\\js\\bootstrap.min.js');
-        Ember.$.getScript('\\js\\bootstrap-switch.js');
-        Ember.$.getScript('\\js\\settingsscript.js');
+        Ember.$.getScript('\\js\\bootstrap-switch.js', function() {
+            Ember.$.getScript('\\js\\settingsscript.js');
+        });
+        
     }
     
 });

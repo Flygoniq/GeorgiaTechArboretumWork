@@ -11,6 +11,12 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     
     afterModel: function() {
+        Ember.$.getScript('\\js\\jquery.min.js');
+        Ember.$.getScript('\\js\\bootstrap.min.js');
+        Ember.$.getScript('\\js\\bootstrap-switch.js', function() {
+            Ember.$.getScript('\\js\\settingsscript.js');
+        });
+        
         var Store = this.store;
         Store.push({
             data: [
@@ -482,7 +488,7 @@ function initializeAttributes(Store) {
                 id: 4,
                 type: 'attribute',
                 attributes: {
-                    Name: 'Decidous Tree',
+                    Name: 'Deciduous Tree',
                     Description: 'Trees that shed or lose foliage at the end of the growing season.',
                     Image_Path: '\\assets\\images\\icons\\Icon-decidouus.svg'
                 }
@@ -1055,7 +1061,7 @@ function initializeAttributes(Store) {
                 }
             }, 
             {
-                id: 67,
+                id: 68,
                 type: 'attribute',
                 attributes: {
                     Name: 'Weapons Performance Characteristic',
