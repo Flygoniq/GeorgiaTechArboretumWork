@@ -11,10 +11,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     
     afterModel: function() {
-        Ember.$.getScript('\\js\\jquery.min.js');
-        Ember.$.getScript('\\js\\bootstrap.min.js');
-        Ember.$.getScript('\\js\\bootstrap-switch.js', function() {
-            Ember.$.getScript('\\js\\settingsscript.js');
+        Ember.$.getScript('assets/js/jquery.min.js');
+        Ember.$.getScript('assets/js/bootstrap.min.js');
+        Ember.$.getScript('assets/js/bootstrap-switch.js', function() {
+            Ember.$.getScript('assets/js/settingsscript.js');
         });
         
         var Store = this.store;
@@ -63,7 +63,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'King of the Hill',
                         Summary: 'Completed the Hill Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge1.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge1.svg'
                     }
                 },
                 {
@@ -72,7 +72,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Stuck in the Middle',
                         Summary: 'Completed the Central Campus Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge2.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge2.svg'
                     }
                 },
                 {
@@ -81,7 +81,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Mowing the Lawn',
                         Summary: 'Completed the Hemphill and IC Lawn Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge3.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge3.svg'
                     }
                 },
                 {
@@ -90,7 +90,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Gone Green',
                         Summary: 'Completed the Tech Green Tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge4.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge4.svg'
                     }
                 },
                 {
@@ -99,7 +99,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Hometree',
                         Summary: 'Found the largest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge5.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge5.svg'
                     }
                 },
                 {
@@ -108,7 +108,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Reach for the Sky',
                         Summary: 'Found the tallest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge6.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge6.svg'
                     }
                 },
                 {
@@ -117,7 +117,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Tree Hugger',
                         Summary: 'Found the widest tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge7.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge7.svg'
                     }
                 },
                 {
@@ -126,7 +126,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeking Shade',
                         Summary: 'Found the tree with the most leaf area',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge8.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge8.svg'
                     }
                 },
                 {
@@ -135,7 +135,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Get Heavy',
                         Summary: 'Found the tree with the most leaf biomass',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge9.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge9.svg'
                     }
                 },
                 {
@@ -144,7 +144,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'ITS OVER 9000',
                         Summary: 'Collected all the trees with a gross carbon sequestration of over 9000 pounds',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge10.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge10.svg'
                     }
                 },
                 {
@@ -153,7 +153,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seeing Green',
                         Summary: 'Found the tree with the most structural value',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge11.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge11.svg'
                     }
                 },
                 {
@@ -162,7 +162,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Thirsty',
                         Summary: 'Found the tree with the most avoided runoff',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge12.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge12.svg'
                     }
                 },
                 {
@@ -171,7 +171,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Professor Oak',
                         Summary: 'Collected all the oak trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge13.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge13.svg'
                     }
                 },
                 {
@@ -180,7 +180,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Seedling',
                         Summary: 'Collected your first tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge14.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge14.svg'
                     }
                 },
                 {
@@ -189,7 +189,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Sapling',
                         Summary: 'Collected 50 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge15.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge15.svg'
                     }
                 },
                 {
@@ -198,7 +198,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Grown Up',
                         Summary: 'Collected 100 trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge16.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge16.svg'
                     }
                 },
                     {
@@ -207,7 +207,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'You’ve Sent Mail',
                         Summary: 'shared that you completed a tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge17.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge17.svg'
                     }
                 },
                                     {
@@ -216,7 +216,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Marathon',
                         Summary: 'completed all 4 tours in a single day',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge18.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge18.svg'
                     }
                 },
                                     {
@@ -225,7 +225,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Hardwood',
                         Summary: 'find the persian ironwood',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge19.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge19.svg'
                     }
                 },
                                     {
@@ -234,7 +234,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Nothing Rhymes with Orange',
                         Summary: 'find the oasage orange',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge20.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge20.svg'
                     }
                 },
                                     {
@@ -243,7 +243,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'The Last Samurai',
                         Summary: 'find the ginko',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge21.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge21.svg'
                     }
                 },
                                     {
@@ -252,7 +252,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Syrup',
                         Summary: 'find all the maple trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge22.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge22.svg'
                     }
                 },
                                     {
@@ -261,7 +261,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Don’t Tell George',
                         Summary: 'find all the cherry trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge23.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge23.svg'
                     }
                 },
                                     {
@@ -270,7 +270,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Freddy Would be Proud',
                         Summary: 'find all the elm tree',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge24.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge24.svg'
                     }
                 },
                                     {
@@ -279,7 +279,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Real Steel',
                         Summary: 'collect all the magnolia trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge25.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge25.svg'
                     }
                 },
                                     {
@@ -288,7 +288,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Stay Green',
                         Summary: 'collect all the coniferous',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge26.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge26.svg'
                     }
                 },
                                     {
@@ -297,7 +297,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Get Naked',
                         Summary: 'collect all the deciduous',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge27.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge27.svg'
                     }
                 },
                                     {
@@ -306,7 +306,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'One Down',
                         Summary: 'complete your first tour',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge28.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge28.svg'
                     }
                 },
                                     {
@@ -315,7 +315,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Going Native',
                         Summary: 'collect all the native GA trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge29.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge29.svg'
                     }
                 },
                                     {
@@ -324,7 +324,7 @@ export default Ember.Route.extend({
                     attributes: {
                         Name: 'Bees?',
                         Summary: 'collect all the bee trees',
-                        Image_Path: '\\assets\\images\\icons\\Icon-badge30.svg'
+                        Image_Path: 'assets/images/icons/Icon-badge30.svg'
                     }
                 }
             ]
@@ -435,7 +435,7 @@ export default Ember.Route.extend({
         initializeAttributes(Store);
     
         
-        //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
+        //this.store.createRecord('tree', {Common_Name: 'White Oak', Scientific_Name: 'Quercus alba', Image: 'assets/images/trees/01470_Quercus_alba.jpg', Description: 'This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.', Tree_Number: 1470});
         initiateLocalstorage();
         this.transitionTo('home');
     },
@@ -463,7 +463,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Georgia Local',
                     Description: 'Trees that are native to Georgia, USA',
-                    Image_Path: '\\assets\\images\\icons\\Icon-galocal.svg'
+                    Image_Path: 'assets/images/icons/Icon-galocal.svg'
                 }
             },
             {
@@ -472,7 +472,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Bee Tree',
                     Description: 'Trees that attract bees for nectar or pollen',
-                    Image_Path: '\\assets\\images\\icons\\Icon-beetree.svg'
+                    Image_Path: 'assets/images/icons/Icon-beetree.svg'
                 }
             },
             {
@@ -481,7 +481,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Coniferous',
                     Description: 'Trees that are usually evergreen, having narrow, needlelike or scale-like leaves, and bear exposed seeds, usually in cones.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-coniferous.svg'
+                    Image_Path: 'assets/images/icons/Icon-coniferous.svg'
                 }
             },
             {
@@ -490,7 +490,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Deciduous Tree',
                     Description: 'Trees that shed or lose foliage at the end of the growing season.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-decidouus.svg'
+                    Image_Path: 'assets/images/icons/Icon-decidouus.svg'
                 }
             },
             {
@@ -499,7 +499,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Pyramidal Shaped Tree',
                     Description: 'Trees that have pyramid shaped crowns.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pyramidal.svg'
+                    Image_Path: 'assets/images/icons/Icon-pyramidal.svg'
                 }
             },
             {
@@ -508,7 +508,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Conical Shaped Tree',
                     Description: 'Trees that have cone shaped crowns.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-conical.svg'
+                    Image_Path: 'assets/images/icons/Icon-conical.svg'
                 }
             },
             {
@@ -517,7 +517,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Columnar Shaped Tree',
                     Description: 'Trees that have tall, narrow, and somewhat cylindrical shaped crowns.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-columnar.svg'
+                    Image_Path: 'assets/images/icons/Icon-columnar.svg'
                 }
             },
             {
@@ -526,7 +526,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Spreading Shaped Tree',
                     Description: 'Trees that have open and irregular shaped crowns that are wider than their tall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-spreading.svg'
+                    Image_Path: 'assets/images/icons/Icon-spreading.svg'
                 }
             },
             {
@@ -535,7 +535,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Vase Shaped Tree',
                     Description: 'Trees that have upside-down triangle shaped crowns.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-vaseshape.svg'
+                    Image_Path: 'assets/images/icons/Icon-vaseshape.svg'
                 }
             },
             {
@@ -544,7 +544,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Broad Shaped Tree',
                     Description: 'Trees that have wider crown than the average crown spread.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-broad.svg'
+                    Image_Path: 'assets/images/icons/Icon-broad.svg'
                 }
             },
             {
@@ -553,7 +553,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Rounded Shaped Tree',
                     Description: 'Trees that have rounded shaped crowns.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-rounded.svg'
+                    Image_Path: 'assets/images/icons/Icon-rounded.svg'
                 }
             },
             {
@@ -562,7 +562,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Alternate Leaf Position',
                     Description: 'Leaves attach singly at different levels on the stem.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-alternate.svg'
+                    Image_Path: 'assets/images/icons/Icon-alternate.svg'
                 }
             },
             {
@@ -571,7 +571,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Opposite Leaf Position',
                     Description: 'Leaves attach at the same level in pairs on the stem.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-opposite.svg'
+                    Image_Path: 'assets/images/icons/Icon-opposite.svg'
                 }
             },
             {
@@ -580,7 +580,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Whorled Leaf Position',
                     Description: 'Three or more leaves attach at one level in a ring on the stem.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-whorled.svg'
+                    Image_Path: 'assets/images/icons/Icon-whorled.svg'
                 }
             },
             {
@@ -589,7 +589,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Needle Shaped Leaf',
                     Description: 'Leaves that are needlelike.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-needleleafconifer.svg'
+                    Image_Path: 'assets/images/icons/Icon-needleleafconifer.svg'
                 }
             },
             {
@@ -598,7 +598,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Scale Shaped Leaf',
                     Description: 'Small modified leaves with the form of scales.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-scaleleafconifer.svg'
+                    Image_Path: 'assets/images/icons/Icon-scaleleafconifer.svg'
                 }
             },
             {
@@ -607,7 +607,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Untoothed Shaped Leaf',
                     Description: 'Leaves with smooth margins.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-untoothedsimpleleaf.svg'
+                    Image_Path: 'assets/images/icons/Icon-untoothedsimpleleaf.svg'
                 }
             },
             {
@@ -616,7 +616,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Toothed Shaped Leaf',
                     Description: 'Leaves with teeth along the margins.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-toothedsimpleleaf.svg'
+                    Image_Path: 'assets/images/icons/Icon-toothedsimpleleaf.svg'
                 }
             },
             {
@@ -625,7 +625,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Yucca Shaped Leaf',
                     Description: 'Clustered long, narrow, and bayonetlike evergreen leaves.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yucca.svg'
+                    Image_Path: 'assets/images/icons/Icon-yucca.svg'
                 }
             },
             {
@@ -634,7 +634,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Compound Shaped Leaf',
                     Description: 'Leaves composed of 3 or more small leaflets.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-compoundleaf.svg'
+                    Image_Path: 'assets/images/icons/Icon-compoundleaf.svg'
                 }
             },
             {
@@ -643,7 +643,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Lobed Shaped Leaf',
                     Description: 'Leaves with margins that are shallowly or deeply cut into narrow or broad lobes.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-lobedsimpleleaf.svg'
+                    Image_Path: 'assets/images/icons/Icon-lobedsimpleleaf.svg'
                 }
             },
             {
@@ -652,7 +652,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Red Flower Color',
                     Description: 'Flowers that are red during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-redflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-redflowercolor.svg'
                 }
             },
             {
@@ -661,7 +661,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Green Flower Color',
                     Description: 'Flowers that are green during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-greenflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-greenflowercolor.svg'
                 }
             },
             {
@@ -670,7 +670,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Brown Flower Color',
                     Description: 'Flowers that are brown during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-brownflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-brownflowercolor.svg'
                 }
             },
             {
@@ -679,7 +679,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Yellow Flower Color',
                     Description: 'Flowers that are yellow during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yellowflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-yellowflowercolor.svg'
                 }
             },
             {
@@ -688,7 +688,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Cream Flower Color',
                     Description: 'Flowers that are yellowish white cream color during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-creamflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-creamflowercolor.svg'
                 }
             },
             {
@@ -697,7 +697,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'White Flower Color',
                     Description: 'Flowers that are white during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-whiteflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-whiteflowercolor.svg'
                 }
             },
             {
@@ -706,7 +706,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Pink Flower Color',
                     Description: 'Flowers that are pink during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pinkflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-pinkflowercolor.svg'
                 }
             },
             {
@@ -715,7 +715,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Purple Flower Color',
                     Description: 'Flowers that are purple during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-purpleflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-purpleflowercolor.svg'
                 }
             },
             {
@@ -724,7 +724,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Light Green Flower Color',
                     Description: 'Flowers that are light green during blossoms.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-lightgreenflowercolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-lightgreenflowercolor.svg'
                 }
             },
             {
@@ -733,7 +733,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Cone FruitCone Type',
                     Description: 'The dry fruits of conifers, briches, and alders. Typically tapering to a rounded end with a array of overlapping scales.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-cone.svg'
+                    Image_Path: 'assets/images/icons/Icon-cone.svg'
                 }
             },
             {
@@ -742,7 +742,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Keys FruitCone Type',
                     Description: 'Also called samara. The dry winged fruits of maples, elms, ashes, Ailanthus, and the Common Hoptree.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-keys.svg'
+                    Image_Path: 'assets/images/icons/Icon-keys.svg'
                 }
             },
             {
@@ -751,7 +751,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Pods FruitCone Type',
                     Description: 'The elongated seed vessel of trees in the legume family.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-pods.svg'
+                    Image_Path: 'assets/images/icons/Icon-pods.svg'
                 }
             },
             {
@@ -760,7 +760,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Ball FruitCone Type',
                     Description: 'The fruits of Sweetgum, Cottonwoods, Sourwood, Sycamore, and Eastern Baccharis. Typically rounded looking.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-balls.svg'
+                    Image_Path: 'assets/images/icons/Icon-balls.svg'
                 }
             },
             {
@@ -769,7 +769,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Acorn FruitCone Type',
                     Description: 'The fruits of oaks. Typically with oval shells and cuplike bases.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-acorn.svg'
+                    Image_Path: 'assets/images/icons/Icon-acorn.svg'
                 }
             },
             {
@@ -778,7 +778,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Nuts FruitCone Type',
                     Description: 'The fruits of hickorie, beeches, walnuts, buckeyes, and schestnuts . Consisting of hard shells around edible kernels.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-nuts.svg'
+                    Image_Path: 'assets/images/icons/Icon-nuts.svg'
                 }
             },
             {
@@ -787,7 +787,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Berrylike FruitCone Type',
                     Description: 'Small fleshy fruits without a stone.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-berrylike.svg'
+                    Image_Path: 'assets/images/icons/Icon-berrylike.svg'
                 }
             },
             {
@@ -796,7 +796,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Fleshy Fruit FruitCone Type',
                     Description: 'Fruits with edible flesh between seeds and skin.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fleshyfruit.svg'
+                    Image_Path: 'assets/images/icons/Icon-fleshyfruit.svg'
                 }
             },
             {
@@ -805,7 +805,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Red Fall Leaf Color',
                     Description: 'Tree foliage turns red during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-redleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-redleafcolor.svg'
                 }
             },
             {
@@ -814,7 +814,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Orange Fall Leaf Color',
                     Description: 'Tree foliage turns orange during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-orangeleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-orangeleafcolor.svg'
                 }
             },
             {
@@ -823,7 +823,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Yellow Fall Leaf Color',
                     Description: 'Tree foliage turns yellow during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-yellowleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-yellowleafcolor.svg'
                 }
             },
             {
@@ -832,7 +832,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Brown Fall Leaf Color',
                     Description: 'Tree foliage turns brown during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-brownleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-brownleafcolor.svg'
                 }
             },
             {
@@ -841,7 +841,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Green Fall Leaf Color',
                     Description: 'Tree foliage turns green during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-greenleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-greenleafcolor.svg'
                 }
             },
             {
@@ -850,7 +850,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Copper Fall Leaf Color',
                     Description: 'Tree foliage turns copper during fall.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-copperleafcolor.svg'
+                    Image_Path: 'assets/images/icons/Icon-copperleafcolor.svg'
                 }
             },
             {
@@ -859,7 +859,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Medicine Performance Characteristic',
                     Description: 'The tree can be used for making medicines.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-medicine.svg'
+                    Image_Path: 'assets/images/icons/Icon-medicine.svg'
                 }
             },
             {
@@ -868,7 +868,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Musical Insturment Performance Characteristic',
                     Description: 'The tree can be used for making musical insturments.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-instrument.svg'
+                    Image_Path: 'assets/images/icons/Icon-instrument.svg'
                 }
             },
             {
@@ -877,7 +877,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Tools Performance Characteristic',
                     Description: 'The tree can be used for making tools.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-tools.svg'
+                    Image_Path: 'assets/images/icons/Icon-tools.svg'
                 }
             },
             {
@@ -886,7 +886,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Landscaping Performance Characteristic',
                     Description: 'The tree can be used during landscaping.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-landscaping.svg'
+                    Image_Path: 'assets/images/icons/Icon-landscaping.svg'
                 }
             },
             {
@@ -895,7 +895,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Transportation Performance Characteristic',
                     Description: 'The tree can be used for making transportation devices or assisting transportaion.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-transportation.svg'
+                    Image_Path: 'assets/images/icons/Icon-transportation.svg'
                 }
             },
             {
@@ -904,7 +904,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Barrel Making Performance Characteristic',
                     Description: 'The tree can be used for making barrels.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-barrel.svg'
+                    Image_Path: 'assets/images/icons/Icon-barrel.svg'
                 }
             },
             {
@@ -913,7 +913,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Construction Performance Characteristic',
                     Description: 'The tree can be used as construction material or to assist the construction process.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-construction.svg'
+                    Image_Path: 'assets/images/icons/Icon-construction.svg'
                 }
             },
             {
@@ -922,7 +922,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Furniture Performance Characteristic',
                     Description: 'The tree can be used as furniture materials.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-furniture.svg'
+                    Image_Path: 'assets/images/icons/Icon-furniture.svg'
                 }
             },
             {
@@ -931,7 +931,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Sports Equiptment Performance Characteristic',
                     Description: 'The tree can be used to make sports equipments.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-sports.svg'
+                    Image_Path: 'assets/images/icons/Icon-sports.svg'
                 }
             },
             {
@@ -940,7 +940,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Brewing Tea Performance Characteristic',
                     Description: 'Tree leaves are brewed for making tea.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-brewingtea.svg'
+                    Image_Path: 'assets/images/icons/Icon-brewingtea.svg'
                 }
             },    
             {
@@ -949,7 +949,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Bug Repellent Performance Characteristic',
                     Description: 'The tree can be used for making bug repellent.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-bugrepellent.svg'
+                    Image_Path: 'assets/images/icons/Icon-bugrepellent.svg'
                 }
             }, 
             {
@@ -958,7 +958,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Christmas Tree Performance Characteristic',
                     Description: 'The tree can be used as Christmas trees.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-christmastree.svg'
+                    Image_Path: 'assets/images/icons/Icon-christmastree.svg'
                 }
             }, 
             {
@@ -967,7 +967,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Fence Post Performance Characteristic',
                     Description: 'The tree can be used to make fence posts.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-fencepost.svg'
+                    Image_Path: 'assets/images/icons/Icon-fencepost.svg'
                 }
             }, 
             {
@@ -976,7 +976,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Food Performance Characteristic',
                     Description: 'Parts of the tree can be consumed as food for animals or humans.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-food.svg'
+                    Image_Path: 'assets/images/icons/Icon-food.svg'
                 }
             }, 
             {
@@ -985,7 +985,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Fuel Source Performance Characteristic',
                     Description: 'The tree can be used as fuel sources.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-gasolene.svg'
+                    Image_Path: 'assets/images/icons/Icon-gasolene.svg'
                 }
             }, 
             {
@@ -994,7 +994,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Hedge Performance Characteristic',
                     Description: 'The tree can be grown to form hedges.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-hedge.svg'
+                    Image_Path: 'assets/images/icons/Icon-hedge.svg'
                 }
             }, 
             {
@@ -1003,7 +1003,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Jam Making Performance Characteristic',
                     Description: 'Parts of the tree can be made into jams.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-jam.svg'
+                    Image_Path: 'assets/images/icons/Icon-jam.svg'
                 }
             }, 
             {
@@ -1012,7 +1012,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Maple Syrup Performance Characteristic',
                     Description: 'Parts of the tree can be made into maple syrup.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-maplesyrup.svg'
+                    Image_Path: 'assets/images/icons/Icon-maplesyrup.svg'
                 }
             }, 
             {
@@ -1021,7 +1021,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Ornamental Tree Performance Characteristic',
                     Description: 'The tree can be planted as ornamental pieces.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-ornamental.svg'
+                    Image_Path: 'assets/images/icons/Icon-ornamental.svg'
                 }
             }, 
             {
@@ -1030,7 +1030,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Rail Road Ties Performance Characteristic',
                     Description: 'The tree can be used for making rail road ties.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-railroadties.svg'
+                    Image_Path: 'assets/images/icons/Icon-railroadties.svg'
                 }
             }, 
             {
@@ -1039,7 +1039,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Seasoning Performance Characteristic',
                     Description: 'Parts of the tree can be used as seasonings for food.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-seasoning.svg'
+                    Image_Path: 'assets/images/icons/Icon-seasoning.svg'
                 }
             }, 
             {
@@ -1048,7 +1048,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Roof Shingles Performance Characteristic',
                     Description: 'The tree can be used for making roof shingles.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-shingle.svg'
+                    Image_Path: 'assets/images/icons/Icon-shingle.svg'
                 }
             }, 
             {
@@ -1057,7 +1057,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Timber Source Performance Characteristic',
                     Description: 'The tree can be processed into timber.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-timber.svg'
+                    Image_Path: 'assets/images/icons/Icon-timber.svg'
                 }
             }, 
             {
@@ -1066,7 +1066,7 @@ function initializeAttributes(Store) {
                 attributes: {
                     Name: 'Weapons Performance Characteristic',
                     Description: 'The tree can be used in weapon making.',
-                    Image_Path: '\\assets\\images\\icons\\Icon-weapon.svg'
+                    Image_Path: 'assets/images/icons/Icon-weapon.svg'
                 }
             }
             ]
@@ -1082,7 +1082,7 @@ data: [
     attributes: {
         CommonName: "White Oak",
         ScientificName: "Quercus alba",
-        TreeImage: "\\assets\\images\\trees\\01470_Quercus_alba.jpg",
+        TreeImage: "assets/images/trees/01470_Quercus_alba.jpg",
         Description: "This tree has tyloses that give the wood a closed cellular structure, making it water- and rot-resistant, thus it is used for wine and whiskey barrels and the USS Constitution ship structure.  The fruit is an acorn, a valuable food for turkeys, wood ducks, pheasants, grackles, jays, nuthatches, thrushes, woodpeckers, rabbits, squirrels, and deer.",
         TreeNumber: "1470",
         ID: "1",
@@ -1142,7 +1142,7 @@ data: [
     attributes: {
         CommonName: "Japanese Maple",
         ScientificName: "Acer palmatum",
-        TreeImage: "\\assets\\images\\trees\\01336_Acer_palmatum.jpg",
+        TreeImage: "assets/images/trees/01336_Acer_palmatum.jpg",
         Description: "Indigenous to southeast Asia, with over 1000 cultivars, this tree is prized for its ornamental character. The branches and leaves are used as a treatment in traditional Chinese medicine.",
         TreeNumber: "1336",
         ID: "2",
@@ -1202,7 +1202,7 @@ data: [
     attributes: {
         CommonName: "Post Oak",
         ScientificName: "Quercus stellata",
-        TreeImage: "\\assets\\images\\trees\\01620_Quercus_stellata.jpg",
+        TreeImage: "assets/images/trees/01620_Quercus_stellata.jpg",
         Description: "Indigenous to the eastern United States including Georgia, this tree adapts to many types of soils but prefers acidic soils.  It boasts good drought tolerance and the wood is  durable, thus it is well-suited for making posts (hence its common name, Post Oak).  In Texas, the wood is used as smoking wood for barbecues.",
         TreeNumber: "1620",
         ID: "3",
@@ -1262,7 +1262,7 @@ data: [
     attributes: {
         CommonName: "Red Maple",
         ScientificName: "Acer rubrum",
-        TreeImage: "\\assets\\images\\trees\\01609_Acer_rubrum.JPG",
+        TreeImage: "assets/images/trees/01609_Acer_rubrum.JPG",
         Description: "A common native to North America including Georgia, the wood is soft and is a medium quality ?rewood possessing lower heat energy than other hardwoods such as Ash, Oak, or Birch.",
         TreeNumber: "1609",
         ID: "4",
@@ -1322,7 +1322,7 @@ data: [
     attributes: {
         CommonName: "Ginko Tree",
         ScientificName: "Ginkgo biloba",
-        TreeImage: "\\assets\\images\\trees\\01555_Ginkgo_biloba.jpg",
+        TreeImage: "assets/images/trees/01555_Ginkgo_biloba.jpg",
         Description: "The national tree of China and the of?cial tree of Tokyo, this tree is a living fossil, recognizably similar to fossils dating back 270 million years.  Six Ginkgo trees were among the few living organisms to survive Hiroshima.",
         TreeNumber: "1555",
         ID: "5",
@@ -1382,7 +1382,7 @@ data: [
     attributes: {
         CommonName: "Yoshino Cherry",
         ScientificName: "Prunus × yedoensis",
-        TreeImage: "\\assets\\images\\trees\\01557_Prunus_x_serrulata.JPG",
+        TreeImage: "assets/images/trees/01557_Prunus_x_serrulata.JPG",
         Description: "Because of its fragrant, light pink ?owers, manageable size, and elegant shape, this tree is often used as an ornamental tree.  It occurs as a natural hybrid in Japan and has become one of the most popularly cultivated ?owering cherries in temperate climates worldwide.",
         TreeNumber: "1557",
         ID: "6",
@@ -1442,7 +1442,7 @@ data: [
     attributes: {
         CommonName: "Southern Magnolia",
         ScientificName: "Magnolia grandiflora",
-        TreeImage: "\\assets\\images\\trees\\01562_Magnolia_grandiflora.jpg",
+        TreeImage: "assets/images/trees/01562_Magnolia_grandiflora.jpg",
         Description: "This tree is grown for its attractive, shiny, green leaves and fragrant ?owers.  The leaves have a waxy coating that makes them resistant to damage from salt and air pollution.  Native to the southeastern United States, the timber of this tree is hard and heavy and has been used commercially to make furniture, pallets, and veneer.",
         TreeNumber: "1562",
         ID: "7",
@@ -1502,7 +1502,7 @@ data: [
     attributes: {
         CommonName: "Shumard Oak",
         ScientificName: "Quercus shumardii",
-        TreeImage: "\\assets\\images\\trees\\01568_Quercus_shumardii.JPG",
+        TreeImage: "assets/images/trees/01568_Quercus_shumardii.JPG",
         Description: "Native to the eastern United States and Canada, including the state of Georgia, this tree tolerates many soil conditions including wet soils.  The fruit of the tree, a large acorn, is a food source for wildlife.  The wood is well-suited for the construction of flooring, furniture, and trim.",
         TreeNumber: "1568",
         ID: "8",
@@ -1562,7 +1562,7 @@ data: [
     attributes: {
         CommonName: "Dogwood",
         ScientificName: "Cornus florida",
-        TreeImage: "\\assets\\images\\trees\\01598_Cornus_florida.jpg",
+        TreeImage: "assets/images/trees/01598_Cornus_florida.jpg",
         Description: "Native to eastern North America including Georgia, this tree was used to treat dogs with mange.  The red berries are edible but do not taste good.  The wood has been used in the production of golf club heads, rake teeth, jeweler’s boxes, butcher’s blocks, scarlet inks, and as a quinine substitute. ",
         TreeNumber: "1598",
         ID: "9",
@@ -1622,7 +1622,7 @@ data: [
     attributes: {
         CommonName: "Eastern Redbud",
         ScientificName: "Cercis canadensis",
-        TreeImage: "\\assets\\images\\trees\\01597_Cercis_canadensis.jpg",
+        TreeImage: "assets/images/trees/01597_Cercis_canadensis.jpg",
         Description: "Indigenous to eastern North America including Georgia, Native Americans consumed redbud ?owers raw or boiled and ate the seeds roasted.  In some parts of Appalachia, the green twigs are used as seasoning for wild game.",
         TreeNumber: "1597",
         ID: "10",
@@ -1682,7 +1682,7 @@ data: [
     attributes: {
         CommonName: "Persian Ironwood",
         ScientificName: "Parrotia persica",
-        TreeImage: "\\assets\\images\\trees\\01381_Parrotia_persica.JPG",
+        TreeImage: "assets/images/trees/01381_Parrotia_persica.JPG",
         Description: "Native to northern Iran and southern Azerbaijan, this tree is cultivated as an ornamental tree for its stunning autumn color and the smooth, patterned bark.  The leaves have wavy margins; they are glossy and green, turning a rich purple to brilliant red in autumn.",
         TreeNumber: "1381",
         ID: "11",
@@ -1742,7 +1742,7 @@ data: [
     attributes: {
         CommonName: "Common Witch-hazel",
         ScientificName: "Hamamelis virginiana",
-        TreeImage: "\\assets\\images\\trees\\13174_Hammamelis_virginiana.JPG",
+        TreeImage: "assets/images/trees/13174_Hammamelis_virginiana.JPG",
         Description: "Native to the eastern United States including Georgia, Native Americans produced witch hazel extract by boiling the stems of the shrub and producing a decoction used to treat swellings, inflammations, and tumors. Pond’s Extract was a popular distillation of the bark in dilute alcohol. The forked twigs of witch hazel are preferred as divining rods.",
         TreeNumber: "13174",
         ID: "12",
@@ -1802,7 +1802,7 @@ data: [
     attributes: {
         CommonName: "Saucer Magnolia",
         ScientificName: "Magnolia x soulangiana",
-        TreeImage: "\\assets\\images\\trees\\01504_Magnolia_x_soulangiana.jpg",
+        TreeImage: "assets/images/trees/01504_Magnolia_x_soulangiana.jpg",
         Description: "This hybrid plant has large, early-blooming ?owers that emerge dramatically in various shades of white, pink, and purple.  The tree is noted for its ease of cultivation and its relative tolerance to wind and alkaline soils, two vulnerabilities of many other magnolias.",
         TreeNumber: "1504",
         ID: "13",
@@ -1862,7 +1862,7 @@ data: [
     attributes: {
         CommonName: "Water Oak",
         ScientificName: "Quercus nigra",
-        TreeImage: "\\assets\\images\\trees\\01483_Quercus_nigra.jpg",
+        TreeImage: "assets/images/trees/01483_Quercus_nigra.jpg",
         Description: "Native to the lower central United States including Georgia, this tree grows best in well-drained yet moist soils.  It must have access to full sun as it does not tolerate shade.  This tree is relatively short-lived and used for fuel and timber.",
         TreeNumber: "1483",
         ID: "14",
@@ -1922,7 +1922,7 @@ data: [
     attributes: {
         CommonName: "Douglas Fir",
         ScientificName: "Pseudotsuga menziesii",
-        TreeImage: "\\assets\\images\\trees\\01451_Pseudotsuga_menziesii.jpg",
+        TreeImage: "assets/images/trees/01451_Pseudotsuga_menziesii.jpg",
         Description: "Indigenous to western North America, this tree yields more timber than any other tree in North America.  It is also popularly used as a Christmas tree.  The buds have been used to ?avor eau de vie, a clear, colorless fruit brandy.",
         TreeNumber: "1451",
         ID: "15",
@@ -1982,7 +1982,7 @@ data: [
     attributes: {
         CommonName: "Chinese Juniper",
         ScientificName: "Juniperus chinensis",
-        TreeImage: "\\assets\\images\\trees\\04655_Juniperus_chinensis.JPG",
+        TreeImage: "assets/images/trees/04655_Juniperus_chinensis.JPG",
         Description: "Native to northeastern Asia, this tree is a popular ornamental tree or shrub in gardens and parks and has more than 100 named cultivars.  This tree is widely used in the art of bonsai.",
         TreeNumber: "4655",
         ID: "16",
@@ -2042,7 +2042,7 @@ data: [
     attributes: {
         CommonName: "Leyland Cypress",
         ScientificName: "Cupressocyparis leylandii",
-        TreeImage: "\\assets\\images\\trees\\04667_Cupressocyparis_leylandii.JPG",
+        TreeImage: "assets/images/trees/04667_Cupressocyparis_leylandii.JPG",
         Description: "This evergreen tree is known for its rapid, thick growth.  It is primarily used as hedges and screens as a means of enforcing privacy.  For many years it was the biggest-selling item in every garden centre in Great Britain.",
         TreeNumber: "4667",
         ID: "17",
@@ -2102,7 +2102,7 @@ data: [
     attributes: {
         CommonName: "Camellia",
         ScientificName: "Camellia japonica",
-        TreeImage: "\\assets\\images\\trees\\02033_Camelia_japonica.JPG",
+        TreeImage: "assets/images/trees/02033_Camelia_japonica.JPG",
         Description: "Indigenous to China, Taiwan, South Korea, and Japan, this tree is related to Camellia sinensis, which is used to make tea.  Camellias are commonly seen as lucky symbols for the Chinese New Year. ",
         TreeNumber: "2033",
         ID: "18",
@@ -2162,7 +2162,7 @@ data: [
     attributes: {
         CommonName: "Higan cherry",
         ScientificName: "Prunus subhirtella",
-        TreeImage: "\\assets\\images\\trees\\04685_Prunus_subhirtella.JPG",
+        TreeImage: "assets/images/trees/04685_Prunus_subhirtella.JPG",
         Description: "Indigenous to Japan, this tree is widely grown for its propensity to flower during mild winter weather.  The tree bears white to pink flowers which may emerge intermittently from autumn through to spring, in addition to a small black fruit.",
         TreeNumber: "4685",
         ID: "19",
@@ -2222,7 +2222,7 @@ data: [
     attributes: {
         CommonName: "Sasanqua Camellia",
         ScientificName: "Camellia sasanqua",
-        TreeImage: "\\assets\\images\\trees\\04684_Camelia_sasanqua.JPG",
+        TreeImage: "assets/images/trees/04684_Camelia_sasanqua.JPG",
         Description: "Native to China and Japan, this tree is used to make tea.  The seeds or nuts are used to make tea seed oil, which has a higher calori?c content than any other edible oil available naturally in Japan and is used for lighting, lubrication, cooking, and cosmetic purposes.",
         TreeNumber: "4684",
         ID: "20",
@@ -2282,7 +2282,7 @@ data: [
     attributes: {
         CommonName: "Hinoki Cypress",
         ScientificName: "Chamaecyparis obtusa",
-        TreeImage: "\\assets\\images\\trees\\01986_Chamaecyparis_obtusa.JPG",
+        TreeImage: "assets/images/trees/01986_Chamaecyparis_obtusa.JPG",
         Description: "This tree is prized for its high-quality timber and is native to central Japan, where it is used as a material for building palaces, temples, shrines, traditional Noh theatres, baths, table tennis blades, and Masu.  The wood is lemon-scented and is highly rot-resistant.",
         TreeNumber: "1986",
         ID: "21",
@@ -2342,7 +2342,7 @@ data: [
     attributes: {
         CommonName: "Kwanzan cherry",
         ScientificName: "Prunus serrulata",
-        TreeImage: "\\assets\\images\\trees\\01978_Prunus_serrulata.JPG",
+        TreeImage: "assets/images/trees/01978_Prunus_serrulata.JPG",
         Description: "Indigenous to Japan, Korea, and China, this tree is noted for its spring cherry blossom displays and festivals.  The National Cherry Blossom Festival is a spring celebration in Washington, D.C., commemorating the 1912 A.D. gift of this tree to the city of Washington, D.C. from Tokyo, Japan.",
         TreeNumber: "1978",
         ID: "22",
@@ -2402,7 +2402,7 @@ data: [
     attributes: {
         CommonName: "Sycamore tree",
         ScientificName: "Platanus occidentalis",
-        TreeImage: "\\assets\\images\\trees\\01975_Platanus_occidentalis.JPG",
+        TreeImage: "assets/images/trees/01975_Platanus_occidentalis.JPG",
         Description: "This tree is able to endure a city environment. The wood is used to make butcher’s blocks, boxes, and crates.  The terms under which the New York Stock Exchange was formed are called the “Buttonwood Agreement” after it was signed under a buttonwood (sycamore) tree at 68 Wall Street in 1792.",
         TreeNumber: "1975",
         ID: "23",
@@ -2462,7 +2462,7 @@ data: [
     attributes: {
         CommonName: "Two-wing silverbell",
         ScientificName: "Halesia diptera",
-        TreeImage: "\\assets\\images\\trees\\01973_Halesia_diptera.JPG",
+        TreeImage: "assets/images/trees/01973_Halesia_diptera.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree is cultivated as an ornamental tree.  It bears white ?owers and fruit that is a dry drupe with two wings down the sides.",
         TreeNumber: "1973",
         ID: "24",
@@ -2522,7 +2522,7 @@ data: [
     attributes: {
         CommonName: "Chinese pistache",
         ScientificName: "Pistacia chinensis",
-        TreeImage: "\\assets\\images\\trees\\01797_Pistacia_chinensis.JPG",
+        TreeImage: "assets/images/trees/01797_Pistacia_chinensis.JPG",
         Description: "Native to central and western China, the oil from the seed of this tree is used in biodiesel production and the wood is used to create furniture, yielding a yellow dye.  Horticulturally, the tree is a popular choice as a street tree in urban settings because it is very drought-tolerant and can survive harsh environments. ",
         TreeNumber: "1797",
         ID: "25",
@@ -2582,7 +2582,7 @@ data: [
     attributes: {
         CommonName: "Bay magnolia",
         ScientificName: "Magnolia virginiana",
-        TreeImage: "\\assets\\images\\trees\\02071_Magnolia_virginiana.JPG",
+        TreeImage: "assets/images/trees/02071_Magnolia_virginiana.JPG",
         Description: "Native to the southeastern and coastal United States and valued for its evergreen foliage, this tree is used in horticultural applications to give an architectural feel to landscape designs.  It is an attractive tree for parks and large gardens, grown for its large, conspicuous, scented ?owers, its clean, attractive foliage, and its fast growth. ",
         TreeNumber: "2071",
         ID: "26",
@@ -2642,7 +2642,7 @@ data: [
     attributes: {
         CommonName: "Fraser photinia",
         ScientificName: "Photinia x fraseri",
-        TreeImage: "\\assets\\images\\trees\\02016_Photinia_x_fraseri.JPG",
+        TreeImage: "assets/images/trees/02016_Photinia_x_fraseri.JPG",
         Description: "The red color of the new leaves in spring contrasted against the dark evergreen older leaves has given the plantthe popular name Red Robin.",
         TreeNumber: "2016",
         ID: "27",
@@ -2702,7 +2702,7 @@ data: [
     attributes: {
         CommonName: "Trident Maple",
         ScientificName: "Acer buergerianum",
-        TreeImage: "\\assets\\images\\trees\\02051_Acer_buergerianum.JPG",
+        TreeImage: "assets/images/trees/02051_Acer_buergerianum.JPG",
         Description: "Indigenous to eastern China, this tree is widely grown in temperate regions as an ornamental tree and is a popular choice for the art of bonsai.",
         TreeNumber: "2051",
         ID: "28",
@@ -2762,7 +2762,7 @@ data: [
     attributes: {
         CommonName: "Northern Red Oak",
         ScientificName: "Quercus rubra",
-        TreeImage: "\\assets\\images\\trees\\02056_Quercus_bicolor.JPG",
+        TreeImage: "assets/images/trees/02056_Quercus_bicolor.JPG",
         Description: "Native to the state of Georgia, this tree prefers fertile, sandy soil with good drainage.  Fruiting may not occur until tree is 40 years old.  This tree is one of the most important lumber oaks, as it is long-lived and can survive up to around 500 years.",
         TreeNumber: "2056",
         ID: "29",
@@ -2822,7 +2822,7 @@ data: [
     attributes: {
         CommonName: "Willow Oak",
         ScientificName: "Quercus phellos",
-        TreeImage: "\\assets\\images\\trees\\02084_Quercus_phellos.JPG",
+        TreeImage: "assets/images/trees/02084_Quercus_phellos.JPG",
         Description: "“Red oak wood” is marketed for pulp and paper production and lumber.  Due to its rapid growth, balance between axial and radial dominance, ability to withstand sun and shade, and full crown, it is a popular ornamental tree.  It often grows larger than expected, leading to cracked sidewalks.",
         TreeNumber: "2084",
         ID: "30",
@@ -2882,7 +2882,7 @@ data: [
     attributes: {
         CommonName: "Yellow wood",
         ScientificName: "Cladrastis kentukea",
-        TreeImage: "\\assets\\images\\trees\\00694_Cladrastis_kentukea.JPG",
+        TreeImage: "assets/images/trees/00694_Cladrastis_kentukea.JPG",
         Description: "A rare tree indigenous to eastern North America including Georgia, the name of this tree is derived from its yellow heartwood.  It is used in small amounts for specialist furniture, gunstocks, and decorative woodturning.",
         TreeNumber: "694",
         ID: "31",
@@ -2942,7 +2942,7 @@ data: [
     attributes: {
         CommonName: "Cabbage palm",
         ScientificName: "Sabal palmetto",
-        TreeImage: "\\assets\\images\\trees\\02121_Sabal_palmetto.JPG",
+        TreeImage: "assets/images/trees/02121_Sabal_palmetto.JPG",
         Description: "Indigenous to the lower southeastern United States including Georgia, this tree is salt and drought tolerant.  It is cultivated as a food source and is the origin of “hearts of palm,” a vegetable harvested from the inner core and growing bud of the tree.  The trunks are used to make wharf piles.",
         TreeNumber: "2121",
         ID: "32",
@@ -3002,7 +3002,7 @@ data: [
     attributes: {
         CommonName: "Princeton Elm",
         ScientificName: "Ulmus americana ‘Princeton’",
-        TreeImage: "\\assets\\images\\trees\\04836_Ulmas_americana_princeton.JPG",
+        TreeImage: "assets/images/trees/04836_Ulmas_americana_princeton.JPG",
         Description: "‘Princeton’ is an older cultivar with an extremely rapid growth rate. It was propagated in 1922 and planted along Washington Ave at the entrance to Princeton University in New Jersey. It tolerates Dutch elm disease well and has the nice classic American elm shape. It may have the best form of all the Ulmus americana cultivars.",
         TreeNumber: "4836",
         ID: "33",
@@ -3062,7 +3062,7 @@ data: [
     attributes: {
         CommonName: "Star Magnolia",
         ScientificName: "Magnolia stellata",
-        TreeImage: "\\assets\\images\\trees\\00742_Magnolia_stellata.JPG",
+        TreeImage: "assets/images/trees/00742_Magnolia_stellata.JPG",
         Description: "This tree bears large, showy, white or pink flower in early spring, before its leaves open.  Star magnolia is native to Japan. It was introduced into cultivation in 1862.",
         TreeNumber: "742",
         ID: "34",
@@ -3122,7 +3122,7 @@ data: [
     attributes: {
         CommonName: "Black Walnut",
         ScientificName: "Juglans nigra",
-        TreeImage: "\\assets\\images\\trees\\12232_Juglans_nigra.JPG",
+        TreeImage: "assets/images/trees/12232_Juglans_nigra.JPG",
         Description: "Native to eastern North America including Georgia, the nuts of this tree are shelled commercially in the United States.  Popular uses include ice cream, bakery goods and confections.  The walnuts have the capability to stain cars, sidewalks, porches, and patios.  The brownish-black dye was used by early American settlers to dye hair.",
         TreeNumber: "12232",
         ID: "35",
@@ -3182,7 +3182,7 @@ data: [
     attributes: {
         CommonName: "Pignut Hickory",
         ScientificName: "Carya glabra",
-        TreeImage: "\\assets\\images\\trees\\12269_Carya_glabra.JPG",
+        TreeImage: "assets/images/trees/12269_Carya_glabra.JPG",
         Description: "Common in the eastern United States and native to Georgia, this tree is considered a “soil improver” because the leaves have a relatively high calcium content.  The nuts and bark provide food to many kinds of wildlife.  With its high heating value, hickory is used to heat homes.",
         TreeNumber: "12269",
         ID: "36",
@@ -3242,7 +3242,7 @@ data: [
     attributes: {
         CommonName: "Bald cypress",
         ScientificName: "Taxodium distichum",
-        TreeImage: "\\assets\\images\\trees\\03501_Taxodium_distichum.JPG",
+        TreeImage: "assets/images/trees/03501_Taxodium_distichum.JPG",
         Description: "Native to the Mississippi Delta region and other areas of the lower coastal United States including Georgia, this tree is recognized by its pronounced “knees” surrounding the trunk.  As it grows primarily in wetlands, the lumber is extremely water resistant.  When clumped in forests it creates a productive ecosystem.",
         TreeNumber: "3501",
         ID: "37",
@@ -3302,7 +3302,7 @@ data: [
     attributes: {
         CommonName: "Winged Elm",
         ScientificName: "Ulmus alata",
-        TreeImage: "\\assets\\images\\trees\\03491_Ulmus_alata.JPG",
+        TreeImage: "assets/images/trees/03491_Ulmus_alata.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree can grow in a wide range of soils but the wood is not particularly useful in the lumber industry.  It is, however, valued for its use in the creation of hockey sticks.",
         TreeNumber: "3491",
         ID: "38",
@@ -3362,7 +3362,7 @@ data: [
     attributes: {
         CommonName: "Wax Myrtle",
         ScientificName: "Myrica cerifera",
-        TreeImage: "\\assets\\images\\trees\\03492_Myrica_cerifera.JPG",
+        TreeImage: "assets/images/trees/03492_Myrica_cerifera.JPG",
         Description: "The wax coating on the fruit of this tree, known as Bayberry wax, has been traditionally used to make candles.  The foliage can be used by campers as insect repellent.  The fruit is an economically important crop in China, sold fresh, dried, canned, juiced, and for alcoholic beverages, and in Denmark for spicing beer and snaps.",
         TreeNumber: "3492",
         ID: "39",
@@ -3422,7 +3422,7 @@ data: [
     attributes: {
         CommonName: "Cherry Bark Oak",
         ScientificName: "Quercus pagoda",
-        TreeImage: "\\assets\\images\\trees\\12934_Quercus_pagoda.JPG",
+        TreeImage: "assets/images/trees/12934_Quercus_pagoda.JPG",
         Description: "Because of the tree’s good form and quality, it is regarded as one of the best red oaks. The light reddish-brown wood is used for interior finishing, veneer, furniture, and cabinets. Many wildlife species consume the acorn, including both the gray and fox squirrel, deer, raccoon, and many birds (wild turkey, blue jay, wood duck, and grackle).",
         TreeNumber: "12934",
         ID: "40",
@@ -3482,7 +3482,7 @@ data: [
     attributes: {
         CommonName: "Japanese Pagoda",
         ScientificName: "Sophora japonica",
-        TreeImage: "\\assets\\images\\trees\\12992_Sophora_Japonica.JPG",
+        TreeImage: "assets/images/trees/12992_Sophora_Japonica.JPG",
         Description: "Although not native to Japan (the tree is native to China and Korea), the name of this tree comes from Japanese use around their Buddhist Temples.  This tree is drought-tolerant.  It has been cultivated for its medicinal qualitites relating to the circulatory system.  ",
         TreeNumber: "12992",
         ID: "41",
@@ -3542,7 +3542,7 @@ data: [
     attributes: {
         CommonName: "Mockernut Hickory",
         ScientificName: "Carya tomentosa",
-        TreeImage: "\\assets\\images\\trees\\12916_Carya_tomentosa.JPG",
+        TreeImage: "assets/images/trees/12916_Carya_tomentosa.JPG",
         Description: "Native to the state of Georgia, this tree is also known as Carya alba, and the wood is the preferred hickory for smoking hams.  The common name refers to the large fruits that, once husked and shelled, yield very little substance. ",
         TreeNumber: "12916",
         ID: "42",
@@ -3602,7 +3602,7 @@ data: [
     attributes: {
         CommonName: "Chinese Fringe Tree",
         ScientificName: "Chionanthus retusus",
-        TreeImage: "\\assets\\images\\trees\\13044_Chionanthus_retusus.JPG",
+        TreeImage: "assets/images/trees/13044_Chionanthus_retusus.JPG",
         Description: "Native to eastern Asia, in eastern and central China, Taiwan, Korea, and Japan, this tree is typically denser and larger than the predominant native spieces Chionanthus virginicus.  The fruit of the tree is a good food source for birds and wildlife. ",
         TreeNumber: "13044",
         ID: "43",
@@ -3662,7 +3662,7 @@ data: [
     attributes: {
         CommonName: "Luster Leaf Holly",
         ScientificName: "Ilex latifolia",
-        TreeImage: "\\assets\\images\\trees\\13046_Ilex_latifolia.JPG",
+        TreeImage: "assets/images/trees/13046_Ilex_latifolia.JPG",
         Description: "Luster Leaf holly is native to southern Japan and eastern and southern China.  It is cultivated as an ornamental tree in parks and temple gardens. The leaves may be infused to make tea. ",
         TreeNumber: "13046",
         ID: "44",
@@ -3722,7 +3722,7 @@ data: [
     attributes: {
         CommonName: "Osage Orange",
         ScientificName: "Maclura pomifera",
-        TreeImage: "\\assets\\images\\trees\\13043_Maclura_pomifera.JPG",
+        TreeImage: "assets/images/trees/13043_Maclura_pomifera.JPG",
         Description: "When dried, the wood has the highest BTU content of any commonly available North American wood, and burns long and hot.  In Arkansas, in the early 19th century, a good Osage bow was worth a horse and a blanket.  A yellow-Orangedye can be extracted from the wood, which can be used as a substitute for fustic and aniline dyes. ",
         TreeNumber: "13043",
         ID: "45",
@@ -3782,7 +3782,7 @@ data: [
     attributes: {
         CommonName: "Valley Forge Elm",
         ScientificName: "Ulmus americana ‘Valley Forge'",
-        TreeImage: "\\assets\\images\\trees\\12921_Ulmas_americana_Valley_Forge.JPG",
+        TreeImage: "assets/images/trees/12921_Ulmas_americana_Valley_Forge.JPG",
         Description: "‘Valley Forge’ was released to wholesale nurseries without patent restrictions by the U. S. National Arboretum in 1995 after proving to have a resistance to Dutch elm disease.  It has proven the most resistant of all the American Elm cultivars to Dutch elm disease. It is also very resistant to the elm leaf beetle.",
         TreeNumber: "12921",
         ID: "46",
@@ -3842,7 +3842,7 @@ data: [
     attributes: {
         CommonName: "European hornbeam",
         ScientificName: "Carpinus betulus",
-        TreeImage: "\\assets\\images\\trees\\03266_Carpinus_betulus.JPG",
+        TreeImage: "assets/images/trees/03266_Carpinus_betulus.JPG",
         Description: "Native to western Asia and central, eastern, and southern Europe, the wood is used in objects where a very hard wood is required, including carving boards, tool handles, coach wheels, piano actions, and gear pegs in simple machines such as traditional windmills.",
         TreeNumber: "3266",
         ID: "47",
@@ -3902,7 +3902,7 @@ data: [
     attributes: {
         CommonName: "Live Oak",
         ScientificName: "Quercus virginiana",
-        TreeImage: "\\assets\\images\\trees\\12376_Quercus_virginiana.JPG",
+        TreeImage: "assets/images/trees/12376_Quercus_virginiana.JPG",
         Description: "Native to the southeastern U.S. including Georgia, the branches host plants such as Spanish moss, ball moss, and resurrection fern, providing shelter for wildlife. Native Americans bent branches for trail markers and the USS Constitution was constructed from live oak harvested on St. Simons Island, GA.",
         TreeNumber: "12376",
         ID: "48",
@@ -3962,7 +3962,7 @@ data: [
     attributes: {
         CommonName: "American snowbell",
         ScientificName: "Styrax americanus",
-        TreeImage: "\\assets\\images\\trees\\01921_Styrax_americanus.JPG",
+        TreeImage: "assets/images/trees/01921_Styrax_americanus.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree is host to Promethea Moth.  It generally grows in swamps, ?oodplains, and other similar wetlands.",
         TreeNumber: "1921",
         ID: "49",
@@ -4022,7 +4022,7 @@ data: [
     attributes: {
         CommonName: "Fringe Tree",
         ScientificName: "Chionanthus virginicus",
-        TreeImage: "\\assets\\images\\trees\\02129_chionanthus_virginicus.JPG",
+        TreeImage: "assets/images/trees/02129_chionanthus_virginicus.JPG",
         Description: "Native to the southeastern United States including Georgia, the dried roots and bark were used by Native Americans to treat skin inflammations.  The crushed bark was used in treatment of sores and wounds.  The fruit provides a good food source for birds and wildlife.",
         TreeNumber: "2129",
         ID: "50",
@@ -4082,7 +4082,7 @@ data: [
     attributes: {
         CommonName: "American Beech",
         ScientificName: "Fagus grandifolia",
-        TreeImage: "\\assets\\images\\trees\\02350_Fagus_grandifolia.JPG",
+        TreeImage: "assets/images/trees/02350_Fagus_grandifolia.JPG",
         Description: "Native to eastern North America including Georgia, this is an important tree in forestry.  Because the wood is heavy, hard, and strong, it was not used for construction until the advent of power tools in the 20th century.  It is now used in ?ooring, furniture, and other woodenware.",
         TreeNumber: "2350",
         ID: "51",
@@ -4142,7 +4142,7 @@ data: [
     attributes: {
         CommonName: "Eastern Red Cedar",
         ScientificName: "Juniperus virginiana",
-        TreeImage: "\\assets\\images\\trees\\02375_Juniperus_viginiana.JPG",
+        TreeImage: "assets/images/trees/02375_Juniperus_viginiana.JPG",
         Description: "In the Missouri and Arkansas, this tree is commonly used as a Christmas tree.  The aromatic wood is avoided by moths, so it is used in dressers and closets.  Native Americans used poles to mark out agreed tribal hunting territories, and French traders named Baton Rouge, LA, (meaning “red stick”) from the reddish color of the poles.",
         TreeNumber: "2375",
         ID: "52",
@@ -4202,7 +4202,7 @@ data: [
     attributes: {
         CommonName: "Tulip Poplar",
         ScientificName: "Liriodendron tulipifera",
-        TreeImage: "\\assets\\images\\trees\\02391_Liriodendron_tulipifera.JPG",
+        TreeImage: "assets/images/trees/02391_Liriodendron_tulipifera.JPG",
         Description: "Native to Georgia, this tree bears the wood of choice for use in organs.  Its tall and rapid growth is a function of its shade intolerance; it grows much slower in the sun.  This tree species is a major honey plant, receiving mixed reviews as a table honey but favorably regarded by bakers.  Nectar is produced in the Orangeparts of the ?owers.",
         TreeNumber: "2391",
         ID: "53",
@@ -4262,7 +4262,7 @@ data: [
     attributes: {
         CommonName: "Kousa Dogwood",
         ScientificName: "Cornus Kousa",
-        TreeImage: "\\assets\\images\\trees\\02392_Cornus_kousa.JPG",
+        TreeImage: "assets/images/trees/02392_Cornus_kousa.JPG",
         Description: "Indigenous to eastern Asia, this tree turns a showy red color in fall.  It is widely planted as an ornamental tree in areas affected by the dogwood anthracnose disease.  The berries are sweet and sometimes used in making wine.",
         TreeNumber: "2392",
         ID: "54",
@@ -4322,7 +4322,7 @@ data: [
     attributes: {
         CommonName: "Bottlebrush buckeye",
         ScientificName: "Aesculus parviflora",
-        TreeImage: "\\assets\\images\\trees\\02401_Aesculus_parviflora.JPG",
+        TreeImage: "assets/images/trees/02401_Aesculus_parviflora.JPG",
         Description: "This tree is grown as an ornamental plant in gardens where its August flowering attracts butterflies.  Naturalist William Bartram first noted this shrub on his travels through Carolina, Georgia, and Florida from 1773 to 1778 AD.",
         TreeNumber: "2401",
         ID: "55",
@@ -4382,7 +4382,7 @@ data: [
     attributes: {
         CommonName: "River Birch",
         ScientificName: "Betula nigra",
-        TreeImage: "\\assets\\images\\trees\\02407_Betula_nigra.JPG",
+        TreeImage: "assets/images/trees/02407_Betula_nigra.JPG",
         Description: "Native to the eastern United States including Georgia, this tree is one of the few heat-tolerant trees in the Birch family.  Native Americans used the boiled sap as a sweetener similar to maple syrup and the inner bark as a survival food.  Yellow-bellied sapsuckers peck holes in the bark to feed on the sap.",
         TreeNumber: "2407",
         ID: "56",
@@ -4442,7 +4442,7 @@ data: [
     attributes: {
         CommonName: "Oklahoma Redbud",
         ScientificName: "Cercis reniformis",
-        TreeImage: "\\assets\\images\\trees\\02561_Cercis_reniformis.JPG",
+        TreeImage: "assets/images/trees/02561_Cercis_reniformis.JPG",
         Description: "Indigenous to southwestern North America including Texas, this tree is similar to the Eastern Redbud.  The seeds are a food source for wildlife.  The tree bears very shiny, leathery leaves, purple seedpods, and dark pink to bright red flowers.",
         TreeNumber: "2561",
         ID: "57",
@@ -4502,7 +4502,7 @@ data: [
     attributes: {
         CommonName: "American Hornbeam",
         ScientificName: "Carpinus caroliniana",
-        TreeImage: "\\assets\\images\\trees\\00928_Carpinus_caroliniana.JPG",
+        TreeImage: "assets/images/trees/00928_Carpinus_caroliniana.JPG",
         Description: "Indigenous to the eastern United States including Georgia, the wood is heavy and hard.  It is used to create tool handles, longbows, walking sticks, walking canes, and golf clubs.",
         TreeNumber: "928",
         ID: "58",
@@ -4562,7 +4562,7 @@ data: [
     attributes: {
         CommonName: "European Hornbeam",
         ScientificName: "Carpinus betulas ‘fastigiata’",
-        TreeImage: "\\assets\\images\\trees\\12496_Carpinus_betulas_fastigiata.JPG",
+        TreeImage: "assets/images/trees/12496_Carpinus_betulas_fastigiata.JPG",
         Description: "The smooth, grey, rippling bark shields the extremely hard, strong wood. This wood is so solid it was reportedly used by the ancient Romans to make chariots, as well as being used by the American pioneers to make yokes for their oxen.",
         TreeNumber: "12496",
         ID: "59",
@@ -4622,7 +4622,7 @@ data: [
     attributes: {
         CommonName: "Green Ash",
         ScientificName: "Fraxinus pennsylvanica",
-        TreeImage: "\\assets\\images\\trees\\02323_Fraxinus_pennsylvanica.JPG",
+        TreeImage: "assets/images/trees/02323_Fraxinus_pennsylvanica.JPG",
         Description: "This is one of the most popular boulevard trees throughout the U.S. and Canada due to its good form and tolerance of urban conditions.  Gibson, Fender, and Warwick, among others, use the wood to make guitars because it can be somewhat lighter than white ash without sacri?cing in tone. It has a bright sound and the wood is desirable.",
         TreeNumber: "2323",
         ID: "60",
@@ -4682,7 +4682,7 @@ data: [
     attributes: {
         CommonName: "Chinese Elm",
         ScientificName: "Ulmus parvifolia",
-        TreeImage: "\\assets\\images\\trees\\00756_Ulmus_parvifolia.JPG",
+        TreeImage: "assets/images/trees/00756_Ulmus_parvifolia.JPG",
         Description: "Native to China, Korea, and Japan, this tree is tolerant of drought, soil, light conditions, and air pollution.  It has good resistance to Dutch Elm Disease, a fungi spread by the elm bark beetle.  The wood is the hardest of all elm trees thus it used in furniture and ?ooring.  It is also used as a bonsai tree.",
         TreeNumber: "756",
         ID: "61",
@@ -4742,7 +4742,7 @@ data: [
     attributes: {
         CommonName: "Fire thorn",
         ScientificName: "Pyracantha coccinea",
-        TreeImage: "\\assets\\images\\trees\\00771_Pyracantha coccinea.JPG",
+        TreeImage: "assets/images/trees/00771_Pyracantha coccinea.JPG",
         Description: "Native to southern Europe and western Asia, this tree has small, white ?owers and produces small, bright, red berries.  The fruit is bitter and astringent, making it inedible when raw, but can be cooked to make jellies, jams, sauces, and marmalade. Since the 1700s A.D. in England, the tree was used to cover unsightly walls.",
         TreeNumber: "771",
         ID: "62",
@@ -4802,7 +4802,7 @@ data: [
     attributes: {
         CommonName: "Cherry Laurel",
         ScientificName: "Prunus laurocerasus",
-        TreeImage: "\\assets\\images\\trees\\04922_Prunus_laurocerasus.JPG",
+        TreeImage: "assets/images/trees/04922_Prunus_laurocerasus.JPG",
         Description: "Native to regions bordering the Black Sea, this tree is often used for hedges, screening, and as a massed landscape plant.  Its rapid growth and tolerance of drought and shade often allow it to out-compete and kill off native plant species.  Laurel water, a distillation made from the plant, has a pharmacological usage.",
         TreeNumber: "4922",
         ID: "63",
@@ -4862,7 +4862,7 @@ data: [
     attributes: {
         CommonName: "Bradford Pear",
         ScientificName: "Pyrus calleryana",
-        TreeImage: "\\assets\\images\\trees\\04756_Pyrus_calleryana.JPG",
+        TreeImage: "assets/images/trees/04756_Pyrus_calleryana.JPG",
         Description: "Native to Vietnam and China, the tree is an invasive species in areas of eastern North America, out competing many native plants and trees.  The tree is known for its pungent, often unpleasant smell.  The timber is prized for making woodwind instruments and its veneer is used in ?ne furniture.  ",
         TreeNumber: "4756",
         ID: "64",
@@ -4922,7 +4922,7 @@ data: [
     attributes: {
         CommonName: "Japanese red cedar",
         ScientificName: "Cryptomeria japonica",
-        TreeImage: "\\assets\\images\\trees\\04937_Cryptomeria_japonica.JPG",
+        TreeImage: "assets/images/trees/04937_Cryptomeria_japonica.JPG",
         Description: "This large evergreen tree is the national tree of Japan.  The timber is extremely fragrant, weather and insect resistant, soft, and with a low density; it is favored for light construction as it is easy to saw and season.",
         TreeNumber: "4937",
         ID: "65",
@@ -4982,7 +4982,7 @@ data: [
     attributes: {
         CommonName: "Ogeechee Tupelo",
         ScientificName: "Nyssa ogeche",
-        TreeImage: "\\assets\\images\\trees\\04761_Nyssa_ogeche.JPG",
+        TreeImage: "assets/images/trees/04761_Nyssa_ogeche.JPG",
         Description: "Native to Georgia, the honey made from the nectar is known as “tupelo honey” and it is noted for attracting wildlife.  The wood is light, soft, and tough, but not strong.  It is coarse-grained, dif?cult to split, and of little value.  The tree is too rare and small to be economically important in the timber industry.",
         TreeNumber: "4761",
         ID: "66",
@@ -5042,7 +5042,7 @@ data: [
     attributes: {
         CommonName: "Big Leaf Magnolia",
         ScientificName: "Magnolia macrophylla",
-        TreeImage: "\\assets\\images\\trees\\04569_Magnolia_macrophylla.JPG",
+        TreeImage: "assets/images/trees/04569_Magnolia_macrophylla.JPG",
         Description: "Native to the southeastern United States including Georgia, the tree boasts the largest simple leaf and single ?ower of any native plant in North America.  Its collection may have an adverse impact on this tree’s existence due to low population density and has led to its status as an endangered species in some states.",
         TreeNumber: "4569",
         ID: "67",
@@ -5102,7 +5102,7 @@ data: [
     attributes: {
         CommonName: "Southern Red Oak",
         ScientificName: "Quercus falcata",
-        TreeImage: "\\assets\\images\\trees\\04570_Quercus_falcata.JPG",
+        TreeImage: "assets/images/trees/04570_Quercus_falcata.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree grows in well-drained clay and loam soil in full sun.  The wood can be used in furniture making, however this is rare.",
         TreeNumber: "4570",
         ID: "68",
@@ -5162,7 +5162,7 @@ data: [
     attributes: {
         CommonName: "Virginia Pine",
         ScientificName: "Pinus virginiana",
-        TreeImage: "\\assets\\images\\trees\\04370_Pinus_virginiana.JPG",
+        TreeImage: "assets/images/trees/04370_Pinus_virginiana.JPG",
         Description: "Indigenous to the state of Georgia, this pine is useful for reforesting and provides nourishment for wildlife.  This tree is also commonly cultivated on Christmas tree farms.",
         TreeNumber: "4370",
         ID: "69",
@@ -5222,7 +5222,7 @@ data: [
     attributes: {
         CommonName: "American Elm",
         ScientificName: "Ulmus americana",
-        TreeImage: "\\assets\\images\\trees\\04565_Ulmas_americana.JPG",
+        TreeImage: "assets/images/trees/04565_Ulmas_americana.JPG",
         Description: "Indigenous to eastern North America including Georgia, this tree grows in clay and silty clay soils and is resonably drought-tolerant.  The wood is important in the creation of sports equipment (especially hockey sticks), furniture, and ?ooring.",
         TreeNumber: "4565",
         ID: "70",
@@ -5282,7 +5282,7 @@ data: [
     attributes: {
         CommonName: "Tea Olive",
         ScientificName: "Osmanthus fragrans",
-        TreeImage: "\\assets\\images\\trees\\00937_Osmanthus_fragrans.JPG",
+        TreeImage: "assets/images/trees/00937_Osmanthus_fragrans.JPG",
         Description: "In Chinese cuisine, its flowers may be infused with green or black tea leaves to create a scented tea. The flowers are also used to produce osmanthus-scented jam, sweet cakes, dumplings, soups, and even liquor.",
         TreeNumber: "937",
         ID: "71",
@@ -5342,7 +5342,7 @@ data: [
     attributes: {
         CommonName: "Carolina laurelcherry",
         ScientificName: "Prunus caroliniana",
-        TreeImage: "\\assets\\images\\trees\\00931_Prunus_caroliniana.JPG",
+        TreeImage: "assets/images/trees/00931_Prunus_caroliniana.JPG",
         Description: "Native to the southeastern United States including Georgia, this tree has long been an ornamental tree and landscape hedge shrub in gardens.  It is sometimes considered a “weedy native” species because when it is damaged or cut down to the ground, it is capable of vigorously resprouting.  It often forms shrubby thickets in the wild.",
         TreeNumber: "931",
         ID: "72",
@@ -5402,7 +5402,7 @@ data: [
     attributes: {
         CommonName: "Service Berry",
         ScientificName: "Amelanchier laevis",
-        TreeImage: "\\assets\\images\\trees\\04344_Amelanchier_laevis.JPG",
+        TreeImage: "assets/images/trees/04344_Amelanchier_laevis.JPG",
         Description: "Native to North America, the fruit are excellent to eat raw, tasting somewhat like a blueberry, strongly accented by the almond-like ?avour of the seeds.  The wood can be used for tool handles and ?shing rods.  Native Americans used it to make arrow shafts.",
         TreeNumber: "4344",
         ID: "73",
@@ -5462,7 +5462,7 @@ data: [
     attributes: {
         CommonName: "Japanese zelkova",
         ScientificName: "Zelkova serrata",
-        TreeImage: "\\assets\\images\\trees\\00943_Zelkova_serrata.JPG",
+        TreeImage: "assets/images/trees/00943_Zelkova_serrata.JPG",
         Description: "Indigenous to Japan, Korea, Manchuria, and Taiwan, this tree well-suited as a street and shade tree.  It is tolerant of wind, drought, and air pollution and produces dense shade. The tree is popular in the art of bonsai and the wood is  used in the creation of certain furniture and taiko (drums).",
         TreeNumber: "943",
         ID: "74",
@@ -5522,7 +5522,7 @@ data: [
     attributes: {
         CommonName: "Yaupon Holly",
         ScientificName: "Ilex vomitoria",
-        TreeImage: "\\assets\\images\\trees\\00951_Ilex_vomitoria.JPG",
+        TreeImage: "assets/images/trees/00951_Ilex_vomitoria.JPG",
         Description: "Native to the southeastern United States including Georgia, the most common cultivars of this tree are slow-growing shrubs popular for their dense, evergreen foliage and their adaptability to pruning into hedges.  The fruit is an important food for many birds and mammals.  Native Americans used the leaves and stems to brew a tea.  ",
         TreeNumber: "951",
         ID: "75",
@@ -5582,7 +5582,7 @@ data: [
     attributes: {
         CommonName: "Laurel Oak",
         ScientificName: "Quercus laurifolia",
-        TreeImage: "\\assets\\images\\trees\\02182_Quercus_laurifolia.JPG",
+        TreeImage: "assets/images/trees/02182_Quercus_laurifolia.JPG",
         Description: "Native to the lower coastal United States including Georgia, the fruit of this tree is an acorn which provides food for raccoons, white-tailed deer, wild turkeys, squirrels, ducks, bobwhite quail, and small birds and rodents.",
         TreeNumber: "2182",
         ID: "76",
@@ -5642,7 +5642,7 @@ data: [
     attributes: {
         CommonName: "Chinese Evergreen Oak",
         ScientificName: "Quercus myrsinifolia",
-        TreeImage: "\\assets\\images\\trees\\06284_Quercus_myrsinifolia.JPG",
+        TreeImage: "assets/images/trees/06284_Quercus_myrsinifolia.JPG",
         Description: "The Chinese Evergreen Oak is native to east and central southeast China, Japan, Korea, and north southeast Asia. It has several common names, including bamboo-leaf oak,  Chinese evergreen oak, and Chinese ring-cupped oak.",
         TreeNumber: "6284",
         ID: "77",
@@ -5702,7 +5702,7 @@ data: [
     attributes: {
         CommonName: "Pecan",
         ScientificName: "Carya illinoinensis",
-        TreeImage: "\\assets\\images\\trees\\06295_Carya_illinoinensis.JPG",
+        TreeImage: "assets/images/trees/06295_Carya_illinoinensis.JPG",
         Description: "Native to southern and central North America, the nuts (pecans) are an excellent source of manganese, protein, unsaturated fats, and Omega-6 fatty acids.  Research shows that pecans contain plant sterols which are known for their cholesterol-lowering ability.",
         TreeNumber: "6295",
         ID: "78",
@@ -5762,7 +5762,7 @@ data: [
     attributes: {
         CommonName: "Sugar Maple",
         ScientificName: "Acer saccharum",
-        TreeImage: "\\assets\\images\\trees\\06303_Acer_saccharum.JPG",
+        TreeImage: "assets/images/trees/06303_Acer_saccharum.JPG",
         Description: "Native to North America including Georgia, this tree is known to engage in hydraulic lift, drawing water from lower soil layers and exuding that water into upper, drier soil layers, bene?ting the tree and other plants.  The sap is a primary source for maple syrup.  The wood is prized for its use in furniture and flooring.  ",
         TreeNumber: "6306",
         ID: "79",
@@ -5822,7 +5822,7 @@ data: [
     attributes: {
         CommonName: "Red Mulberry",
         ScientificName: "Morus rubra",
-        TreeImage: "\\assets\\images\\trees\\06160_Morus_rubra.JPG",
+        TreeImage: "assets/images/trees/06160_Morus_rubra.JPG",
         Description: "Indigenous to eastern North America including Georgia, the fruit of this tree is very sweet.  It can be eaten raw, used in fruit pastries, or fermented into wine.  The wood is sometimes dried and used for smoking meats with a mild and sweet flavor.",
         TreeNumber: "6160",
         ID: "80",
@@ -5882,7 +5882,7 @@ data: [
     attributes: {
         CommonName: "Sugarberry",
         ScientificName: "Celtis laevigata",
-        TreeImage: "\\assets\\images\\trees\\06172_Celtis_laevigata.JPG",
+        TreeImage: "assets/images/trees/06172_Celtis_laevigata.JPG",
         Description: "Indigenous to North America including Georgia, this tree occurs primarily along streams and in moist soils on floodplains.  Birds consume the fruit, helping to disperse the seeds, and a number of insects eat the leaves.",
         TreeNumber: "6172",
         ID: "81",
@@ -5942,7 +5942,7 @@ data: [
     attributes: {
         CommonName: "Freeman Maple",
         ScientificName: "Acer x freemanii",
-        TreeImage: "\\assets\\images\\trees\\06025_Acer_x_freemanii.JPG",
+        TreeImage: "assets/images/trees/06025_Acer_x_freemanii.JPG",
         Description: "A hybrid between the Red Maple and Silver Maple, this tree is a fast grower with less brittle wood and less invasive roots than Red Maple.",
         TreeNumber: "6025",
         ID: "82",
@@ -6002,7 +6002,7 @@ data: [
     attributes: {
         CommonName: "Black Tupelo",
         ScientificName: "Nyssa sylvatica",
-        TreeImage: "\\assets\\images\\trees\\06024_Nyssa_sylvatica.JPG",
+        TreeImage: "assets/images/trees/06024_Nyssa_sylvatica.JPG",
         Description: "Native to eastern North America, this tree is cultivated as an ornamental tree in parks and large gardens, where it is often used as a specimen or shade tree.  It is best grown in sheltered but not crowded positions.  Hollow sections of the trunks were formerly used as bee gums by beekeepers and the sap is a major source of wild honey.",
         TreeNumber: "6024",
         ID: "83",
@@ -6062,7 +6062,7 @@ data: [
     attributes: {
         CommonName: "Nuttall Oak",
         ScientificName: "Quercus texana",
-        TreeImage: "\\assets\\images\\trees\\06023_Quercus_texana.JPG",
+        TreeImage: "assets/images/trees/06023_Quercus_texana.JPG",
         Description: "Indigenous to the lower central United States, this tree is adaptable to a wide array of soils, even clay.  The leaves display a vivid fall color and the fruit, the acorn, is an important food source for ducks.",
         TreeNumber: "6023",
         ID: "84",
@@ -6122,7 +6122,7 @@ data: [
     attributes: {
         CommonName: "Chestnut Oak",
         ScientificName: "Quercus prinus",
-        TreeImage: "\\assets\\images\\trees\\06000_Quercus_prinus.JPG",
+        TreeImage: "assets/images/trees/06000_Quercus_prinus.JPG",
         Description: "Chestnut oak occurs primarily in the Appalachian Mountains and adjacent hill country. Chestnut oak is rareon the Southeastern Coastal Plain.  Chestnut oak wood is cut and utilized as white oak lumber.",
         TreeNumber: "6000",
         ID: "85",
@@ -6182,7 +6182,7 @@ data: [
     attributes: {
         CommonName: "Swamp White Oak",
         ScientificName: "Quercus bicolor",
-        TreeImage: "\\assets\\images\\trees\\04971_Quercus_bicolor.JPG",
+        TreeImage: "assets/images/trees/04971_Quercus_bicolor.JPG",
         Description: "Native to the eastern United States, this tree forms hybrids with Bur Oak where they occur together in the wild.  Over 400 of these trees will be planted in the September 11th Memorial Plaza in Manhattan in New York.  Wildlife such as deer, ducks, and geese are attracted to this tree when the acorns drop in the fall season.",
         TreeNumber: "4971",
         ID: "86",
@@ -6242,7 +6242,7 @@ data: [
     attributes: {
         CommonName: "Overcup Oak",
         ScientificName: "Quercus lyrata",
-        TreeImage: "\\assets\\images\\trees\\04969_Quercus_lyrata.JPG",
+        TreeImage: "assets/images/trees/04969_Quercus_lyrata.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, the common name comes from the acorns being largely enclosed in the cup and the scienti?c name comes from the lyrate (lyre-shaped) leaves.  Similar to other white oaks, the wood is valuable and used for making objects such as barrels, weaponry, and ships.",
         TreeNumber: "4969",
         ID: "87",
@@ -6302,7 +6302,7 @@ data: [
     attributes: {
         CommonName: "Sawtooth Oak",
         ScientificName: "Quercus acutissima",
-        TreeImage: "\\assets\\images\\trees\\04961_Quercus_acutissima.JPG",
+        TreeImage: "assets/images/trees/04961_Quercus_acutissima.JPG",
         Description: "Indigenous to China, Korea, and Japan, this tree bears flowers that are wind-pollinated catkins and acorns as the fruit.  The wood has many of the characteristics of other fruit.  The wood has many of the characteristics of other is relegated to uses such as fencing.",
         TreeNumber: "4961",
         ID: "88",
@@ -6362,7 +6362,7 @@ data: [
     attributes: {
         CommonName: "Fosters Holly",
         ScientificName: "Ilex x attenuata",
-        TreeImage: "\\assets\\images\\trees\\04984_Ilex_x_attenuata.JPG",
+        TreeImage: "assets/images/trees/04984_Ilex_x_attenuata.JPG",
         Description: "Also known as Savannah Holly, the tree is ideal for use as a street tree.  The fruit of the tree is very attractive to wildlife and serves as an excellent food source.  The American Indians used preserved Holly berries as decorative buttons and were highly sought after by other tribes who bartered for them.",
         TreeNumber: "4984",
         ID: "89",
@@ -6422,7 +6422,7 @@ data: [
     attributes: {
         CommonName: "Sweet Viburnum",
         ScientificName: "Viburnum odoratissimum",
-        TreeImage: "\\assets\\images\\trees\\04988_Viburnum_odoratissimum.JPG",
+        TreeImage: "assets/images/trees/04988_Viburnum_odoratissimum.JPG",
         Description: "Native to Asia, this tree is a dense shrub often used for soundproofing between streets and houses.  It grows to 30 feet high and has glossy elliptical leaves that can grow up to 8 inches long.  In spring, it produces pyramid-shaped clusters of fragrant, white flowers, followed by red berries that age to black.",
         TreeNumber: "4988",
         ID: "90",
@@ -6482,7 +6482,7 @@ data: [
     attributes: {
         CommonName: "Pin Oak",
         ScientificName: "Quercus palustris",
-        TreeImage: "\\assets\\images\\trees\\04996_Quercus_palustris.JPG",
+        TreeImage: "assets/images/trees/04996_Quercus_palustris.JPG",
         Description: "Native to the eastern half of Canada and the United States including Georgia, this tree is one of the most commonly used landscaping oak trees in its native range due to its relatively fast growth, ease of transplant, and pollution tolerance.  The distinctive shape of the tree is considered unique among hardwoods.",
         TreeNumber: "4996",
         ID: "91",
@@ -6542,7 +6542,7 @@ data: [
     attributes: {
         CommonName: "Boxelder",
         ScientificName: "Acer negundo",
-        TreeImage: "\\assets\\images\\trees\\09990_Acer_negundo.JPG",
+        TreeImage: "assets/images/trees/09990_Acer_negundo.JPG",
         Description: "Native to Georgia, this tree was used to make the oldest surviving Anasazi ?utes, dated to 620 AD.  Various Native American tribes have used it to make spiritual medicine, charcoal for body paint, and bellows, and used the sap to make sugar, syrup, and candy.",
         TreeNumber: "9990",
         ID: "92",
@@ -6602,7 +6602,7 @@ data: [
     attributes: {
         CommonName: "Slippery Elm",
         ScientificName: "Ulmas rubra",
-        TreeImage: "\\assets\\images\\trees\\07465_Ulmus_rubra.JPG",
+        TreeImage: "assets/images/trees/07465_Ulmus_rubra.JPG",
         Description: "Native to North America, this tree is less susceptible to Dutch Elm Disease, a fungi spread by the elm bark beetle.  It serves commercial medicinal use as a demulcent, reducing inflammation in mucus membranes.  The wood is strong and used to make bows and wheel hubs.  The inner bark is used to make bow strings, twine, or rope. ",
         TreeNumber: "7465",
         ID: "93",
@@ -6662,7 +6662,7 @@ data: [
     attributes: {
         CommonName: "Crepe myrtle",
         ScientificName: "Lagerstroemia indica",
-        TreeImage: "\\assets\\images\\trees\\07459_Lagerstroemia_indica.JPG",
+        TreeImage: "assets/images/trees/07459_Lagerstroemia_indica.JPG",
         Description: "Native to China, Korea, Japan, and India, the bark of this tree is a prominent feature as it is smooth, pinkish-gray and mottled, shedding each year.  The ?owers are white, pink, mauve, purple, or carmine.  The tree is a popular nesting shrub for songbirds and wrens.",
         TreeNumber: "7459",
         ID: "94",
@@ -6722,7 +6722,7 @@ data: [
     attributes: {
         CommonName: "Silver Maple",
         ScientificName: "Acer saccharinum",
-        TreeImage: "\\assets\\images\\trees\\10619_Acer_saccharinum.JPG",
+        TreeImage: "assets/images/trees/10619_Acer_saccharinum.JPG",
         Description: "Native to eastern North America including Georgia, this tree becomes a primary food source for wildlife in the spring.  Due to its fast growth, this tree is being researched as a potential source of biofuels.  The light wood is used to make furniture, cabinets, flooring, musical instruments, and tool handles.",
         TreeNumber: "10619",
         ID: "95",
@@ -6782,7 +6782,7 @@ data: [
     attributes: {
         CommonName: "American Holly",
         ScientificName: "Ilex opaca",
-        TreeImage: "\\assets\\images\\trees\\04600_Ilex_opaca.JPG",
+        TreeImage: "assets/images/trees/04600_Ilex_opaca.JPG",
         Description: "This tree is a popular Christmas and winter holiday season decoration.  Like all Hollies, this tree is dioecious, with separate male and female plants, and only female plants produce the characteristic red berries.  The wood is used to make whip handles, engraving blocks, and cabinets.  It can also be dyed and used as a substitute for ebony.  ",
         TreeNumber: "4600",
         ID: "96",
@@ -6842,7 +6842,7 @@ data: [
     attributes: {
         CommonName: "Southern Catalpa",
         ScientificName: "Catalpa bignonioides",
-        TreeImage: "\\assets\\images\\trees\\10780_Catalpa_bignonioides.JPG",
+        TreeImage: "assets/images/trees/10780_Catalpa_bignonioides.JPG",
         Description: "Native to the southeastern United States including Georgia, the wood is brittle and hard, but does not rot easily.  It is used for fence posts and railroad ties.  Some plant it to attract the catalpa worm, which is harvested and used as fish bait.",
         TreeNumber: "10780",
         ID: "97",
@@ -6902,7 +6902,7 @@ data: [
     attributes: {
         CommonName: "Slash Pine",
         ScientificName: "Pinus elliottii",
-        TreeImage: "\\assets\\images\\trees\\04716_Pinus_elliottii.JPG",
+        TreeImage: "assets/images/trees/04716_Pinus_elliottii.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree is widely grown on plantations and used in horticulture.  It is named after the “slashes” – swampy ground overgrown with trees and bushes – that constitute its habitat.",
         TreeNumber: "4716",
         ID: "98",
@@ -6962,7 +6962,7 @@ data: [
     attributes: {
         CommonName: "Loblolly Pine",
         ScientificName: "Pinus taeda",
-        TreeImage: "\\assets\\images\\trees\\04725_Pinus_taeda.JPG",
+        TreeImage: "assets/images/trees/04725_Pinus_taeda.JPG",
         Description: "Indigenous to the southeastern United States including Georgia, this tree is the second most common species of tree in the country.  It is regarded as the most commercially important tree in the southeastern United States due to its timber.",
         TreeNumber: "4725",
         ID: "99",
@@ -7022,7 +7022,7 @@ data: [
     attributes: {
         CommonName: "Sweetgum",
         ScientificName: "Liquidambar styraciflua",
-        TreeImage: "\\assets\\images\\trees\\04730_Liquidambar_styraciflua.JPG",
+        TreeImage: "assets/images/trees/04730_Liquidambar_styraciflua.JPG",
         Description: "The wood of this tree is used for furniture, interior finish, paper pulp, veneers, and baskets.  The heartwood was once used to make furniture, sometimes as imitation mahogany or Circassian walnut.  The hardened sap, or gum resin, can be chewed like chewing gum and has been long used for this purpose in the southern United States.",
         TreeNumber: "4730",
         ID: "100",
@@ -7087,8 +7087,8 @@ data: [
                     attributes: {
                         Common_Name: 'White Oak',
                         Scientific_Name: 'Quercus alba',
-                        //Image: '\\assets\\images\\trees\\01470_Quercus_alba.jpg',
-                        Image: '\\assets\\images\\icons\\Icon-acorns.svg',
+                        //Image: 'assets/images/trees/01470_Quercus_alba.jpg',
+                        Image: 'assets/images/icons/Icon-acorns.svg',
                         Description: 'This is an oak tree',
                         Tree_Number: 1470
                     },
@@ -7117,7 +7117,7 @@ data: [
                     attributes: {
                         Common_Name: 'Japanese Maple',
                         Scientific_Name: 'Acer palmatum',
-                        Image: '\\assets\\images\\trees\\01336_Acer_palmatum.jpg',
+                        Image: 'assets/images/trees/01336_Acer_palmatum.jpg',
                         Description: 'this is a maple tReeEEe',
                         Tree_Number: 1336
                     },
