@@ -42,14 +42,16 @@ Make use of the many generators for code, try `ember help generate` for more det
 * To build android app:
  * Delete /cordova/ path in root
  * `ember generate cordova-init edu.gatech.arch.imagine.arboretum --platform=android`.  The url can be whatever you want when testing.
- ** `ember cordova run android`
- * `.\ArboretumApp\cordova\platforms\android\cordova\build.bat`
- * `.\ArboretumAPp\cordova\platforms\android\build\outputs\apk\...`
+ * `ember build --environment production`
+ * `ember cordova run android`
+  * `.\ArboretumApp\cordova\platforms\android\cordova\build.bat`
+  * `.\ArboretumAPp\cordova\platforms\android\build\outputs\apk\...`
 
 ### Notes on Ember behaviors
 * When creating multiple hooks for routes (ie beforeModel, model, afterModel), they must be in the file in their order of execution.  See /app/routes/badges.js for example.
 * Generally, each template and its backend route should share the same name (for example, badge.hbs and badge.js).  However, Ember's initial route is an exception.  It is called application.hbs, serves as the starting page, and is backed by index.js.  Currently, this app uses index.js to initialize data and then transitions to home.hbs without showing application.hbs.
 * Templates should contain links to other templates.  Any appropriate hooks in their backing routes activate when links are pressed.
+* In Templates and Routes, do not include slash[es] at the beginning of file paths
 
 ### File Organization
 * `app` Contains folders and files for code.
@@ -72,6 +74,9 @@ Specify what it takes to deploy your app.
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
+* [Cordova](https://cordova.apache.org/)
+* [ember-cli-cordova](https://github.com/poetic/ember-cli-cordova/blob/master/docs/getting-started.md)
+* [ember-cordova](http://embercordova.com/)
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
