@@ -40,7 +40,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 * To build android app:
- * Delete /cordova/ path in root
+ * Delete /cordova/ path in root (Generally you can skip this and the ember generate step)
  * `ember generate cordova-init edu.gatech.arch.imagine.arboretum --platform=android`.  The url can be whatever you want when testing.
  * `ember build --environment production`
  * `ember cordova run android`
