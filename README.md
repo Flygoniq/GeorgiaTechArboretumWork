@@ -51,6 +51,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 * When creating multiple hooks for routes (ie beforeModel, model, afterModel), they must be in the file in their order of execution.  See /app/routes/badges.js for example.
 * Generally, each template and its backend route should share the same name (for example, badge.hbs and badge.js).  However, Ember's initial route is an exception.  It is called application.hbs, serves as the starting page, and is backed by index.js.  Currently, this app uses index.js to initialize data and then transitions to home.hbs without showing application.hbs.
 * Templates should contain links to other templates.  Any appropriate hooks in their backing routes activate when links are pressed.
+* In Templates and Routes, do not include slash[es] at the beginning of file paths
 
 ### File Organization
 * `app` Contains folders and files for code.
