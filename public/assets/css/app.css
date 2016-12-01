@@ -1,3 +1,27 @@
+.needsloading {
+    display: none; 
+}
+
+
+/*
+conglomerate css file for the arboretum app.
+Above this block is experimental
+Contains Supernice css (last updated: 11/17/2016?)
+arboretum_app.css (last updated: 11/17/2016)
+bootstrap-switch.css (last updated: 11/17/2016)
+*/
+
+/*background-image: url("assets/images/AppBGTileSmall.png");*/
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto Slab;
+    src: url(/assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
+/* please don't remove stuff above this */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: "Roboto", sans-serif , "Roboto Slab", serif;
@@ -2012,7 +2036,7 @@ select[multiple].input-lg {
   right: 15px;
 }
 .btn {
-  display: inline-block;
+  display: inline-block
   margin-bottom: 0;
   font-weight: normal;
   text-align: center;
@@ -2373,7 +2397,7 @@ fieldset[disabled] .btn-link:focus {
   margin-top: 5px;
 }
 .btn-bar{
-      display: block;
+  display: block;
   width: 100%;
   padding-left: 10px;
   padding-right: 0px;
@@ -4420,7 +4444,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   /* color: inherit;
   background-color: #f0f0f0; */
-  background-image: url("../../public/assets/images/AppBGTileSmall.png");
+  background-image: url(/assets/images/AppBGTileSmall.png);
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5926,4 +5950,349 @@ button.close {
 .hemphillcolor{
     background-color: #691aa8;
     border-color: #691aa8;
+}
+
+.attribute{
+    /*display: block;*/
+    width: 100px;
+    height: 85px;
+    background-size: 100px 85px;
+}
+.attribute.ga { background-image: url(/assets/images/icons/Icon-galocal.svg); }
+.attribute.bee { background-image: url(/assets/images/icons/Icon-beetree.svg); }
+
+.attribute.coniferous { background-image: url(/assets/images/icons/Icon-coniferous.svg); }
+.attribute.deciduous { background-image: url(/assets/images/icons/Icon-decidouus.svg); }
+
+.attribute.pyramidal { background-image: url(/assets/images/icons/Icon-pyramidal.svg); }
+.attribute.conical { background-image: url(/assets/images/icons/Icon-conical.svg); }
+.attribute.columnar { background-image: url(/assets/images/icons/Icon-columnar.svg); }
+.attribute.spreading { background-image: url(/assets/images/icons/Icon-spreading.svg); }
+.attribute.vase { background-image: url(/assets/images/icons/Icon-vaseshape.svg); }
+.attribute.broad { background-image: url(/assets/images/icons/Icon-broad.svg); }
+.attribute.rounded { background-image: url(/assets/images/icons/Icon-rounded.svg); }
+
+.attribute.alternate { background-image: url(/assets/images/icons/Icon-alternate.svg); }
+.attribute.opposite { background-image: url(/assets/images/icons/Icon-opposite.svg); }
+.attribute.whorled { background-image: url(/assets/images/icons/Icon-whorled.svg); }
+
+.attribute.needle { background-image: url(/assets/images/icons/Icon-needleleafconifer.svg); }
+.attribute.scale { background-image: url(/assets/images/icons/Icon-scaleleafconifer.svg); }
+.attribute.untoothed { background-image: url(/assets/images/icons/Icon-untoothedsimpleleaf.svg); }
+.attribute.toothed { background-image: url(/assets/images/icons/Icon-toothedsimpleleaf.svg); }
+.attribute.yucca { background-image: url(/assets/images/icons/Icon-yucca.svg); }
+.attribute.compound { background-image: url(/assets/images/icons/Icon-compoundleaf.svg); }
+.attribute.lobed { background-image: url(/assets/images/icons/Icon-lobedsimpleleaf.svg); }
+
+.attribute.flowerred { background-image: url(/assets/images/icons/Icon-redflowercolor.svg); }
+.attribute.flowergreen { background-image: url(/assets/images/icons/Icon-greenflowercolor.svg); }
+.attribute.flowerolive { background-image: url(/assets/images/icons/Icon-brownflowercolor.svg); }
+.attribute.floweryellow { background-image: url(/assets/images/icons/Icon-yellowflowercolor.svg); }
+.attribute.flowercream { background-image: url(/assets/images/icons/Icon-creamflowercolor.svg); }
+.attribute.flowerwhite { background-image: url(/assets/images/icons/Icon-whiteflowercolor.svg); }
+.attribute.flowerpink { background-image: url(/assets/images/icons/Icon-pinkflowercolor.svg); }
+.attribute.flowerpurple { background-image: url(/assets/images/icons/Icon-purpleflowercolor.svg); }
+.attribute.flowerlightgreen { background-image: url(/assets/images/icons/Icon-lightgreenflowercolor.svg); }
+
+.attribute.cone { background-image: url(/assets/images/icons/Icon-cone.svg); }
+.attribute.key { background-image: url(/assets/images/icons/Icon-keys.svg); }
+.attribute.pod { background-image: url(/assets/images/icons/Icon-pods.svg); }
+.attribute.ball { background-image: url(/assets/images/icons/Icon-balls.svg); }
+.attribute.acorn { background-image: url(/assets/images/icons/Icon-acorn.svg); }
+.attribute.nut { background-image: url(/assets/images/icons/Icon-nuts.svg); }
+.attribute.berry { background-image: url(/assets/images/icons/Icon-berrylike.svg); }
+.attribute.fruit { background-image: url(/assets/images/icons/Icon-fleshyfruit.svg); }
+
+.attribute.fallred { background-image: url(/assets/images/icons/Icon-redleafcolor.svg); }
+.attribute.fallorange { background-image: url(/assets/images/icons/Icon-orangeleafcolor.svg); }
+.attribute.fallyellow { background-image: url(/assets/images/icons/Icon-yellowleafcolor.svg); }
+.attribute.fallbrown { background-image: url(/assets/images/icons/Icon-brownleafcolor.svg); }
+.attribute.fallgreen { background-image: url(/assets/images/icons/Icon-greenleafcolor.svg); }
+.attribute.fallcopper { background-image: url(/assets/images/icons/Icon-copperleafcolor.svg); }
+
+.attribute.badge1 { background-image: url(/assets/images/icons/Icon-badge1.svg); }
+.attribute.badge2 { background-image: url(/assets/images/icons/Icon-badge2.svg); }
+.attribute.badge3 { background-image: url(/assets/images/icons/Icon-badge3.svg); }
+.attribute.badge4 { background-image: url(/assets/images/icons/Icon-badge4.svg); }
+.attribute.badge5 { background-image: url(/assets/images/icons/Icon-badge5.svg); }
+.attribute.badge6 { background-image: url(/assets/images/icons/Icon-badge6.svg); }
+.attribute.badge7 { background-image: url(/assets/images/icons/Icon-badge7.svg); }
+.attribute.badge8 { background-image: url(/assets/images/icons/Icon-badge8.svg); }
+.attribute.badge9 { background-image: url(/assets/images/icons/Icon-badge9.svg); }
+.attribute.badge10 { background-image: url(/assets/images/icons/Icon-badge10.svg); }
+.attribute.badge11 { background-image: url(/assets/images/icons/Icon-badge11.svg); }
+.attribute.badge12 { background-image: url(/assets/images/icons/Icon-badge12.svg); }
+.attribute.badge13 { background-image: url(/assets/images/icons/Icon-badge13.svg); }
+.attribute.badge14 { background-image: url(/assets/images/icons/Icon-badge14.svg); }
+.attribute.badge15 { background-image: url(/assets/images/icons/Icon-badge15.svg); }
+.attribute.badge16 { background-image: url(/assets/images/icons/Icon-badge16.svg); }
+.attribute.badge17 { background-image: url(/assets/images/icons/Icon-badge17.svg); }
+.attribute.badge18 { background-image: url(/assets/images/icons/Icon-badge18.svg); }
+.attribute.badge19 { background-image: url(/assets/images/icons/Icon-badge19.svg); }
+.attribute.badge20 { background-image: url(/assets/images/icons/Icon-badge20.svg); }
+.attribute.badge21 { background-image: url(/assets/images/icons/Icon-badge21.svg); }
+.attribute.badge22 { background-image: url(/assets/images/icons/Icon-badge22.svg); }
+.attribute.badge23 { background-image: url(/assets/images/icons/Icon-badge23.svg); }
+.attribute.badge24 { background-image: url(/assets/images/icons/Icon-badge24.svg); }
+.attribute.badge25 { background-image: url(/assets/images/icons/Icon-badge25.svg); }
+.attribute.badge26 { background-image: url(/assets/images/icons/Icon-badge26.svg); }
+.attribute.badge27 { background-image: url(/assets/images/icons/Icon-badge27.svg); }
+.attribute.badge28 { background-image: url(/assets/images/icons/Icon-badge28.svg); }
+.attribute.badge29 { background-image: url(/assets/images/icons/Icon-badge29.svg); }
+.attribute.badge30 { background-image: url(/assets/images/icons/Icon-badge30.svg); }
+
+.attribute.avoidedwaterrunnoff { background-image: url(/assets/images/icons/Icon-avoidedwaterrunnoff.svg); }
+.attribute.carbonstorage { background-image: url(/assets/images/icons/Icon-carbonstorage.svg); }
+.attribute.dbh { background-image: url(/assets/images/icons/Icon-dbh.svg); }
+.attribute.totalheight { background-image: url(/assets/images/icons/Icon-totalheight.svg); }
+.attribute.treecondition { background-image: url(/assets/images/icons/Icon-treecondition.svg); }
+.attribute.treenumber { background-image: url(/assets/images/icons/Icon-treenumber.svg); }
+.attribute.treevalue { background-image: url(/assets/images/icons/Icon-treevalue.svg); }
+.attribute.leafarea { background-image: url(/assets/images/icons/Icon-leafarea.svg); }
+.attribute.leafbiomass { background-image: url(/assets/images/icons/Icon-leafbiomass.svg); }
+.attribute.grosscarbon { background-image: url(/assets/images/icons/Icon-grosscarbon.svg); }
+.attribute.crownew { background-image: url(/assets/images/icons/Icon-crownew.svg); }
+.attribute.crownns { background-image: url(/assets/images/icons/Icon-crownns.svg); }
+
+.attribute.medicinal { background-image: url(/assets/images/icons/Icon-medicine.svg); }
+.attribute.music { background-image: url(/assets/images/icons/Icon-instrument.svg); }
+.attribute.tools { background-image: url(/assets/images/icons/Icon-tools.svg); }
+.attribute.landscaping { background-image: url(/assets/images/icons/Icon-landscaping.svg); }
+.attribute.transportation { background-image: url(/assets/images/icons/Icon-transportation.svg); }
+.attribute.barrel { background-image: url(/assets/images/icons/Icon-barrel.svg); }
+.attribute.construction { background-image: url(/assets/images/icons/Icon-construction.svg); }
+.attribute.furniture { background-image: url(/assets/images/icons/Icon-furniture.svg); }
+.attribute.sports { background-image: url(/assets/images/icons/Icon-sports.svg); }
+
+.attribute.brewingtea { background-image: url(/assets/images/icons/Icon-brewingtea.svg); }
+.attribute.bugrepellent { background-image: url(/assets/images/icons/Icon-bugrepellent.svg); }
+.attribute.christmastree { background-image: url(/assets/images/icons/Icon-christmastree.svg); }
+.attribute.fencepost { background-image: url(/assets/images/icons/Icon-fencepost.svg); }
+.attribute.food { background-image: url(/assets/images/icons/Icon-food.svg); }
+.attribute.gasolene { background-image: url(/assets/images/icons/Icon-gasolene.svg); }
+.attribute.hedge { background-image: url(/assets/images/icons/Icon-hedge.svg); }
+.attribute.jam { background-image: url(/assets/images/icons/Icon-jam.svg); }
+.attribute.maplesyrup { background-image: url(/assets/images/icons/Icon-maplesyrup.svg); }
+.attribute.ornamental { background-image: url(/assets/images/icons/Icon-ornamental.svg); }
+.attribute.railroadties { background-image: url(/assets/images/icons/Icon-railroadties.svg); }
+.attribute.seasoning { background-image: url(/assets/images/icons/Icon-seasoning.svg); }
+.attribute.shingle { background-image: url(/assets/images/icons/Icon-shingle.svg); }
+.attribute.timber { background-image: url(/assets/images/icons/Icon-timber.svg); }
+.attribute.weapon { background-image: url(/assets/images/icons/Icon-weapon.svg); }
+
+.attribute.settings { background-image: url(/assets/images/icons/Icon-settings.svg); }
+.attribute.placeholder { background-image: url(/assets/images/icons/Icon-placeholder.svg); }
+
+.treedatagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px
+.treedatagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+ solid #349123; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.treedatagrid table td, .treedatagrid table th { padding: 3px 10px; }
+.treedatagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #349123), color-stop(1, #006937) );background:-moz-linear-gradient( center top, #349123 5%, #006937 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#349123', endColorstr='#006937');background-color:#349123; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #36752D; }
+.treedatagrid table thead th:first-child { border: none; }
+.treedatagrid table tbody td { color: #275420; border-left: 1px solid #CDE5BE;font-size: 16px;font-weight: normal; }
+.treedatagrid table tbody .alt td { background: #CDE5BE; color: #275420; }
+.treedatagrid table tbody td:first-child { border-left: none; }
+.treedatagrid table tbody tr:last-child td { border-bottom: none; }
+.treedatagrid table tfoot td div { border-top: 1px solid #349123;background: #CDE5BE;} 
+.treedatagrid table tfoot td { padding: 0; font-size: 16px }
+.treedatagrid table tfoot td div{ padding: 2px; }
+.treedatagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
+.treedatagrid table tfoot li { display: inline; }
+.treedatagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #36752D;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #36752D), color-stop(1, #275420) );background:-moz-linear-gradient( center top, #36752D 5%, #275420 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#36752D', endColorstr='#275420');background-color:#36752D; }
+.treedatagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #275420; color: #FFFFFF; background: none; background-color:#36752D;}
+
+/* ========================================================================
+ * bootstrap-switch - v3.3.2
+ * http://www.bootstrap-switch.org
+ * ========================================================================
+ * Copyright 2012-2013 Mattia Larentis
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+
+.bootstrap-switch {
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #cccccc;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  z-index: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.bootstrap-switch .bootstrap-switch-container {
+  display: inline-block;
+  top: 0;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-align: center;
+  z-index: 1;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #fff;
+  background: #42aa19;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
+  color: #fff;
+  background: #5bc0de;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {
+  color: #fff;
+  background: #5cb85c;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning {
+  background: #f0ad4e;
+  color: #fff;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  color: #fff;
+  background: #d9534f;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+  color: #000;
+  background: #eeeeee;
+}
+.bootstrap-switch .bootstrap-switch-label {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  color: #333333;
+  background: #ffffff;
+}
+.bootstrap-switch .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bootstrap-switch .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: -1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 6px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+  cursor: default !important;
+}
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important;
+}
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+  -webkit-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.bootstrap-switch.bootstrap-switch-focused {
+  border-color: #42aa19;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
 }

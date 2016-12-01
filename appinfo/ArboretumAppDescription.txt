@@ -1,0 +1,2 @@
+Arboretum App Description
+The Arboretum app supports the guided tour of the Georgia Tech Arboretum by encouraging users to explore the campus. The app provides descriptive information about each of the 100 trees on the tour. Species based information such as fall color is provided in addition to individual tree specific characteristics and performance such as height and carbon storage respectively. The app rewards users with badges for visiting various groups of trees.
