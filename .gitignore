@@ -12,6 +12,7 @@ tests/
 
 # dependencies
 /node_modules
+/node_modules old
 /bower_components/*
 
 # misc
