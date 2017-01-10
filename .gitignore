@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/dist old/*
 
 # dependencies
 /node_modules
@@ -16,6 +17,11 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+/app testing/*
+
+# cordova should not be included
+cordova/*
+ember-cordova/*
 
 # iOS
 cordova/platforms/ios/build/

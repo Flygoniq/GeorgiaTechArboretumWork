@@ -11,11 +11,11 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     
     afterModel: function() {
-        Ember.$.getScript('assets/js/jquery.min.js');
+        /*Ember.$.getScript('assets/js/jquery.min.js');
         Ember.$.getScript('assets/js/bootstrap.min.js');
         Ember.$.getScript('assets/js/bootstrap-switch.js', function() {
             Ember.$.getScript('assets/js/settingsscript.js');
-        });
+        });*/
         
         var Store = this.store;
         Store.push({

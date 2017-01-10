@@ -776,10 +776,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-
-margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
-
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -3526,6 +3524,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  overflow: hidden;
 }
 .nav > li {
   position: relative;
@@ -6295,4 +6294,9 @@ button.close {
 .bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
+}
+
+.g-map-canvas {
+  width: 600px;
+  height: 400px;
 }
