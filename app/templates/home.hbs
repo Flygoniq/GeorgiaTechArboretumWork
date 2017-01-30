@@ -12,13 +12,16 @@
 
     <div class="header clearfix">
         <nav>
-          <ul class="nav nav-pills pull-right">
+          <ul class="nav nav-pills pull-right" id="menu">
             <li role="presentation" class="active">{{#link-to "home"}}Home{{/link-to}}</li>
             <li role="presentation">{{#link-to "tours"}}Tours{{/link-to}}</li>
             <li role="presentation">{{#link-to "trees"}}Trees{{/link-to}}</li>
             <li role="presentation">{{#link-to "badges"}}Badges{{/link-to}}</li>
             <li role="presentation">{{#link-to "about"}}About{{/link-to}}</li>
             <li role="presentation">{{#link-to "settings"}}Settings{{/link-to}}</li>
+            <li class="icon">
+              <a {{action "toggleMenu"}}>&#9776;</a>
+            </li>
           </ul>
         </nav>
     </div>

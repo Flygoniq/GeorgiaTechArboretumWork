@@ -6300,3 +6300,30 @@ button.close {
   width: 600px;
   height: 400px;
 }
+
+@media screen and (max-width:680px) {
+    ul.nav-pills li:not(first-child) {display: none:}
+    ul.nav-pills li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:680px) {
+  ul.nav-pills.responsive {position: relative;}
+  ul.nav-pills.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.nav-pills.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.nav-pills.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+ul.nav-pills li.icon {display: none;}
