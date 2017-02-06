@@ -12,6 +12,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [ember-g-map](https://www.npmjs.com/package/ember-g-map)
 
 ## Installation
 
