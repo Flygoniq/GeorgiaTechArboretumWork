@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    title: 'Georgia Tech Arboretum',
+    title: 'Georgia Tech Arboretum'/*,
     actions: {
         toggleMenu() {
             var x = document.getElementById("menu");
@@ -11,5 +11,5 @@ export default Ember.Route.extend({
                 x.className = "nav nav-pills pull-right";
             }
         }
-    }
+    }*/
 });
