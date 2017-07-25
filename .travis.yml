@@ -11,10 +11,8 @@ cache:
 
 before_install:
   - npm config set spin false
-  - yarn remove node-sass
   - npm install bower
   - npm install phantomjs-prebuilt
-  - yarn add node-sass
 
 install:
   - npm install
