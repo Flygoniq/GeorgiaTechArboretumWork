@@ -1,6 +1,6 @@
 {
   "name": "Arboretum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Georgia Tech Arboretum Tour",
   "private": true,
   "directories": {
@@ -19,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-es2015-block-scoping": "^6.24.1",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
     "ember-bootstrap": "0.10.0",
@@ -49,6 +50,8 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
+    "ember-data": "^2.14.6",
+    "ember-inflector": "^2.0.1",
     "lodash": "^4.17.2",
     "rsvp": "^3.3.3"
   }
