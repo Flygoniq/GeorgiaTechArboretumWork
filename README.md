@@ -85,3 +85,6 @@ Specify what it takes to deploy your app.
 * [Plugins may not work with live reload on](https://www.bountysource.com/issues/14022485-using-cordova-plugins)
 * [Repeat actions in templates](http://emberjs.jsbin.com/dekewo/8/edit?html,css,js,output)
 
+## Heroku and Ember
+https://github.com/heroku/heroku-buildpack-emberjs
+$ heroku buildpacks:set https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz
