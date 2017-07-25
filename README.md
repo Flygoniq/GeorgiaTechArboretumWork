@@ -94,3 +94,7 @@ $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
 
 https://github.com/heroku/heroku-buildpack-emberjs
 $ heroku buildpacks:set https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz
+
+### Phantomjs
+https://github.com/stomita/heroku-buildpack-phantomjs
+heroku buildpacks:add https://github.com/stomita/heroku-buildpack-phantomjs
