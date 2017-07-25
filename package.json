@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "bower": "^1.8.0",
+    "bower-npm-resolver": "^0.8.1",
     "colors": "^1.1.2",
     "ember-data": "^2.14.6",
     "ember-inflector": "^2.0.1",
