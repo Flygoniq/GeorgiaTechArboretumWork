@@ -86,5 +86,11 @@ Specify what it takes to deploy your app.
 * [Repeat actions in templates](http://emberjs.jsbin.com/dekewo/8/edit?html,css,js,output)
 
 ## Heroku and Ember
+https://github.com/heroku/heroku-buildpack-ember-cli-deploy
+$ heroku buildpacks:clear
+$ heroku buildpacks:add heroku/nodejs
+$ heroku buildpacks:add https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/ember-cli-deploy.tgz
+$ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
+
 https://github.com/heroku/heroku-buildpack-emberjs
 $ heroku buildpacks:set https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz
