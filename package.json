@@ -1,7 +1,7 @@
 {
-  "name": "ember-two",
-  "version": "0.0.0",
-  "description": "Small description for ember-two goes here",
+  "name": "Arboretum",
+  "version": "1.0.0",
+  "description": "Georgia Tech Arboretum Tour",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -9,12 +9,12 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "ember serve",
     "test": "ember test"
   },
   "repository": "",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "4.8.4"
   },
   "author": "",
   "license": "MIT",
